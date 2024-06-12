@@ -1,0 +1,194 @@
+﻿/// <reference path="../_variables.scss">
+@import "../variables";
+
+
+.contentMaps {
+    .map-text-container {
+        display: none;
+    }
+
+    .CTALinkMenu {
+        bottom: auto;
+        top: 0;
+        margin: 0 auto;
+        padding: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 20;
+
+        button {
+            font-size: 1rem !important;
+            text-transform: none;
+            background-color: #d9c27a;
+            padding: .42rem 1rem .456rem .5rem;
+            display: flex;
+            align-items: center;
+            color: #191919;
+            width: fit-content !important;
+            border: 0;
+
+            svg {
+                width: 18.38px;
+                height: 10.52px;
+                display: inline-block;
+                margin: 0 0 0 1rem;
+            }
+        }
+    }
+
+
+    .map-text-container {
+        text-align: center;
+
+        .CTALinkMenu {
+            position: relative;
+
+            button {
+                margin: auto;
+            }
+        }
+    }
+
+    .titleMaps {
+        .spacer.spacerPB1x {
+            padding-bottom: 1rem;
+        }
+
+        .spacer.spacerPT1x {
+            padding-top: 1rem;
+        }
+
+        .sectionTitle h1.sectiontitle-padder, .sectionTitle h2.sectiontitle-padder {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .imgMap {
+        z-index: 0;
+        height: auto;
+    }
+
+    .navigationMaps {
+        margin-bottom: 2rem;
+        bottom: 5rem;
+        z-index: 1;
+
+        .nav {
+            --bs-nav-link-padding-x: 0;
+        }
+
+        .nav-tabs {
+            padding: 0;
+            border-bottom: 1px solid $black;
+            max-width: max-content;
+            --bs-nav-tabs-border-width: 0;
+
+            .nav-item {
+                margin-right: 2rem;
+                padding: 0;
+
+                .nav-link {
+                    color: $black;
+                    font-size: 1.125rem;
+
+                    &.active {
+                        color: $black;
+                        background-color: transparent;
+                        border-color: transparent;
+                        border: 0;
+                        font-weight: bold;
+
+                        + .lineTabActive {
+                            display: block !important;
+                            position: relative;
+                            bottom: -3px;
+                            margin: auto;
+                        }
+                    }
+
+                    &:focus, &:hover {
+                        border-color: none;
+                        border: 0;
+                    }
+                }
+
+                .lineTabActive {
+                    width: 82px;
+                    height: 6px;
+                    background: $black;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:768px) {
+    .contentMaps {
+        .navigationMaps {
+            position: absolute;
+            margin-bottom: 0;
+        }
+
+        .navigationMaps {
+            .nav-tabs {
+                .nav-item {
+                    &:last-of-type {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:992px) {
+    .contentMaps {
+        .titleMaps {
+            position: absolute;
+            top: 0;
+            z-index: 1;
+        }
+
+        .navigationMaps {
+            bottom: 10rem;
+
+            .nav-tabs {
+                .nav-item {
+                    margin-right: 6rem;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:1200px) {
+    .contentMaps {
+        .navigationMaps {
+            bottom: 15rem;
+
+            .nav-tabs {
+                .nav-item {
+                    margin-right: 6rem;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:1400px) {
+    .contentMaps {
+        .titleMaps {
+            .spacer.spacerPB1x {
+                padding-bottom: 3.75rem;
+            }
+
+            .spacer.spacerPT1x {
+                padding-top: 3.75rem;
+            }
+
+            .sectionTitle h1.sectiontitle-padder, .sectionTitle h2.sectiontitle-padder {
+                margin-bottom: 3.75rem;
+            }
+        }
+    }
+}

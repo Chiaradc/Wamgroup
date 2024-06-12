@@ -1,0 +1,38 @@
+﻿@using Progress.Sitefinity.AspNetCore.ViewComponents;
+@using Progress.Sitefinity.AspNetCore.Mvc.Rendering;
+@using Progress.Sitefinity.AspNetCore.Web;
+@using Elogic.Wamgroup.Sito2023.NetCore.ViewModels.WamgroupArticoli;
+@using Elogic.Wamgroup.Sito2023.NetCore.ViewComponents.WamgroupArticoli;
+@using Elogic.Wamgroup.Sito2023.NetCore.Entities.WamgroupArticoli;
+@using Elogic.Wamgroup.Sito2023.NetCore.Localization;
+
+@inject LocalizationHelperService localizationHelper;
+
+@model WamgroupArticoliViewModel
+
+<form method="get">
+<section>
+   <div data-sfcontainer>
+
+         @localizationHelper.Localize("Cerca"):
+         <input asp-for="CercaFiltro" />
+         <button type="submit" asp-action="Cerca" class="btn btn-link navbar-btn navbar-link">@localizationHelper.Localize("Cerca")</button>
+   </div>
+   @{
+      var path = this.Context.Request.Path.Value;
+         var eventUrlInNew = $"{path}/{WamgroupArticoliViewComponent.DetailItemPrefix}/newItem/edit";
+      }
+   @foreach (var item in Model.Articoli)
+   {
+      
+      var eventUrlInDetail = $"{path}/{WamgroupArticoliViewComponent.DetailItemPrefix}/{item.Id}";
+
+         <h3><strong>@localizationHelper.Localize("Codice")</strong>: @item.Codice</h3>
+         <div><strong>@localizationHelper.Localize("Descrizione")</strong>: @item.Descrizione</div>
+         <div><strong>@localizationHelper.Localize("Costo")</strong>: @item.Costo</div>
+         <div><a href="@eventUrlInDetail">@localizationHelper.Localize("Dettagli")</a></div>
+      <hr />
+   }
+      <a href="@eventUrlInNew">Nuovo</a>
+</section>
+</form>

@@ -1,0 +1,137 @@
+﻿/// <reference path="../_variables.scss">
+
+
+.filtroSettori {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-gap: 40px 50px;
+    grid-template-columns: 1fr;
+    max-width: 1060px;
+    margin: 0 auto;
+
+    > div {
+        position: relative;
+        display: flex;
+        -webkit-box-shadow: 0px 3px 15px 0px #0000002e;
+        -moz-box-shadow: 0px 3px 15px 0px #0000002e;
+        -o-box-shadow: 0px 3px 15px 0px #0000002e;
+        box-shadow: 0px 3px 15px 0px #0000002e;
+        background: $white;
+
+        &.buildingCostruction {
+            .icona {
+                background: #26ABE3;
+            }
+        }
+
+        &.feedFood {
+            .icona {
+                background: #FCB042;
+            }
+        }
+
+        &.plasticsChemicals {
+            .icona {
+                background: #209BB0;
+            }
+        }
+
+        &.heavyIndustries {
+            .icona {
+                background: #0D74B9;
+            }
+        }
+
+        &.renewableEnergy {
+            .icona {
+                background: #94C84A;
+            }
+        }
+
+        &.plantsMachinery {
+            .icona {
+                background: #C8A64A;
+            }
+        }
+
+        &.environmental {
+            .icona {
+                background: #4EB597;
+            }
+        }
+
+        &.miscellaneous {
+            .icona {
+                background: #F03F37;
+            }
+        }
+
+        > .icona {
+            background: red;
+            position: relative;
+            min-width: 90px;
+            min-height: 90px;
+            aspect-ratio: 1/1;
+            position: relative;
+
+            > img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 50px;
+            }
+        }
+
+        .content {
+            padding: 10px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-family: $font-family-alt;
+            line-height: 1.2;
+            color: $blue;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 4px;
+            right: 6px;
+            width: 20px;
+            height: 28px;
+            background: url("../../svg/checkSettore.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0;
+        }
+
+        &.selected {
+            &:after {
+                opacity: 1;
+            }
+
+            .content {
+                color: #209BB0;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .filtroSettori {
+        grid-template-columns: 1fr 1fr
+    }
+}
+
+@media(min-width: 1400px) {
+    .filtroSettori {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

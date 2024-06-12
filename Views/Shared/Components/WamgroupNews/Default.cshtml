@@ -1,0 +1,154 @@
+﻿@using Elogic.Wamgroup.Sito2023.NetCore.ViewModels.WamgroupNews;
+@using Microsoft.AspNetCore.Http;
+@using Progress.Sitefinity.AspNetCore.Web;
+
+@inject IRenderContext renderContext
+
+@model WamgroupNewsViewModel;
+@{
+   var guid = Guid.NewGuid().ToString("N");
+}
+
+@inject IHttpContextAccessor _httpContextAccessor;
+
+ @if (Model.TipoPresentazione == "slider") {
+
+    <div class="sectionSliderNews position-relative">
+    <div class="titleSection">@(!string.IsNullOrWhiteSpace(Model.TitleSection) ? Model.TitleSection : "Media")</div>
+    <div class="MediaSlide">
+      @if (Model.News.Count > 0)
+      {
+       
+            <div class="swiper-wrapper">
+               @foreach (var news in Model.News)
+               {
+                    <div class="swiper-slide mediaSlideSlide@(news.Highlighted? " evidenza" : "")" data-type="newscontainer">
+                        <div class="item position-relative">
+                            <div class="img-container">
+                                <picture>
+                                    <img src="@news.ImmagineLista" aria-hidden="true" loading="lazy" alt="@news.AltImmagineLista" width="@news.WidthLista" height="@news.HeightLista" />
+                                </picture>
+                            </div>
+                            <div class="content">
+                                @*   <div class="NewsDate"><span class="lineOrizontal"></span> @news.DataStringa</div> *@
+                                
+                                <div class="category">@news.Category</div>
+                                <div class="title">@Html.Raw(@news.Titolo.TruncateString(60, SitefinityExtensions.TruncateOptions.IncludeEllipsis))</div>
+                                <a href="@news.Url" aria-label="Leggi altro" title="Leggi altro">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16.102" height="13.801" viewBox="0 0 16.102 13.801"><path d="M108.875-43.348Zm9.51-6.662,6.325,6.038a.863.863,0,0,1,.267.625.864.864,0,0,1-.267.625l-6.325,6.038a.864.864,0,0,1-1.22-.029.862.862,0,0,1,.029-1.22l4.769-4.55H109.738a.863.863,0,0,1-.863-.863.863.863,0,0,1,.863-.862h12.223l-4.769-4.55a.866.866,0,0,1-.029-1.222A.865.865,0,0,1,118.385-50.01Z" transform="translate(-108.875 50.248)" fill="#fff"></path></svg></a>
+                                @*  <div>@news.Date</div> *@
+                                @*  <div>@news.Type</div> *@
+
+                                @*   <div>@news.ImmagineDettaglio</div> *@
+                                @*    <div>@news.Highlighted</div> *@
+                                @*   <div>@news.Testo</div> *@
+                            </div>
+
+                        </div>
+                    </div>
+               }
+         </div>
+         <div class="swiper-button-container">
+                 
+                    <div class="swiper-button-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.102" height="13.802" viewBox="0 0 16.102 13.802">
+                            <path id="Tracciato_16770" data-name="Tracciato 16770" d="M108.875-43.348Zm9.51-6.662,6.325,6.038a.863.863,0,0,1,.267.625.864.864,0,0,1-.267.625l-6.325,6.038a.864.864,0,0,1-1.22-.029.862.862,0,0,1-.239-.616.862.862,0,0,1,.268-.6l4.769-4.55H109.738a.863.863,0,0,1-.863-.863.863.863,0,0,1,.863-.862h12.223l-4.769-4.55a.866.866,0,0,1-.029-1.222.865.865,0,0,1,1.222-.03Z" transform="translate(124.977 -36.446) rotate(180)" fill="currentColor" />
+                        </svg>
+                    </div>
+                    <div class="swiper-button-next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.102" height="13.801" viewBox="0 0 16.102 13.801"><path d="M108.875-43.348Zm9.51-6.662,6.325,6.038a.863.863,0,0,1,.267.625.864.864,0,0,1-.267.625l-6.325,6.038a.864.864,0,0,1-1.22-.029.862.862,0,0,1,.029-1.22l4.769-4.55H109.738a.863.863,0,0,1-.863-.863.863.863,0,0,1,.863-.862h12.223l-4.769-4.55a.866.866,0,0,1-.029-1.222A.865.865,0,0,1,118.385-50.01Z" transform="translate(-108.875 50.248)" fill="currentColor"></path></svg>
+                    </div>
+         </div>
+                
+         @*    <div class="swiper-pagination"></div> *@
+      }
+      else
+      {
+         <div class="text-center mb-5">
+            Nessun dato
+         </div>
+      }
+
+
+   </div>
+    </div>
+
+    @if (!string.IsNullOrWhiteSpace(Model.LinkDiscoverMore) && !string.IsNullOrWhiteSpace(Model.TestoLinkDiscoverMore))
+    {
+        <div class="spacer spacerPT1x"></div>
+        <div class="container d-flex justify-content-end">
+            <a href="@Model.LinkDiscoverMore" title="Read more" aria-label="Read more" class="text-uppercase wp-ctaText linkDiscoverMore" data-call-to-action="" target="@Model.TargetLinkDiscoverMore" style="color:inherit">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16.102" height="13.801" viewBox="0 0 16.102 13.801"><path d="M108.875-43.348Zm9.51-6.662,6.325,6.038a.863.863,0,0,1,.267.625.864.864,0,0,1-.267.625l-6.325,6.038a.864.864,0,0,1-1.22-.029.862.862,0,0,1,.029-1.22l4.769-4.55H109.738a.863.863,0,0,1-.863-.863.863.863,0,0,1,.863-.862h12.223l-4.769-4.55a.866.866,0,0,1-.029-1.222A.865.865,0,0,1,118.385-50.01Z" transform="translate(-108.875 50.248)" fill="currentColor"></path></svg>
+                @(!string.IsNullOrWhiteSpace(Model.TestoLinkDiscoverMore) ? Model.TestoLinkDiscoverMore : "Vedi tutti")
+    </a>
+    </div>
+        <div class="spacer spacerPT1x"></div>
+    } else
+    {
+        <div class="spacer spacerPT1x"></div>
+        <div class="container d-flex justify-content-end">
+            <a href="/home/news" target="_blank" title="Read more" aria-label="Read more" class="text-uppercase wp-ctaText linkDiscoverMore" data-call-to-action="" style="color:inherit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16.102" height="13.801" viewBox="0 0 16.102 13.801"><path d="M108.875-43.348Zm9.51-6.662,6.325,6.038a.863.863,0,0,1,.267.625.864.864,0,0,1-.267.625l-6.325,6.038a.864.864,0,0,1-1.22-.029.862.862,0,0,1,.029-1.22l4.769-4.55H109.738a.863.863,0,0,1-.863-.863.863.863,0,0,1,.863-.862h12.223l-4.769-4.55a.866.866,0,0,1-.029-1.222A.865.865,0,0,1,118.385-50.01Z" transform="translate(-108.875 50.248)" fill="currentColor"></path></svg>
+                @(!string.IsNullOrWhiteSpace(Model.TestoLinkDiscoverMore) ? Model.TestoLinkDiscoverMore : "Vedi tutti")
+            </a>
+        </div>
+        <div class="spacer spacerPT1x"></div>
+    }
+
+   @*  <div data-readmore-container="news" class="@(Model.MostraReadMore && Model.News.Count > 0 && Model.News.Count >= Model.TopN ? "" : "d-none")">
+
+        <div class="spacer spacerPT1x"></div>
+        <div class="text-center">
+            <button data-current-page="1" data-page-size="@Model.TopN" data-type="readmore-news" class="linkReadMore">
+                Leggi altro
+            </button>
+            <span class="d-none" data-type="loader-news">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto;  display: block; shape-rendering: auto;" width="30px" height="30px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                    <circle cx="50" cy="50" fill="none" stroke="#0a0a0a" stroke-width="10" r="35" stroke-dasharray="164.93361431346415 56.97787143782138">
+                        <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s" values="0 50 50;360 50 50" keyTimes="0;1"></animateTransform>
+                    </circle>
+                </svg>
+            </span>
+        </div>
+    </div> *@
+
+   @if (Model.News.Count == 0 && !string.IsNullOrWhiteSpace(Model.SelettorePerNascondereElemento))
+   {
+      <script>
+         var elem = document.querySelector('@Model.SelettorePerNascondereElemento');
+         if (elem != null) {
+            elem.classList.add('d-none');
+         }
+      </script>
+   }
+
+
+}
+else if (Model.TipoPresentazione == "lista") {
+
+    <div class="sectionNewsList">
+        <div class="titleSection">@(!string.IsNullOrWhiteSpace(Model.TitleSection) ? Model.TitleSection : "Media")</div>
+        <div class="row grid-news" data-take="2" data-skip="0" data-urldettaglio="@Model.LinkDettaglioNews">
+            <div class="grid-news-sizer col-12 col-md-6 col-lg-4"></div>
+            @foreach (var news in Model.News)
+            {
+                <div class="col-12 col-md-6 col-lg-4 item grid-news-item">
+                    <div class="item">
+                        <div class="img-container">
+                            <picture>
+                                <img class="img-fluid" src="@news.ImmagineLista" aria-hidden="true" loading="lazy" alt="@news.AltImmagineLista" width="@news.WidthLista" height="@news.HeightLista" />
+                            </picture>
+                        </div>
+                        <div class="content">
+                            <div class="NewsDate"><span class="lineOrizontal"></span> @news.DataStringa</div>
+                            <div class="category">@news.Category</div>
+                            <div class="title">@Html.Raw(@news.Titolo.TruncateString(60, SitefinityExtensions.TruncateOptions.IncludeEllipsis))</div>
+                            <div class="summary">@Html.Raw(@news.Intro.TruncateString(100, SitefinityExtensions.TruncateOptions.IncludeEllipsis))</div>
+                            <a href="@news.Url" aria-label="Leggi altro" title="Leggi altro"></a>
+                            </div>
+                            </div>
+                            </div>
+}
+</div>
+</div> 
+}

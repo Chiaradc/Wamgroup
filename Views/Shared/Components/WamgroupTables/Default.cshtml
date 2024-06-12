@@ -1,0 +1,262 @@
+﻿@using Elogic.Wamgroup.Sito2023.NetCore.ViewModels.WamgroupTables
+@using Elogic.Wamgroup.Sito2023.NetCore.Entities.WamgroupTables
+@using Progress.Sitefinity.AspNetCore.ViewComponents;
+@using System.Text.Json;
+@using System.Text;
+@using Progress.Sitefinity.AspNetCore.Web;
+
+@inject IRenderContext renderContext
+
+@model IViewComponentContext<WamgroupTablesEntity>
+@{
+   var guid = Guid.NewGuid().ToString("N");
+
+   string GetCellSpanAttributes(WamgroupTablesCellViewModel cell)
+   {
+      int.TryParse(cell.ColSpan, out var colSpan);
+      int.TryParse(cell.RowSpan, out var rowSpan);
+
+      var sb = new StringBuilder();
+
+      if (colSpan > 1)
+      {
+         sb.Append(@$"colspan={colSpan}");
+      }
+
+      if (rowSpan > 1)
+      {
+         sb.Append(@$"rowspan={rowSpan}");
+      }
+
+      return sb.ToString();
+   }
+}
+
+@if (renderContext.IsEdit)
+{
+   <style>
+      .pulsante-caratteristiche {
+         border: 2px solid #ccc !important;
+         padding: 3px 4px;
+         width: 30px;
+         height: 30px;
+         display: inline-flex;
+         align-items: center;
+         justify-content: center;
+      }
+
+         .pulsante-caratteristiche.active {
+            border-color: #C00 !important;
+         }
+
+      .empty-span {
+         height: 30px;
+         display: inline-flex;
+      }
+
+      .tables-container .fr-element, .fr-element:focus {
+         outline: 1px solid #000;
+      }
+
+      .txtSmall {
+         max-width: 40px;
+         font-size: 0.9rem;
+      }
+
+      .lblSmall {
+         font-size: 1rem;
+      }
+   </style>
+   <div class="tables-container" data-id="@guid" data-editors-loaded="false">
+      @{
+         var inlineEditorModel = new WamgroupTablesContentViewModel
+            {
+               PropertyName = nameof(WamgroupTablesEntity.TableContent),
+               TableContent = Model.Entity.TableContent
+            };
+      }
+      <partial name="~/views/shared/components/elogictables/tablecontent.cshtml" model="inlineEditorModel" />
+      @{
+         var table = JsonSerializer.Deserialize<WamgroupTablesViewModel>(Model.Entity.TableContent);
+      }
+      <table summary="@Model.Entity.Summary">
+         <caption>@Model.Entity.Caption</caption>
+         <thead>
+            @for (int rowIndex = 0; rowIndex < table.Headers.Count; rowIndex++)
+            {
+               <tr>
+                  @for (int colIndex = 0; colIndex < table.Headers[rowIndex].Cells.Count; colIndex++)
+                  {
+                     var cell = table.Headers[rowIndex].Cells[colIndex];
+
+                     <th scope="col" @GetCellSpanAttributes(cell) data-row-index="@rowIndex" data-col-index="@colIndex">
+
+                        <a role="button" class="pulsante-caratteristiche border" title="togli il bordo">
+                           <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M32 480a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm96-64a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm0-384a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm0 256a32 32 0 1 1 0-64 32 32 0 1 1 0 64zM320 416a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm0-320a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm0 128a32 32 0 1 1 0 64 32 32 0 1 1 0-64zM224 480a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm0-448a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm0 256a32 32 0 1 1 0-64 32 32 0 1 1 0 64zM416 416a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm0-384a32 32 0 1 1 0 64 32 32 0 1 1 0-64zM32 96a32 32 0 1 1 0-64 32 32 0 1 1 0 64zM416 224a32 32 0 1 1 0 64 32 32 0 1 1 0-64zM32 288a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm192 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm192 64a32 32 0 1 1 0-64 32 32 0 1 1 0 64zM32 320a32 32 0 1 1 0 64 32 32 0 1 1 0-64zM416 192a32 32 0 1 1 0-64 32 32 0 1 1 0 64zM32 128a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm192 64a32 32 0 1 1 0-64 32 32 0 1 1 0 64z" /></svg>
+                        </a>
+
+                        <br />
+
+                        <a role="button" class="pulsante-caratteristiche alignment" data-value="start" title="allinea a sinistra">
+                           <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M288 64c0 17.7-14.3 32-32 32H32C14.3 96 0 81.7 0 64S14.3 32 32 32H256c17.7 0 32 14.3 32 32zm0 256c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c17.7 0 32 14.3 32 32zM0 192c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" /></svg>
+                        </a>
+                        <a role="button" class="pulsante-caratteristiche alignment" data-value="center" title="allinea al centro">
+                           <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M352 64c0-17.7-14.3-32-32-32H128c-17.7 0-32 14.3-32 32s14.3 32 32 32H320c17.7 0 32-14.3 32-32zm96 128c0-17.7-14.3-32-32-32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H416c17.7 0 32-14.3 32-32zM0 448c0 17.7 14.3 32 32 32H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H32c-17.7 0-32 14.3-32 32zM352 320c0-17.7-14.3-32-32-32H128c-17.7 0-32 14.3-32 32s14.3 32 32 32H320c17.7 0 32-14.3 32-32z" /></svg>
+                        </a>
+                        <a role="button" class="pulsante-caratteristiche alignment" data-value="end" title="allinea a destra">
+                           <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M448 64c0 17.7-14.3 32-32 32H192c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32zm0 256c0 17.7-14.3 32-32 32H192c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32zM0 192c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" /></svg>
+                        </a>
+                        <br />
+
+                        <input type="text" placeholder="Type header here" data-property-name="Value" />
+                        <br />
+
+                        <a role="button" class="pulsante-merge-col merge-col" title="merge con colonna a destra">
+                           <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M48 432V160H232V432H48zm232 0V160H464V432H280zM48 32H0V80 432v48H48 464h48V432 80 32H464 48z" /></svg>
+                        </a>
+
+                        <a role="button" class="pulsante-unmerge-col unmerge-col" title="unmerge con colonna a destra">
+                           <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M280 80V232H464V80H280zm-48 0H48V232H232V80zM48 280V432H232V280H48zM280 432H464V280H280V432zM0 32H48 464h48V80 432v48H464 48 0V432 80 32z" /></svg>
+                        </a>
+
+                        <a role="button" class="pulsante-merge-row merge-row" title="merge con riga sotto">
+                           <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M0 32H512V480H0V32zM128 96V224H448V96H128zM448 288H128V416H448V288z" /></svg>
+                        </a>
+
+                        <a role="button" class="pulsante-unmerge-row unmerge-row" title="unmerge con riga sotto">
+                           <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M280 80V232H464V80H280zm-48 0H48V232H232V80zM48 280V432H232V280H48zM280 432H464V280H280V432zM0 32H48 464h48V80 432v48H464 48 0V432 80 32z" /></svg>
+                        </a>
+
+                        <a role="button" class="pulsante-add-row add-row" title="aggiungi una riga">
+                           <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M512 224V32H0V224l512 0zM464 336v96l-96 0H144 48l0-96 416 0zm48 96V336 288H464L48 288H0v48 96 48H48l416 0h48V432z" /></svg>
+                        </a>
+
+                        <a role="button" class="pulsante-remove-row remove-row" title="rimuovi una riga">
+                           <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M480 192L32 192 32 64l448 0V192zm32 32V192 64 32H480 32 0V64 192v32H32l448 0h32zm0 240V304 288H496L16 288H0v16V464v16H16l480 0h16V464zM32 448l0-128 448 0V448L32 448z" /></svg>
+                        </a>
+                     </th>
+                  }
+               </tr>
+            }
+         </thead>
+         <tbody>
+            @for (int rowIndex = 0; rowIndex < table.Rows.Count; rowIndex++)
+            {
+               <tr class="row-content">
+                  @for (int colIndex = 0; colIndex < table.Rows[rowIndex].Cells.Count; colIndex++)
+                  {
+                     var cell = table.Rows[rowIndex].Cells[colIndex];
+
+                     <td @GetCellSpanAttributes(cell) data-row-index="@rowIndex" data-col-index="@colIndex">
+
+                        <a role="button" class="pulsante-caratteristiche border" title="togli il bordo">
+                           <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M32 480a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm96-64a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm0-384a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm0 256a32 32 0 1 1 0-64 32 32 0 1 1 0 64zM320 416a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm0-320a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm0 128a32 32 0 1 1 0 64 32 32 0 1 1 0-64zM224 480a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm0-448a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm0 256a32 32 0 1 1 0-64 32 32 0 1 1 0 64zM416 416a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm0-384a32 32 0 1 1 0 64 32 32 0 1 1 0-64zM32 96a32 32 0 1 1 0-64 32 32 0 1 1 0 64zM416 224a32 32 0 1 1 0 64 32 32 0 1 1 0-64zM32 288a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm192 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm192 64a32 32 0 1 1 0-64 32 32 0 1 1 0 64zM32 320a32 32 0 1 1 0 64 32 32 0 1 1 0-64zM416 192a32 32 0 1 1 0-64 32 32 0 1 1 0 64zM32 128a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm192 64a32 32 0 1 1 0-64 32 32 0 1 1 0 64z" /></svg>
+                        </a>
+
+                        <br />
+
+                        <a role="button" class="pulsante-caratteristiche alignment" data-value="start" title="allinea a sinistra">
+                           <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M288 64c0 17.7-14.3 32-32 32H32C14.3 96 0 81.7 0 64S14.3 32 32 32H256c17.7 0 32 14.3 32 32zm0 256c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c17.7 0 32 14.3 32 32zM0 192c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" /></svg>
+                        </a>
+                        <a role="button" class="pulsante-caratteristiche alignment" data-value="center" title="allinea al centro">
+                           <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M352 64c0-17.7-14.3-32-32-32H128c-17.7 0-32 14.3-32 32s14.3 32 32 32H320c17.7 0 32-14.3 32-32zm96 128c0-17.7-14.3-32-32-32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H416c17.7 0 32-14.3 32-32zM0 448c0 17.7 14.3 32 32 32H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H32c-17.7 0-32 14.3-32 32zM352 320c0-17.7-14.3-32-32-32H128c-17.7 0-32 14.3-32 32s14.3 32 32 32H320c17.7 0 32-14.3 32-32z" /></svg>
+                        </a>
+                        <a role="button" class="pulsante-caratteristiche alignment" data-value="end" title="allinea a destra">
+                           <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M448 64c0 17.7-14.3 32-32 32H192c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32zm0 256c0 17.7-14.3 32-32 32H192c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32zM0 192c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" /></svg>
+                        </a>
+                        <br />
+
+                        @{
+                           // TODO: Widget Tables, Sitemare editor
+                           <div class="ktc-rich-text-wrapper fr-box fr-inline">
+                              <textarea></textarea>
+                           </div>
+                           //Html.Kentico().RichTextEditor($"property{rowIndex}_{colIndex}");
+                        }
+
+                        <a role="button" class="pulsante-merge-col merge-col" title="merge con colonna a destra">
+                           <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M48 432V160H232V432H48zm232 0V160H464V432H280zM48 32H0V80 432v48H48 464h48V432 80 32H464 48z" /></svg>
+                        </a>
+
+                        <a role="button" class="pulsante-unmerge-col unmerge-col" title="unmerge con colonna a destra">
+                           <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M280 80V232H464V80H280zm-48 0H48V232H232V80zM48 280V432H232V280H48zM280 432H464V280H280V432zM0 32H48 464h48V80 432v48H464 48 0V432 80 32z" /></svg>
+                        </a>
+
+                        <a role="button" class="pulsante-merge-row merge-row" title="merge con riga sotto">
+                           <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M0 32H512V480H0V32zM128 96V224H448V96H128zM448 288H128V416H448V288z" /></svg>
+                        </a>
+
+                        <a role="button" class="pulsante-unmerge-row unmerge-row" title="unmerge con riga sotto">
+                           <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M280 80V232H464V80H280zm-48 0H48V232H232V80zM48 280V432H232V280H48zM280 432H464V280H280V432zM0 32H48 464h48V80 432v48H464 48 0V432 80 32z" /></svg>
+                        </a>
+
+                        <a role="button" class="pulsante-add-row add-row" title="aggiungi una riga">
+                           <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M512 224V32H0V224l512 0zM464 336v96l-96 0H144 48l0-96 416 0zm48 96V336 288H464L48 288H0v48 96 48H48l416 0h48V432z" /></svg>
+                        </a>
+
+                        <a role="button" class="pulsante-remove-row remove-row" title="rimuovi una riga">
+                           <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M480 192L32 192 32 64l448 0V192zm32 32V192 64 32H480 32 0V64 192v32H32l448 0h32zm0 240V304 288H496L16 288H0v16V464v16H16l480 0h16V464zM32 448l0-128 448 0V448L32 448z" /></svg>
+                        </a>
+                     </td>
+                  }
+               </tr>
+            }
+         </tbody>
+      </table>
+   </div>
+   <script>window.$eloTablesBe.init('@guid');</script>
+   
+}
+else
+{
+   var table = JsonSerializer.Deserialize<WamgroupTablesViewModel>
+        (Model.Entity.TableContent);
+
+   <div class="tables-container table-responsive">
+      <table summary="@Model.Entity.Summary">
+         <caption>@Model.Entity.Caption</caption>
+         <thead>
+            @for (int rowIndex = 0; rowIndex < table.Headers.Count; rowIndex++)
+            {
+               <tr>
+                  @for (int colIndex = 0; colIndex < table.Headers[rowIndex].Cells.Count; colIndex++)
+                  {
+                     var cell = table.Headers[rowIndex].Cells[colIndex];
+
+                     <th scope="col" @GetCellSpanAttributes(cell) class="text-@cell.Alignment @(table.Headers[rowIndex].Cells[colIndex].NoBorder.GetValueOrDefault() ? "no-border" : "")">
+                        @Html.Raw(cell.Value)
+                     </th>
+                  }
+               </tr>
+            }
+         </thead>
+         <tbody>
+            @for (int rowIndex = 0; rowIndex < table.Rows.Count; rowIndex++)
+            {
+               <tr class="row-content">
+                  @for (int colIndex = 0; colIndex < table.Rows[rowIndex].Cells.Count; colIndex++)
+                  {
+                     var cell = table.Rows[rowIndex].Cells[colIndex];
+
+                     <td @GetCellSpanAttributes(cell) class="text-md-@cell.Alignment @(table.Rows[rowIndex].Cells[colIndex].NoBorder.GetValueOrDefault() ? "no-border" : "")">
+                        @*<span class="d-inline d-md-none mobile-th">
+               @if (!string.IsNullOrWhiteSpace(table.Rows[j].CellValues[i]))
+               {
+               <span>@Html.Raw(table.Headers.CellValues[i])</span>
+
+               <span>: </span>
+               }
+               else
+               {
+               <span>&nbsp;</span>
+               }
+               </span>*@
+                        @Html.Raw(cell.Value)
+                     </td>
+                  }
+               </tr>
+            }
+         </tbody>
+      </table>
+   </div>
+}

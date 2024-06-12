@@ -1,0 +1,105 @@
+﻿/// <reference path="_variables.scss">
+
+// --------------------------------
+//    Form 
+// --------------------------------
+
+.btn {
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: $font-family-base;
+    padding: 0.565rem 2.35rem;
+}
+
+
+.form-control {
+    background: $white;
+    color: $blue;
+
+    &:active, &:focus-visible {
+        outline: none;
+        background: $white;
+        color: $blue;
+    }
+}
+
+
+select, select.form-select {
+    color: $blue;
+    background-color: $white;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23023b6b'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    background-size: 18px 18px;
+    font-family: $font-family-base;
+
+    > option {
+        color: $blue;
+        font-size: .85rem;
+        font-family: 'din 2014';
+    }
+}
+
+.form-checkbox {
+
+    label {
+        position: relative;
+        padding-left: 25px;
+        cursor: pointer;
+        font-size: .8rem;
+        text-transform: uppercase;
+        font-family: $font-family-base;
+        font-weight: 400;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-color: $white;
+            background-image: url(/svg/checkWhite.svg);
+            background-size: 12px;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            border: 1px solid #d4d4d4;
+            -webkit-transition: border-color .2s linear;
+            transition: border-color .2s linear;
+            width: 18px;
+            height: 18px;
+            border-radius: 6px;
+            left: 0;
+            top: 1px;
+        }
+    }
+
+    input {
+        position: absolute;
+        z-index: -1;
+        display: block !important;
+        width: 1px;
+        height: 1px;
+        clip: rect(0 0 0 0);
+
+        &:checked + label::before {
+            background-color: $blue;
+            border: 1px solid $blue;
+        }
+    }
+}
+
+nav[aria-label="Page navigation"] {
+    ul.pagination {
+        .page-item {
+
+            > .page-link {
+                background-color: $white;
+                color: $blue;
+                border-color: #C4C4C4;
+            }
+
+            &.active {
+                > .page-link {
+                    background-color: #E9EAE1;
+                    }
+                }
+            }
+        }
+    }

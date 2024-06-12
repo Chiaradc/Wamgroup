@@ -1,0 +1,44 @@
+﻿@using Elogic.Wamgroup.Sito2023.NetCore.ViewModels.WamgroupBanner;
+
+@model WamgroupBannerViewModel
+
+@{
+   var sectionClasses = string.Empty;
+   var sectionStyles = string.Empty;
+   if (!string.IsNullOrWhiteSpace(Model.BackgroundColorClass))
+      sectionClasses = Model.BackgroundColorClass;
+   else if (!string.IsNullOrWhiteSpace(Model.BackgroundColorStyle))
+      sectionStyles = Model.BackgroundColorStyle;
+
+   if (!string.IsNullOrWhiteSpace(Model.TextColorClass))
+      sectionClasses += $" {Model.TextColorClass}";
+   else if (!string.IsNullOrWhiteSpace(Model.TextColorStyle))
+      sectionStyles += $" {Model.TextColorStyle};";
+
+   if (!string.IsNullOrWhiteSpace(sectionClasses))
+      sectionClasses = sectionClasses.Trim();
+   if (!string.IsNullOrWhiteSpace(sectionStyles))
+      sectionStyles = $@" style=""{sectionStyles.Trim()}""";
+}
+
+@if (!string.IsNullOrWhiteSpace(Model.DesktopImageUrl) || !string.IsNullOrWhiteSpace(Model.Testo))
+{
+<div class="row m-sm-0 align-items-stretch">
+   <div class="col-12 col-md-6 col-xxl-5 @sectionClasses pad-content-left pad-content-right align-items-center d-flex py-md-5 colTextBanner" @Html.Raw(sectionStyles)>
+      <div class="fr-view">
+         @Html.Raw(Model.Testo)
+      </div>
+   </div>
+   <div class="col-12 col-md-6 col-xxl-7 p-0 colIMGBanner">
+      <div class="ratio ratio-16x9 h-100">
+         <img srcset="@Model.MobileImageUrl 400w, @Model.TabletImageUrl 800w, @Model.DesktopImageUrl 1440w"
+              sizes="(max-width: 767px) 400px, (min-width: 768px) and (max-width: 1279px) 800px, (min-width: 1280px) 1440px"
+              src="@Model.DesktopImageUrl"
+              alt="@Model.ImageAlt"
+              loading="lazy"
+              aria-hidden="true"
+              class="object-fit-cover" />
+      </div>
+   </div>
+</div>
+}

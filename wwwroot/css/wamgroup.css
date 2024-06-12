@@ -1,0 +1,49 @@
+﻿html {
+  margin: 0;
+  padding: 0 !important;
+}
+
+header, footer {
+  background: #ccc;
+  padding: 40px;
+}
+
+.txtBianco {
+  color: #FFFFFF;
+}
+
+.txtGiallo {
+  color: #FAEE05;
+}
+
+.txtBlu {
+  color: #023B6B;
+}
+
+.txtNero {
+  color: #191919;
+}
+
+.bgBianco {
+  background-color: #FFFFFF;
+}
+
+.bgGiallo {
+  background-color: #FAEE05;
+}
+
+.bgBluChiaro {
+  background-color: #023B6B;
+}
+
+.bgBlu {
+  background-color: #023B6B;
+}
+
+.bgBluScuro {
+  background-color: #191919;
+}
+
+.bgNero {
+  background-color: #191919;
+}

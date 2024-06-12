@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Elogic.Wamgroup.Sito2023-NetCore.props" />
+</Project>

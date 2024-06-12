@@ -1,0 +1,35 @@
+﻿@using Elogic.Wamgroup.Sito2023.NetCore.ViewModels.WamgroupTabs;
+
+@model IEnumerable<WamgroupTabsViewModel>
+@{
+   var guid = Guid.NewGuid().ToString("N");
+}
+
+<div class="tab-container" data-id="@guid">
+   <div>
+      <ul class="nav nav-tabs tab-slick" id="tab-@guid" role="tablist">
+         @{
+            var index = 0;
+            foreach (var tab in Model)
+            {
+               <li class="nav-item" role="presentation">
+                  <button class="nav-link@(index == 0 ? " active" : "")" title="@tab.Text" id="@($"tab-{guid}-{index}")" data-bs-toggle="tab" data-bs-target="#@($"{guid}-{index}")" type="button" role="tab" aria-controls="@($"{guid}-{index}")" aria-selected="@(index == 0 ? "true" : "")">
+                     @if (!string.IsNullOrWhiteSpace(tab.Image))
+                     {
+                        <img src="@tab.Image" aria-hidden="true" class="tabImage" width="@tab.Width" height="@tab.Height" alt="@tab.ImageAlt" />
+                        <img src="@tab.HoverImage" aria-hidden="true" class="tabHoverImage" width="@tab.Width" height="@tab.Height" alt="@tab.ImageAlt" />
+                     }
+                     else
+                     {
+                        @tab.Text
+                     }
+                  </button>
+               </li>
+               index++;
+            }
+         }
+      </ul>
+   </div>
+</div>
+<div class="tab-content">
+</div>

@@ -1,0 +1,350 @@
+﻿// --------------------------------
+//    md
+// --------------------------------
+
+
+    /*  h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3.50rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    h4 {
+        font-size: 2.5rem;
+    }
+
+    h5 {
+        font-size: 2rem;
+    }
+
+    h6 {
+        font-size: 1.5rem;
+    }*/
+
+p {
+    font-size: 1.15rem;
+    line-height: 1.3;
+}
+
+    .text-sm {
+        display: block;
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .text-md {
+        display: block;
+        font-size: 2rem;
+    }
+
+    .text-lg {
+        display: block;
+        font-size: 2.5rem;
+    }
+
+    .text-xl {
+        display: block;
+        font-size: 2.75rem;
+    }
+
+.navbar-nav {
+    > li {
+
+        a, button {
+            font-size: 1.5rem;
+        }
+
+        ul {
+            li {
+                a, button {
+                    font-size: 1.5rem;
+                }
+
+                ul {
+                    li {
+                        a {
+                            font-size: 1.375rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.containerBannerGrid {
+    grid-template-rows: 0 auto 100px;
+}
+
+// --------------------------------
+//    banner Hero
+// --------------------------------
+
+.bannerHero {
+
+    .figureHero {
+        grid-column-gap: 15px;
+        -moz-column-gap: 15px;
+        column-gap: 15px;
+        grid-row: 1/3;
+
+        .imgBannerHero {
+            grid-column: 4/span 6;
+            position: -webkit-sticky;
+            position: sticky;
+            width: 80%;
+            top: 50%;
+            transform: translateY(-40%);
+            padding-top: 0;
+            margin-bottom: -10vw;
+        }
+    }
+
+    .bannerTextWrap {
+        padding-top: 60vh;
+        font-size: 10vw;
+    }
+
+    .heroText {
+        &.TextTranslLeftPlusPlus {
+            margin-left: -7.7rem;
+        }
+
+        &.TextTranslLeftPlus {
+            margin-left: -6.8rem;
+        }
+
+        &.TextTranslRightPlus {
+            margin-left: 5.5rem;
+        }
+
+        &.TextTranslRightPlusPlus {
+            margin-left: 25rem;
+        }
+    }
+}
+
+.grid {
+    grid-template-columns: 25px repeat(11,1fr 15px) 1fr 25px;
+}
+
+.pad-content-left {
+    padding-left: 3.75rem;
+}
+
+.pad-content-right {
+    padding-right: 3.75rem;
+}
+
+.slick-prev {
+    left: -1.5rem;
+}
+
+.slick-next {
+    right: -1.5rem;
+}
+
+
+
+.OurValuesSlide {
+
+    .itemOV {
+
+        &.margin-read-more:nth-child(3n+2) {
+            margin-top: 7.5rem;
+        }
+    }
+}
+
+
+/* slider places */
+.PlacesSectionSlide {
+
+    .description {
+        h3 {
+            font-size: 5.5rem;
+        }
+
+        .text {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    header {
+        .navbar-nav > li .dropdown-menu.ulThirdLevel {
+            height: calc(100vh - 5rem) !important;
+            top: 5rem;
+            padding: 1.688rem !important;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+        }
+    }
+
+    .offcanvas.Megamenu .containerOffCanvas {
+        padding: 0;
+    }
+
+    .offcanvas .offcanvas-body {
+        overflow-x: hidden;
+    }
+
+    .footer-container {
+        padding: 3.125rem 0;
+
+        .navbar-nav li {
+            &.nav-item {
+                margin-bottom: 1rem;
+            }
+
+            &.nav-item:last-of-type {
+                margin-bottom: 0;
+            }
+
+            .dropdown-menu {
+                position: relative !important;
+                text-align: center;
+                transform: none !important;
+            }
+
+            .nav-link {
+                &.show {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+
+        .logo-link {
+            margin-top: 3.125rem;
+
+            .logo-image {
+                width: 130px;
+                height: 14px;
+            }
+        }
+
+        .footer-link {
+            margin-bottom: 3.125rem;
+            margin-top: 3.125rem;
+        }
+
+        .footer-nav {
+            margin-top: 3.125rem;
+
+            a {
+                margin-bottom: 1.5rem;
+                text-decoration: underline;
+            }
+        }
+
+        address {
+            margin-bottom: 0;
+
+            span {
+                display: block;
+            }
+        }
+    }
+}
+
+
+.sectionTitle h1, .sectionTitle h2 {
+    font-size: 2.5rem;
+}
+
+.row.textAndImage {
+    margin-left: 0;
+    margin-right: -6vw;
+
+    .col:first-of-type {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 10px;
+    }
+}
+
+
+.container:not(.sf-zone-column),
+.container-fluid:not(.sf-zone-column) {
+    > .textAroundImage {
+
+
+        > .col:first-of-type {
+            width: 50%;
+            position: relative;
+            z-index: 2;
+
+            > div > div:last-of-type {
+                max-width: 250px; /**/
+    }
+}
+
+        > .col:nth-of-type(2) {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+
+            div {
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        > .col:last-of-type {
+            width: 50%;
+            position: relative;
+            z-index: 2;
+
+            > div > div:last-of-type {
+                max-width: 220px; /**/
+            }
+        }
+
+        .sectionTitle {
+            padding: 10px 0 0 0;
+        }
+    }
+}
+
+.imgTitleVisual {
+    gap: 0;
+    padding-bottom: 0;
+
+    > .col {
+        padding-bottom: 70px;
+
+        &:first-of-type {
+            border-right: 2px solid #fff;
+        }
+    }
+
+    > .col:first-of-type > .position-relative > div {
+        picture, img {
+            margin-left: -6vw;
+            width: calc(100% + 6vw) !important;
+        }
+    }
+
+    > .col:last-of-type > .position-relative > div {
+        picture, img {
+            width: calc(100% + 6vw) !important;
+            margin-right: auto;
+        }
+    }
+}

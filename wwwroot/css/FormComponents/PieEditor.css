@@ -1,0 +1,16 @@
+﻿.el-icons .icon-a-lowercase:before {
+  content: "\e74f" !important;
+}
+.el-icons .icon-modal-close:before {
+  content: "\e64a" !important;
+}
+
+.el-pie-container {
+  display: flex !important;
+}
+.el-pie-container input[type=text] {
+  border: 1px solid #ccc !important;
+}
+.el-pie-container > div {
+  margin: 2px 5px;
+}

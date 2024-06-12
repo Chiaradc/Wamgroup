@@ -1,0 +1,71 @@
+﻿@model Elogic.Wamgroup.Sito2023.NetCore.Models.WamgroupContentPager.ContentPagerViewModel
+
+@if (Model.EndPageIndex > 1)
+{
+    <nav aria-label="Page navigation">
+    <ul class="pagination">
+        @if (Model.CurrentPage > 1 )
+        {
+            // back button
+            <li class="page-item">
+                <a class="page-link" href="@Model.GetPagerUrl(Model.CurrentPage - 1, this.Context)" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+            </li>
+        }
+     @*    @if (Model.IsPreviousButtonVisible)
+      {
+         <li class="page-item previous">
+            <a class="page-link" href="@Model.GetPagerUrl(Model.PreviousPageIndex, this.Context)" aria-label="Previous">
+               <span aria-hidden="true">&laquo;</span>
+            </a>
+         </li>
+      } *@
+      @for (var pageNumber = Model.StartPageIndex; pageNumber <= Model.EndPageIndex; pageNumber++)
+      {
+         <li class="page-item @(Model.CurrentPage == pageNumber ? "active" : "")">
+            <a class="page-link" href="@Model.GetPagerUrl(pageNumber, this.Context)">@pageNumber</a>
+         </li>
+      }
+     @*  @if (Model.IsNextButtonVisible)
+      {
+         <li class="page-item next">
+            <a class="page-link" href="@Model.GetPagerUrl(Model.NextPageIndex, this.Context)" aria-label="Next">
+               <span aria-hidden="true">&raquo;</span>
+            </a>
+         </li>
+      } *@
+
+        @if (Model.CurrentPage < Model.TotalPagesCount)
+        {
+            // back button
+            <li class="page-item">
+                <a class="page-link" href="@Model.GetPagerUrl(Model.CurrentPage + 1, this.Context)" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </li>
+        }
+   </ul>
+    </nav>
+    @* <nav aria-label="Page navigation">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </li>
+        </ul>
+    </nav> *@
+}

@@ -1,0 +1,460 @@
+﻿@using Elogic.Wamgroup.Sito2023.NetCore.ViewModels.WamgroupProductDetail;
+@using Elogic.Wamgroup.Sito2023.NetCore.ViewModels.WamgroupNews;
+@model WamgroupProductDetailViewModel
+
+<div class="productDetail">
+    @* <h1>Product</h1> *@
+    <div class="row g-0">
+        <div class="general-slider">
+            <div class="swiper-wrapper ">
+                @foreach (var visualSlide in Model.VisualiSlides)
+                {
+                    <div class="swiper-slide @(Model.VisualiSlides.Count() > 1 ? "multiSlide" : "")">
+                        <div class="position-relative overrideBackground">
+                            <picture class="position-relative">
+                                <source srcset="/@visualSlide.URL" media="(max-width: 767px)">
+                                <source srcset="@visualSlide.URL" media="(max-width: 1279px)">
+                                <img aria-hidden="true" src="@visualSlide.URL" width="1920" height="600" alt="@visualSlide.Title">
+                            </picture>
+                            @* <div class="position-absolute m-4 description bottom-0 containerText" style="background-color:rgba(0, 0, 0, 0.8); color: #ffffff">
+                        <div class="title">Continuous mixing</div>
+                        <div class="text">
+                        Pay off
+                        </div>
+                        </div> *@
+                        </div>
+                    </div>
+                }
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    @*     <div class="spacer spacerPT1x spacerPB1x"></div> *@
+    <div class="spacer spacerPT1x"></div>
+    <section>
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-12 d-flex">
+                    <div class=" flex-center content-center txtBlu">
+                        <div>
+                            <div class="sectionTitle">
+                                <h1 class="">
+                                    @if (Model.TitleOrder == "2")
+                                    {
+                                        <span>@Model.Code</span>
+                                    }
+                                    @Model.Title
+                                    @if (Model.TitleOrder == "1")
+                                    {
+                                        <span>@Model.Code</span>
+                                    }
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-flex pt-4">
+                    <div class=" flex-center content-center txtBlu">
+                        <p class="text-md">@Model.Subtitle</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-4 pb-4">
+                <p style="text-align: left">@Html.Raw(Model.Presentation)</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="position-relative txtNero d-xl-block d-md-block d-block">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                @foreach (var spotBox in Model.SpotBoxes)
+                {
+                    @*     <img src="@spotBox.ImageUrl" alt="@spotBox.Title" /> *@
+                    <div class="col col-xl-4 d-xl-flex col-md-4 d-md-flex col-12 d-flex">
+                        <div class=" flex-start content-left txtBlu position-relative">
+                            <div>
+                                <div class="d-flex gx-3 align-items-center justify-content-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="52.471" height="36.534" viewBox="0 0 52.471 36.534">
+                                        <path id="Tracciato_17330" data-name="Tracciato 17330" d="M51.574,12.57a2.546,2.546,0,0,1,0,3.879L20.637,47.387a2.546,2.546,0,0,1-3.879,0L.824,31.449a2.694,2.694,0,0,1,0-3.879,2.828,2.828,0,0,1,3.977,0L18.75,41.527,47.7,12.57A2.7,2.7,0,0,1,51.574,12.57Z" transform="translate(0 -11.749)" fill="#3eac6e" />
+                                    </svg>
+                                    <p class="text-uppercase m-0 px-4"><strong>@spotBox.Title</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+
+    </section>
+    <div class="spacer spacerPT1x spacerPB1x"></div>
+    <section>
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-12 d-flex">
+                    <div class=" flex-center content-center txtBlu">
+                        <div>
+                            <div class="sectionTitle">
+                                <h2>Tecnical Specs</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="spacer spacerPT1x spacerPB1x"></div>
+    @if (Model.MainImage != null)
+    {
+        <section class="position-relative txtBlu d-xl-block d-md-block d-block corners-ltr" style="background-color: #E7E8E0;">
+            <div class="container">
+                <div class="row g-5 pb-5">
+                    <div class="col col-xl-6 d-xl-flex col-md-6 d-md-flex col-12 d-flex">
+                        <div class=" flex-center content-left position-relative">
+                            <div>
+                                <p class="">
+                                    @Html.Raw(Model.Description)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-xl-6 d-xl-flex col-md-6 d-md-flex col-12 d-flex">
+                        <div class="flex-center content-center position-relative">
+                            <div>
+                                <picture class="position-relative">
+                                    <source srcset="@Model.MainImage.ImageUrl" media="(max-width: 768px)" width="540" height="288">
+                                    <source srcset="@Model.MainImage.ImageUrl" media="(max-width: 1279px)" width="540" height="288">
+                                    <img aria-hidden="true" src="@Model.MainImage.ImageUrl" class="w-100 h-auto " loading="lazy" width="540" height="288" alt="@Model.MainImage.Title">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="spacer spacerPT1x spacerPB1x"></div>
+    }
+
+    <section class="position-relative txtBlu">
+        <div class="container">
+            <div class="row g-0 pb-5">
+                <div class="col-12">
+                    <div class="text-center" style="background-color: #E7E8E0;">
+                        <h3 class="text-uppercase font-alt"><strong>Function</strong></h3>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="pt-4 pb-4">
+                        <p style="text-align: left">@Html.Raw(Model.Function)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="position-relative txtBlu">
+        <div class="container">
+            <div class="row g-5 pb-5">
+                <div class="col-12">
+                    <div class="text-center" style="background-color: #E7E8E0;">
+                        <h3 class="text-uppercase font-alt"><strong>Features</strong></h3>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="pt-4 pb-4">
+                        <p style="text-align: left">@Html.Raw(Model.Features)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="position-relative txtBlu">
+        <div class="container">
+            <div class="row g-0 pb-5">
+                <div class="col-12 col-md-6">
+                    <div class="text-center" style="background-color: #E7E8E0;">
+                        <h3 class="text-uppercase font-alt"><strong>Benefits</strong></h3>
+                    </div>
+                    <div class="pt-4 pb-4">
+                        <p style="text-align: left">@Html.Raw(Model.Benefits)</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="text-center" style="background-color: #E7E8E0;">
+                        <h3 class="text-uppercase font-alt"><strong>Options</strong></h3>
+                    </div>
+                    <div class="pt-4 pb-4">
+                        <p style="text-align: left">@Html.Raw(Model.Options)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    @if (Model.Multimedia != null)
+    {
+        <section class="position-relative txtBlu">
+            <div class="container">
+                <div class="row g-0 pb-5">
+                    <div class="col-12 mb-4">
+                        <div class="text-center" style="background-color: #E7E8E0;">
+                            <h3 class="text-uppercase font-alt"><strong>Multimedia</strong></h3>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="pt-4 pb-4">
+                            <div class="wamgroup-product-list">
+                                <div class="wamgroup-product-list__body">
+                                    <div class="wamgroup-product-list__items">
+
+                                        @foreach (var multimedia in Model.Multimedia)
+                                        {
+                                            @*   @multimedia.VideoEmbedCode *@
+
+                                            <div class="wamgroup-product-list__item">
+                                                <a href="" class="wamgroup-product-list__item-link">
+                                                    <img src="@multimedia.ImageUrl" class="wamgroup-product-list__item-image">
+                                                </a>
+                                                <div class="wamgroup-product-list__item-content">
+                                                    <h3 class="wamgroup-product-list__item-title">@multimedia.Title</h3>
+                                                    <p class="wamgroup-product-list__item-description">
+                                                        OGGETTO TESTO DA CREARE
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    }
+
+    <section class="position-relative txtBlu">
+        <div class="container">
+            <div class="row g-5 pb-5">
+                <div class="col-12">
+                    <div class="text-center" style="background-color: #E7E8E0;">
+                        <h3 class="text-uppercase font-alt"><strong>Download</strong></h3>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="pt-4 pb-4">
+                        <p style="text-align: center">Here below you will find all documents regarding this product. Click “Other Languages” for translated versions.</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="pt-4 pb-4">
+                        <hr />
+                        <div class="row g-5">
+                            <div class="col-auto">
+                                <div class="form-checkbox">
+                                    <input class="form-checkbox-input" type="checkbox" value="" id="check1">
+                                    <label class="form-checkbox-label" for="check1">
+                                        Select all
+                                    </label>
+                                </div>
+                            </div>
+                          
+                            <div class="col-auto">
+                                <button class="nav-link download-zip">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.5 30" width="15" height="23">
+                                    <path id="Tracciato_17627" data-name="Tracciato 17627" d="M3.75-.25A3.753,3.753,0,0,0,0,3.5V26a3.753,3.753,0,0,0,3.75,3.75h15A3.753,3.753,0,0,0,22.5,26V9.125H15A1.873,1.873,0,0,1,13.125,7.25V-.25ZM15-.25v7.5h7.5ZM5.625,2.563a.94.94,0,0,1,.938-.937H8.438a.938.938,0,0,1,0,1.875H6.563A.94.94,0,0,1,5.625,2.563Zm0,3.75a.94.94,0,0,1,.938-.937H8.438a.938.938,0,0,1,0,1.875H6.563A.94.94,0,0,1,5.625,6.313Zm0,3.75a.94.94,0,0,1,.938-.937H8.438a.938.938,0,0,1,0,1.875H6.563A.94.94,0,0,1,5.625,10.063ZM5.256,14.27a1.875,1.875,0,0,1,1.811-1.395h.867A1.868,1.868,0,0,1,9.744,14.27l1.377,5.168a3.825,3.825,0,0,1,.123.961,3.75,3.75,0,0,1-7.5,0,3.791,3.791,0,0,1,.123-.961L5.244,14.27Zm1.307,5.168a.938.938,0,0,0,0,1.875H8.438a.938.938,0,0,0,0-1.875Z" transform="translate(0 0.25)" fill="#023b6b"></path>
+                                </svg>
+                                <span class="p-2">Download selected</span>
+                            </div>
+                            <div class="col-auto">
+                          
+                                <div class="nav-item dropdown-s filter-download-lang">
+                                    <button id="lnk-634" class="nav-link  dropdown-toggle-s" aria-label="lang menu" aria-haspopup="dialog" aria-controls="menu-634" data-bs-target="#filter-download-lang" data-bs-toggle="offcanvas" aria-expanded="false">
+                                        Language
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="5.547" viewBox="0 0 12 5.547">
+                                            <path id="Tracciato_141" data-name="Tracciato 141" d="M6,5.545a.608.608,0,0,1-.362-.127L.217,1.024A.568.568,0,0,1,.127.217.577.577,0,0,1,.942.127l5.065,4.1,5.056-4.1a.573.573,0,0,1,.725.888L6.361,5.409A.608.608,0,0,1,6,5.536Z" transform="translate(0.001 0.002)" fill="currentColor"></path>
+                                        </svg>
+                                    </button>
+
+                                        <div class="offcanvas" aria-hidden="true" aria-labelledby="lnk-634" id="filter-download-lang">
+
+                                        <div class="offcanvas-body d-flex flex-column">
+                                            @foreach (var language in Model.DocumentsLanguages)
+                                            {
+                                                <div>@language.Code</div>
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                              
+                            </div>
+                        </div>
+                        <hr />
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="position-relative txtBlu">
+        <div class="container">
+            <div class="row g-0 pb-5">
+                <div class="col-12">
+                    <div class="pt-3 pb-3" style="background-color: #E7E8E0;">
+                        <div class="row">
+                            <div class="offset-3 col-2">LANGUAGE</div>
+                            <div class="col-1">ISSUE</div>
+                            <div class="col-2">NAME</div>
+                            <div class="col-2">CODE</div>
+                            <div class="col-2">LATEST EDITION</div>
+
+                        </div>
+                    </div>
+                </div>
+                @foreach (var document in Model.Documents)
+                {
+                    var id = Guid.NewGuid().ToString("N");
+                <div class="col-12">
+                    <div class="pt-2 pb-2">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="form-checkbox">
+                                    <input class="form-checkbox-input check-document" type="checkbox" value="@document.Id" id="check_@document.Id">
+                              <label class="form-checkbox-label" for="check_@document.Id">
+                                      <a href="@document.URL" download="@document.Title">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="21" viewBox="0 0 18 21">
+                                            <path id="Tracciato_17622" data-name="Tracciato 17622" d="M8,22.5a1.5,1.5,0,0,1,0-3H23a1.5,1.5,0,0,1,0,3Zm8.559-6.441a1.5,1.5,0,0,1-2.123,0l-6-6a1.5,1.5,0,1,1,2.123-2.123L14,11.377V3a1.5,1.5,0,0,1,3,0v8.377l3.441-3.441a1.5,1.5,0,0,1,2.123,2.123l-6,6Z" transform="translate(-6.5 -1.5)" fill="#023b6b" />
+                                                </svg>
+                                            </a>
+                                            <span class="pl-3">@document.Type</span>
+                                    </label>
+                                </div>
+
+                            </div>
+                            <div class="col-2">
+
+                                <div class="nav-item dropdown-s filter-download-lang">
+                                    <button id="lnk-@id" class="nav-link  dropdown-toggle-s" aria-label="lang menu" aria-haspopup="dialog" aria-controls="menu-@id" data-bs-target="#@id" data-bs-toggle="offcanvas" aria-expanded="false">
+                                        ENGLISH
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="5.547" viewBox="0 0 12 5.547">
+                                            <path id="Tracciato_141" data-name="Tracciato 141" d="M6,5.545a.608.608,0,0,1-.362-.127L.217,1.024A.568.568,0,0,1,.127.217.577.577,0,0,1,.942.127l5.065,4.1,5.056-4.1a.573.573,0,0,1,.725.888L6.361,5.409A.608.608,0,0,1,6,5.536Z" transform="translate(0.001 0.002)" fill="currentColor"></path>
+                                        </svg>
+                                    </button>
+
+                                        <div class="offcanvas" aria-hidden="true" aria-labelledby="lnk-@id" id=@id>
+
+                                            <div class="offcanvas-body d-flex flex-column">
+                                                @foreach (var language in document.ListLanguages)
+                                                {
+                                                    <a><div>@language.Code</div></a>
+                                                }
+                                         @* <div>EN</div>
+                                            <div>IT</div>
+                                            <div>DE</div>
+                                            <div>FR</div> *@
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                                <div class="col-1">@document.Issue</div>
+                                <div class="col-2">@document.Title</div>
+                                <div class="col-2">@document.Code</div>
+                                <div class="col-2">@document.RefDate?.ToShortDateString()</div>
+
+                        </div>
+                    </div>
+                </div>
+                <hr class="m-0"/>
+                }
+            </div>
+        </div>
+    </section>
+<div class="spacer spacerPB1x"></div>
+    <section class="position-relative txtBianco d-xl-block d-md-block d-block bgBlu">
+        <div class="container">
+
+
+
+            <div class="pt-4 pb-4">
+                <p style="">
+                    <span class="text-md col-md-10">
+                        To download technical, and spare parts manuals, please log in with your username and password.
+                    </span>
+                </p><p style="">
+                    <span class="text-md">
+                        If you do not have an account, please <span style="color:#FAEE05"><b>click here</b></span> to register.
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <a href="https://localhost:7199/home-page"></a>
+
+
+    </section>
+<div class="spacer spacerPB1x"></div>
+
+
+
+  @*  
+        <a href="@document.URL" download="@document.Title">@document.Title</a>
+        <p>Code: @document.Code</p>
+        <p>Latest Edition: @document.RefDate?.ToShortDateString()</p>
+        <p>Languages: @document.Languages</p>
+        <p>issue: @document.Issue</p>
+        <p>type: @document.Type</p> *@
+   
+
+    @* <div class="product">
+
+    <h4>Solutions</h4>
+
+    <h6>Solution by Industry</h6>
+
+    @foreach (var solution in Model.solutionbyindustry)
+    {
+
+    <p>@solution</p>
+    }
+
+    <h6>Solution by Technology</h6>
+
+    @foreach (var solution in Model.solutionbyneed)
+    {
+
+    <p>@solution</p>
+    }
+
+    <h4>Suggested Products</h4>
+
+    @foreach (var linkedProducts in Model.LinkedProducts)
+    {
+    <img src="@linkedProducts.ImageUrl" alt="@linkedProducts.Title" />
+    <p>@linkedProducts.Title</p>
+    }
+    </div> *@
+
+</div>
+<section class="position-relative txtBlu">
+    <div class="container">
+        <div class="row g-5 pb-5">
+            <div class="col-12 d-flex">
+                <div class="txtBlu">
+                    <div>
+                        <div class="sectionTitle">
+                            <div class="">
+                                    <span>Media</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@* <vc:wamgroup-news context="ViewBag.NewsViewModel"></vc:wamgroup-news>  *@

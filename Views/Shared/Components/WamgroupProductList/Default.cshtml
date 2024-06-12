@@ -1,0 +1,37 @@
+﻿@using Elogic.Wamgroup.Sito2023.NetCore.ViewModels.WamgroupProductList;
+
+@model WamgroupProductListViewModel
+
+@if (Model.Items != null && Model.Items.Any())
+{
+    <div class="wamgroup-product-list">
+        <div class="wamgroup-product-list__header">
+            <h2 class="wamgroup-product-list__title">@Model.Title</h2>
+        </div>
+        <div class="wamgroup-product-list__body">
+            <div class="wamgroup-product-list__items">
+                @foreach (var product in Model.Items)
+                {
+                    <div class="wamgroup-product-list__item">
+                        <a href="@product.Url" class="wamgroup-product-list__item-link">
+                            <img src="@product.ImageUrl" alt="@product.Title" class="wamgroup-product-list__item-image" />
+                        </a>
+                        <div class="wamgroup-product-list__item-content">
+                            <h3 class="wamgroup-product-list__item-title">@product.Title</h3>
+                             <p class="wamgroup-product-list__item-description">@Html.Raw(product.Description)</p>
+                           @if (!string.IsNullOrEmpty(product.Url) && product.Url != "#")
+                           {
+                               <a href="@product.Url" target="_blank" title="Read more" aria-label="Read more" class="wp-ctaText" data-call-to-action="" style="color:inherit">
+                                   Read more
+
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="16.102" height="13.801" viewBox="0 0 16.102 13.801"><path d="M108.875-43.348Zm9.51-6.662,6.325,6.038a.863.863,0,0,1,.267.625.864.864,0,0,1-.267.625l-6.325,6.038a.864.864,0,0,1-1.22-.029.862.862,0,0,1,.029-1.22l4.769-4.55H109.738a.863.863,0,0,1-.863-.863.863.863,0,0,1,.863-.862h12.223l-4.769-4.55a.866.866,0,0,1-.029-1.222A.865.865,0,0,1,118.385-50.01Z" transform="translate(-108.875 50.248)" fill="currentColor"></path></svg>
+                               </a>
+                            }
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+}
+

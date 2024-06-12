@@ -1,0 +1,28 @@
+﻿@using Elogic.Wamgroup.Sito2023.NetCore.ViewModels.WamgroupNews;
+
+@model List<WamgroupNewsItemViewModel>;
+
+@{
+   Layout = "";
+}
+
+@foreach (var news in Model)
+{
+   <div class="col-12 col-md-6 col-lg-4 item grid-news-item">
+      <div class="item item-news">
+         <div class="img-container">
+            <picture>
+               <img class="img-fluid" src="@news.ImmagineLista" aria-hidden="true" loading="lazy" alt="@news.AltImmagineLista" width="@news.WidthLista" height="@news.HeightLista" />
+            </picture>
+         </div>
+         <div class="content">
+            <div class="NewsDate"><span class="lineOrizontal"></span> @news.DataStringa</div>
+            <div class="category">@news.Category</div>
+            <div class="title">@Html.Raw(@news.Titolo.TruncateString(60, SitefinityExtensions.TruncateOptions.IncludeEllipsis))</div>
+            <div class="summary">@Html.Raw(@news.Intro.TruncateString(100, SitefinityExtensions.TruncateOptions.IncludeEllipsis))</div>
+            <a href="@news.Url" aria-label="Leggi altro" title="Leggi altro"></a>
+         </div>
+      </div>
+   </div>
+
+}

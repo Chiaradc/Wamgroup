@@ -1,0 +1,70 @@
+﻿.tab-container .nav-tabs {
+  margin-bottom: 4rem;
+  justify-content: start;
+  flex-wrap: nowrap;
+  --bs-nav-tabs-border-width: 0;
+  --bs-nav-tabs-border-color: transparent;
+  --bs-nav-tabs-border-radius: 0;
+  --bs-nav-tabs-link-hover-border-color: transparent transparent transparent;
+  --bs-nav-tabs-link-active-color: $gold;
+  --bs-nav-tabs-link-active-bg: transparent;
+  --bs-nav-tabs-link-active-border-color: transparent transparent transparent;
+  border-bottom: 3px solid transparent !important;
+}
+.tab-container .nav-tabs .nav-link {
+  margin-bottom: calc(-1 * var(--bs-nav-tabs-border-width));
+  padding-bottom: 0.7rem;
+  background: none;
+  border-bottom: 3px solid transparent;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 1.3rem;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tab-container .nav-tabs .nav-link img {
+  width: auto;
+  height: 50px;
+}
+.tab-container .nav-tabs .nav-link .tabHoverImage {
+  display: none;
+}
+.tab-container .nav-tabs .nav-link.active {
+  color: #98680E;
+  background-color: transparent;
+  border-color: #98680E;
+}
+.tab-container .nav-tabs .nav-link.active .tabImage {
+  display: none;
+}
+.tab-container .nav-tabs .nav-link.active .tabHoverImage {
+  display: block;
+}
+.tab-container .tab-slick.slick-slider .slick-list {
+  margin: 0 1.2rem;
+}
+.tab-container .nav-item {
+  margin: 0 0.5rem;
+  flex: 1 0 0%;
+  max-width: 202px;
+  text-align: center;
+}
+.tab-container .nav-item.show .nav-link {
+  color: #191919;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .tab-container .nav-tabs {
+    justify-content: center;
+  }
+  .tab-container .nav-tabs .nav-link img {
+    width: auto;
+    height: auto;
+  }
+}

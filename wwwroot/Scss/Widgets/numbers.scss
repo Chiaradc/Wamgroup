@@ -1,0 +1,224 @@
+﻿/// <reference path="../_variables.scss">
+@import "../variables";
+
+// --------------------------------
+//    Golden numbers
+// --------------------------------
+
+.sectionNumbers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin-bottom: 1000px;*/
+    padding: 50px 0;
+
+    .lineVertical {
+    }
+
+    IMG {
+        z-index: 0;
+    }
+
+    .goldNum {
+        font-size: 40px;
+        text-align: center;
+        font-family: $font-family-alt;
+        font-weight: 800;
+        padding: 0 1rem;
+        line-height: 4.5rem;
+        width: 100%;
+        flex-wrap: wrap;
+        /* margin-top: 3.75rem;
+        margin-bottom: -2rem;*/
+        opacity: 1;
+        flex-direction: row !important;
+
+        span.numberCaption {
+            font-family: $font-family-base;
+            font-size: 1.2rem;
+            line-height: 1.375rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            font-weight: 300;
+            text-align:left;
+        }
+
+
+
+        span {
+            width: 50%;
+        }
+    }
+
+    .dateGN {
+        font-size: 1.125rem;
+        /*padding-top: 5rem;
+        padding-bottom: 7.188rem;*/
+    }
+
+    .numbers-final-text {
+        margin-bottom: 3.75rem;
+    }
+}
+
+body.-sf-new-zone-editor .goldNum {
+    opacity: 1;
+}
+
+.numberSmall {
+  font-size:3.125rem;
+  line-height:4.063rem;
+}
+
+.numberLine {
+  border-bottom:1px solid $golddark;
+  width:100%;
+  text-align:center;
+  padding-bottom:1.5rem;
+  white-space: nowrap;
+}
+
+@media (min-width:768px) {
+    .sectionNumbers {
+        .goldNum {
+            width: 100%;
+
+            span.numberCaption {
+                font-size: 1.4rem;
+            }
+        }
+    }
+ }
+@media(min-width:992px) {
+    .sectionNumbers {
+        .goldNum {
+            font-size: 4rem;
+            width: 50%;
+            flex-direction: column !important;
+
+            span {
+                width: unset;
+            }
+
+            span.numberCaption {
+                font-size: 1.35rem;
+                line-height: 1;
+            }
+
+            &:nth-of-type(even) span, &:nth-of-type(even) span.numberCaption {
+                text-align: left
+            }
+
+            &:nth-of-type(odd) span, &:nth-of-type(odd) span.numberCaption {
+                text-align: right
+            }
+        }
+    }
+}
+@media(min-width:1200px) {
+    .sectionNumbers {
+
+        .goldNum {
+            padding: 0 1.5rem;
+            line-height: 4rem;
+            font-size: 4rem;
+            width: 50%;
+
+            span.numberCaption {
+                font-size: 1.6rem;
+                line-height: 1;
+            }
+
+            &:nth-of-type(1), &:nth-of-type(2) {
+                margin-bottom: 2rem;
+            }
+
+            &:nth-of-type(3), &:nth-of-type(4) {
+                margin-bottom: 0;
+
+                span.numberCaption {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .dateGN {
+            font-size: 1.125rem;
+            /*padding-top: 5rem;
+        padding-bottom: 7.188rem;*/
+        }
+    }
+
+}
+
+@media(min-width:1400px) {
+    .sectionNumbers {
+
+        .goldNum {
+            padding: 0 1.5rem;
+            line-height: 4rem;
+            font-size: 5rem;
+            width: 50%;
+
+            span.numberCaption {
+                font-size: 1.6rem;
+                line-height: 1;
+            }
+
+            &:nth-of-type(1), &:nth-of-type(2) {
+                margin-bottom: 2rem;
+            }
+
+            &:nth-of-type(3), &:nth-of-type(4) {
+                margin-bottom: 0;
+
+                span.numberCaption {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .dateGN {
+            font-size: 1.125rem;
+            /*padding-top: 5rem;
+        padding-bottom: 7.188rem;*/
+        }
+    }
+}
+
+@media(min-width:1600px) {
+    .sectionNumbers {
+
+        .goldNum {
+            padding: 0 1.5rem;
+            line-height: 4rem;
+            font-size: 6rem;
+            width: 50%;
+
+
+            span.numberCaption {
+                font-size: 2rem;
+                line-height: 1;
+            }
+
+            &:nth-of-type(1), &:nth-of-type(2) {
+                margin-bottom: 2rem;
+            }
+
+            &:nth-of-type(3), &:nth-of-type(4) {
+                margin-bottom: 0;
+
+                span.numberCaption {
+                  margin-bottom:0;
+                }
+            }
+        }
+
+        .dateGN {
+            font-size: 1.125rem;
+            /*padding-top: 5rem;
+        padding-bottom: 7.188rem;*/
+        }
+    }
+}

@@ -1,0 +1,46 @@
+﻿@using Elogic.Wamgroup.Sito2023.NetCore.ViewModels.WamgroupRow;
+@using Progress.Sitefinity.AspNetCore.ViewComponents;
+@using Progress.Sitefinity.AspNetCore.Mvc.Rendering;
+@using Progress.Sitefinity.AspNetCore.Web;
+
+@model WamgroupRowViewModel;
+
+@{
+    var rowClass = string.Empty;
+
+    if (!string.IsNullOrWhiteSpace(Model.PresetRowClass))
+        rowClass = Model.PresetRowClass;
+        rowClass += $" g-{Model.ColumnGap}";
+   
+}
+
+<div class="row @rowClass">
+    @for (var i = 0; i < Model.ColumnDefinitions.Count; i++)
+    {
+        var outerClasses = string.Empty;
+        var classes = string.Empty;
+        var styles = string.Empty;
+        var desktopImageUrl = string.Empty;
+        if (Model.ColumnDefinitions.ContainsKey($"Column{(i + 1)}"))
+        {
+            outerClasses = Model.ColumnDefinitions[$"Column{(i + 1)}"].ColumnOuterClasses;
+            classes = Model.ColumnDefinitions[$"Column{(i + 1)}"].ColumnClasses;
+            styles = Model.ColumnDefinitions[$"Column{(i + 1)}"].ColumnStyles;
+            desktopImageUrl = Model.ColumnDefinitions[$"Column{(i + 1)}"].ColumnDesktopImageUrl;
+        }
+        string placeHolder = $"Column{(i + 1)}{Model.Context.PlaceHolder}";
+        string label = $"Column {(i + 1)}";
+        string style = !string.IsNullOrWhiteSpace(styles) ? styles : "";
+        <div class="col @outerClasses">
+            <div class="@classes position-relative" style="@styles">
+                @if (!string.IsNullOrWhiteSpace(desktopImageUrl))
+                {
+                    <div style="background:url('@desktopImageUrl')" class="col-bgImage"></div>
+                    @*<img src="@desktopImageUrl" aria-hidden="true" class="bg-image object-fit-cover" width="100" height="100" alt="Image" />*@
+                }
+                <div data-sfcontainer container-context="@this.Model.Context.ContainerContext(placeHolder, label)"></div>
+            </div>
+          
+        </div>
+    }
+</div>

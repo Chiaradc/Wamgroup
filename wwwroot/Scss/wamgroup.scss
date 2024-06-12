@@ -1,0 +1,46 @@
+﻿/// <reference path="_variables.scss">
+
+html {
+    margin: 0;
+    padding: 0 !important;    
+}
+
+//-------------
+// Colori testo
+//-------------
+.txtBianco {
+    color: $white;
+}
+.txtGiallo {
+    color: $yellow;
+}
+.txtBlu {
+    color: $blue;
+}
+.txtNero {
+    color: $black;
+}
+
+//--------------
+// Colori sfondo
+//--------------
+
+.bgBianco {
+    background-color: $white;
+}
+.bgGiallo {
+    background-color: $yellow;
+}
+.bgBluChiaro {
+    background-color: $blue;
+}
+.bgBlu {
+    background-color: $blue;
+}
+.bgBluScuro {
+    background-color: $black;
+}
+.bgNero {
+    background-color: $black;
+}
+

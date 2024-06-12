@@ -1,0 +1,1913 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Resources\\Entities.Designer.cs",
+      "PackagePath": "staticwebassets\\Resources\\Entities.Designer.cs"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Resources\\Entities.resx",
+      "PackagePath": "staticwebassets\\Resources\\Entities.resx"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\Elogic.scss",
+      "PackagePath": "staticwebassets\\Scss\\Elogic.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\FormComponents\\PieEditor.scss",
+      "PackagePath": "staticwebassets\\Scss\\FormComponents\\PieEditor.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\FormComponents\\SectionIntroPhrasesEditor.scss",
+      "PackagePath": "staticwebassets\\Scss\\FormComponents\\SectionIntroPhrasesEditor.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\FormComponents\\TabsEditor.scss",
+      "PackagePath": "staticwebassets\\Scss\\FormComponents\\TabsEditor.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\Widgets\\DocumentDownload.scss",
+      "PackagePath": "staticwebassets\\Scss\\Widgets\\DocumentDownload.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\Widgets\\catalog.scss",
+      "PackagePath": "staticwebassets\\Scss\\Widgets\\catalog.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\Widgets\\cta.scss",
+      "PackagePath": "staticwebassets\\Scss\\Widgets\\cta.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\Widgets\\filtroSettori.scss",
+      "PackagePath": "staticwebassets\\Scss\\Widgets\\filtroSettori.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\Widgets\\gallery.scss",
+      "PackagePath": "staticwebassets\\Scss\\Widgets\\gallery.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\Widgets\\generalslider.scss",
+      "PackagePath": "staticwebassets\\Scss\\Widgets\\generalslider.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\Widgets\\generation.scss",
+      "PackagePath": "staticwebassets\\Scss\\Widgets\\generation.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\Widgets\\maps.scss",
+      "PackagePath": "staticwebassets\\Scss\\Widgets\\maps.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\Widgets\\news.scss",
+      "PackagePath": "staticwebassets\\Scss\\Widgets\\news.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\Widgets\\numbers.scss",
+      "PackagePath": "staticwebassets\\Scss\\Widgets\\numbers.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\Widgets\\people.scss",
+      "PackagePath": "staticwebassets\\Scss\\Widgets\\people.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\Widgets\\pies.scss",
+      "PackagePath": "staticwebassets\\Scss\\Widgets\\pies.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\Widgets\\productListDetail.scss",
+      "PackagePath": "staticwebassets\\Scss\\Widgets\\productListDetail.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\Widgets\\search.scss",
+      "PackagePath": "staticwebassets\\Scss\\Widgets\\search.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\Widgets\\sentences.scss",
+      "PackagePath": "staticwebassets\\Scss\\Widgets\\sentences.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\Widgets\\sliderNews.scss",
+      "PackagePath": "staticwebassets\\Scss\\Widgets\\sliderNews.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\Widgets\\slidingtitle.scss",
+      "PackagePath": "staticwebassets\\Scss\\Widgets\\slidingtitle.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\Widgets\\stores.scss",
+      "PackagePath": "staticwebassets\\Scss\\Widgets\\stores.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\Widgets\\tables.scss",
+      "PackagePath": "staticwebassets\\Scss\\Widgets\\tables.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\Widgets\\tabs.scss",
+      "PackagePath": "staticwebassets\\Scss\\Widgets\\tabs.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\Widgets\\timeline.scss",
+      "PackagePath": "staticwebassets\\Scss\\Widgets\\timeline.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\Widgets\\tripletPagine.scss",
+      "PackagePath": "staticwebassets\\Scss\\Widgets\\tripletPagine.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\Widgets\\values.scss",
+      "PackagePath": "staticwebassets\\Scss\\Widgets\\values.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\_addictional.scss",
+      "PackagePath": "staticwebassets\\Scss\\_addictional.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\_form-controls.scss",
+      "PackagePath": "staticwebassets\\Scss\\_form-controls.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\_ui.scss",
+      "PackagePath": "staticwebassets\\Scss\\_ui.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\_variables.css",
+      "PackagePath": "staticwebassets\\Scss\\_variables.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\_variables.min.css",
+      "PackagePath": "staticwebassets\\Scss\\_variables.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\Scss\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\animation.scss",
+      "PackagePath": "staticwebassets\\Scss\\animation.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\elogic-lg.scss",
+      "PackagePath": "staticwebassets\\Scss\\elogic-lg.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\elogic-md.scss",
+      "PackagePath": "staticwebassets\\Scss\\elogic-md.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\elogic-xl.scss",
+      "PackagePath": "staticwebassets\\Scss\\elogic-xl.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\elogic-xs.scss",
+      "PackagePath": "staticwebassets\\Scss\\elogic-xs.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\elogic-xxl-dsk.scss",
+      "PackagePath": "staticwebassets\\Scss\\elogic-xxl-dsk.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\elogic-xxl.scss",
+      "PackagePath": "staticwebassets\\Scss\\elogic-xxl.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Scss\\wamgroup.scss",
+      "PackagePath": "staticwebassets\\Scss\\wamgroup.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Thumbnails\\banner.jpg",
+      "PackagePath": "staticwebassets\\Thumbnails\\banner.jpg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Thumbnails\\cta.jpg",
+      "PackagePath": "staticwebassets\\Thumbnails\\cta.jpg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Thumbnails\\download.jpg",
+      "PackagePath": "staticwebassets\\Thumbnails\\download.jpg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Thumbnails\\filtrosettori.jpg",
+      "PackagePath": "staticwebassets\\Thumbnails\\filtrosettori.jpg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Thumbnails\\footer.jpg",
+      "PackagePath": "staticwebassets\\Thumbnails\\footer.jpg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Thumbnails\\gallery.jpg",
+      "PackagePath": "staticwebassets\\Thumbnails\\gallery.jpg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Thumbnails\\generalslider.jpg",
+      "PackagePath": "staticwebassets\\Thumbnails\\generalslider.jpg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Thumbnails\\header.jpg",
+      "PackagePath": "staticwebassets\\Thumbnails\\header.jpg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Thumbnails\\images.jpg",
+      "PackagePath": "staticwebassets\\Thumbnails\\images.jpg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Thumbnails\\news.jpg",
+      "PackagePath": "staticwebassets\\Thumbnails\\news.jpg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Thumbnails\\numbers.jpg",
+      "PackagePath": "staticwebassets\\Thumbnails\\numbers.jpg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Thumbnails\\row.jpg",
+      "PackagePath": "staticwebassets\\Thumbnails\\row.jpg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Thumbnails\\section.jpg",
+      "PackagePath": "staticwebassets\\Thumbnails\\section.jpg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Thumbnails\\slidingtitle.jpg",
+      "PackagePath": "staticwebassets\\Thumbnails\\slidingtitle.jpg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Thumbnails\\spacer.jpg",
+      "PackagePath": "staticwebassets\\Thumbnails\\spacer.jpg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Thumbnails\\tabs.jpg",
+      "PackagePath": "staticwebassets\\Thumbnails\\tabs.jpg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\Thumbnails\\titlesubtitle.jpg",
+      "PackagePath": "staticwebassets\\Thumbnails\\titlesubtitle.jpg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Elogic.css",
+      "PackagePath": "staticwebassets\\css\\Elogic.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Elogic.min.css",
+      "PackagePath": "staticwebassets\\css\\Elogic.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\FormComponents\\PieEditor.css",
+      "PackagePath": "staticwebassets\\css\\FormComponents\\PieEditor.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\FormComponents\\PieEditor.min.css",
+      "PackagePath": "staticwebassets\\css\\FormComponents\\PieEditor.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\FormComponents\\SectionIntroPhrasesEditor.css",
+      "PackagePath": "staticwebassets\\css\\FormComponents\\SectionIntroPhrasesEditor.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\FormComponents\\SectionIntroPhrasesEditor.min.css",
+      "PackagePath": "staticwebassets\\css\\FormComponents\\SectionIntroPhrasesEditor.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\FormComponents\\TabsEditor.css",
+      "PackagePath": "staticwebassets\\css\\FormComponents\\TabsEditor.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\FormComponents\\TabsEditor.min.css",
+      "PackagePath": "staticwebassets\\css\\FormComponents\\TabsEditor.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\catalog.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\catalog.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\catalog.min.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\catalog.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\cta.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\cta.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\cta.min.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\cta.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\documentdownload.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\documentdownload.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\documentdownload.min.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\documentdownload.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\filtroSettori.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\filtroSettori.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\filtroSettori.min.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\filtroSettori.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\gallery.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\gallery.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\gallery.min.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\gallery.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\generalslider.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\generalslider.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\generalslider.min.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\generalslider.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\generation.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\generation.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\generation.min.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\generation.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\maps.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\maps.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\maps.min.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\maps.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\news.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\news.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\news.min.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\news.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\numbers.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\numbers.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\numbers.min.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\numbers.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\people.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\people.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\people.min.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\people.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\pies.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\pies.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\pies.min.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\pies.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\productListDetail.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\productListDetail.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\productListDetail.min.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\productListDetail.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\search.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\search.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\search.min.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\search.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\sentences.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\sentences.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\sentences.min.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\sentences.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\sliderNews.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\sliderNews.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\sliderNews.min.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\sliderNews.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\slidingtitle.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\slidingtitle.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\slidingtitle.min.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\slidingtitle.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\stores.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\stores.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\stores.min.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\stores.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\tables.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\tables.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\tables.min.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\tables.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\tabs.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\tabs.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\tabs.min.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\tabs.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\timeline.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\timeline.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\timeline.min.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\timeline.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\tripletPagine.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\tripletPagine.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\tripletPagine.min.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\tripletPagine.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\values.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\values.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\Widgets\\values.min.css",
+      "PackagePath": "staticwebassets\\css\\Widgets\\values.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\animation.css",
+      "PackagePath": "staticwebassets\\css\\animation.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\animation.min.css",
+      "PackagePath": "staticwebassets\\css\\animation.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\elogic-lg.css",
+      "PackagePath": "staticwebassets\\css\\elogic-lg.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\elogic-lg.min.css",
+      "PackagePath": "staticwebassets\\css\\elogic-lg.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\elogic-md.css",
+      "PackagePath": "staticwebassets\\css\\elogic-md.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\elogic-md.min.css",
+      "PackagePath": "staticwebassets\\css\\elogic-md.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\elogic-xl.css",
+      "PackagePath": "staticwebassets\\css\\elogic-xl.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\elogic-xl.min.css",
+      "PackagePath": "staticwebassets\\css\\elogic-xl.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\elogic-xs.css",
+      "PackagePath": "staticwebassets\\css\\elogic-xs.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\elogic-xs.min.css",
+      "PackagePath": "staticwebassets\\css\\elogic-xs.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\elogic-xxl-dsk.css",
+      "PackagePath": "staticwebassets\\css\\elogic-xxl-dsk.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\elogic-xxl-dsk.min.css",
+      "PackagePath": "staticwebassets\\css\\elogic-xxl-dsk.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\elogic-xxl.css",
+      "PackagePath": "staticwebassets\\css\\elogic-xxl.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\elogic-xxl.min.css",
+      "PackagePath": "staticwebassets\\css\\elogic-xxl.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\wamgroup.css",
+      "PackagePath": "staticwebassets\\css\\wamgroup.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\css\\wamgroup.min.css",
+      "PackagePath": "staticwebassets\\css\\wamgroup.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Elogic.js",
+      "PackagePath": "staticwebassets\\js\\Elogic.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\FormComponents\\PieEditor.js",
+      "PackagePath": "staticwebassets\\js\\FormComponents\\PieEditor.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\FormComponents\\SectionIntroPhrasesEditor.js",
+      "PackagePath": "staticwebassets\\js\\FormComponents\\SectionIntroPhrasesEditor.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\FormComponents\\TabsEditor.js",
+      "PackagePath": "staticwebassets\\js\\FormComponents\\TabsEditor.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\SlickWAIFix.js",
+      "PackagePath": "staticwebassets\\js\\SlickWAIFix.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\DocumentDownload.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\DocumentDownload.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\RichTextEditor.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\RichTextEditor.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\captcha3.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\captcha3.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\catalog.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\catalog.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\catalog.min.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\catalog.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\documentdownload.es5.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\documentdownload.es5.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\documentdownload.es5.min.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\documentdownload.es5.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\documentdownload.min.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\documentdownload.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\eurotool.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\eurotool.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\eurotool.min.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\eurotool.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\gallery.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\gallery.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\gallery.min.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\gallery.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\generalslider.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\generalslider.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\generalslider.min.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\generalslider.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\maps.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\maps.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\maps.min.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\maps.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\news.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\news.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\news.min.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\news.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\numbers.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\numbers.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\numbers.min.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\numbers.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\pages.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\pages.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\pages.min.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\pages.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\pies.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\pies.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\pies.min.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\pies.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\places.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\places.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\places.min.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\places.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\productdetail.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\productdetail.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\productdetail.min.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\productdetail.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\richtexteditor.min.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\richtexteditor.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\search.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\search.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\search.min.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\search.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\sentences.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\sentences.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\sentences.min.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\sentences.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\slidingtitle.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\slidingtitle.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\slidingtitle.min.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\slidingtitle.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\static\\main.868a98a2.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\static\\main.868a98a2.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\static\\main.868a98a2.js.map",
+      "PackagePath": "staticwebassets\\js\\Widgets\\static\\main.868a98a2.js.map"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\stores.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\stores.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\stores.min.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\stores.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\stories.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\stories.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\stories.min.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\stories.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\tables-be.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\tables-be.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\tabs.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\tabs.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\tabs.min.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\tabs.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\timeline.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\timeline.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\timeline.min.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\timeline.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\values.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\values.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\values.min.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\values.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\video.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\video.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\Widgets\\video.min.js",
+      "PackagePath": "staticwebassets\\js\\Widgets\\video.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\elogic.min.js",
+      "PackagePath": "staticwebassets\\js\\elogic.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\js\\slickwaifix.min.js",
+      "PackagePath": "staticwebassets\\js\\slickwaifix.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_accordion.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_accordion.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_alert.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_badge.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_breadcrumb.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_breadcrumb.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_button-group.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_button-group.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_buttons.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_card.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_card.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_carousel.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_carousel.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_close.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_close.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_containers.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_containers.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_dropdown.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_forms.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_functions.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_functions.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_grid.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_helpers.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_helpers.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_images.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_images.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_list-group.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_maps.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_maps.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_modal.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_modal.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_nav.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_nav.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_navbar.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_navbar.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_offcanvas.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_offcanvas.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_pagination.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_placeholders.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_placeholders.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_popover.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_popover.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_progress.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_progress.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_reboot.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_reboot.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_root.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_root.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_spinners.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_spinners.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_tables.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_tables.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_toasts.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_toasts.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_tooltip.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_tooltip.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_transitions.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_transitions.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_type.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_type.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_utilities.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_utilities.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_variables-dark.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_variables-dark.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\bootstrap-grid.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\bootstrap-grid.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\bootstrap-reboot.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\bootstrap-reboot.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\bootstrap-utilities.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\bootstrap-utilities.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\bootstrap.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\forms\\_floating-labels.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\forms\\_floating-labels.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\forms\\_form-check.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\forms\\_form-check.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\forms\\_form-control.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\forms\\_form-control.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\forms\\_form-range.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\forms\\_form-range.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\forms\\_form-select.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\forms\\_form-select.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\forms\\_form-text.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\forms\\_form-text.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\forms\\_input-group.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\forms\\_input-group.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\forms\\_labels.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\forms\\_labels.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\forms\\_validation.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\forms\\_validation.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\helpers\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_color-bg.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\helpers\\_color-bg.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_colored-links.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\helpers\\_colored-links.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_position.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\helpers\\_position.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_ratio.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\helpers\\_ratio.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_stacks.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\helpers\\_stacks.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_stretched-link.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\helpers\\_stretched-link.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_text-truncation.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\helpers\\_text-truncation.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_visually-hidden.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\helpers\\_visually-hidden.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_vr.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\helpers\\_vr.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_alert.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_backdrop.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_backdrop.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_banner.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_banner.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_border-radius.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_border-radius.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_box-shadow.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_box-shadow.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_breakpoints.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_breakpoints.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_buttons.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_caret.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_caret.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_color-mode.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_color-mode.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_color-scheme.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_color-scheme.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_container.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_container.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_deprecate.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_deprecate.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_forms.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_gradients.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_gradients.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_grid.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_image.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_image.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_list-group.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_lists.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_lists.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_pagination.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_reset-text.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_reset-text.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_resize.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_resize.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_table-variants.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_table-variants.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_text-truncate.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_text-truncate.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_transition.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_transition.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_utilities.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_utilities.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_visually-hidden.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_visually-hidden.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_api.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\utilities\\_api.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\bootstrap\\scss\\vendor\\_rfs.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\vendor\\_rfs.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\jquery\\dist\\jquery-3.7.1.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery-3.7.1.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\malihu\\jquery.mCustomScrollbar.concat.min.js",
+      "PackagePath": "staticwebassets\\lib\\malihu\\jquery.mCustomScrollbar.concat.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\malihu\\jquery.mCustomScrollbar.min.css",
+      "PackagePath": "staticwebassets\\lib\\malihu\\jquery.mCustomScrollbar.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\masonry\\masonry.pkgd.min.js",
+      "PackagePath": "staticwebassets\\lib\\masonry\\masonry.pkgd.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\popper\\popper.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\slick\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\lib\\slick\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\slick\\config.rb",
+      "PackagePath": "staticwebassets\\lib\\slick\\config.rb"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\slick\\fonts\\slick.eot",
+      "PackagePath": "staticwebassets\\lib\\slick\\fonts\\slick.eot"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\slick\\fonts\\slick.svg",
+      "PackagePath": "staticwebassets\\lib\\slick\\fonts\\slick.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\slick\\fonts\\slick.ttf",
+      "PackagePath": "staticwebassets\\lib\\slick\\fonts\\slick.ttf"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\slick\\fonts\\slick.woff",
+      "PackagePath": "staticwebassets\\lib\\slick\\fonts\\slick.woff"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\slick\\slick-custom.js",
+      "PackagePath": "staticwebassets\\lib\\slick\\slick-custom.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\slick\\slick-style-custom.css",
+      "PackagePath": "staticwebassets\\lib\\slick\\slick-style-custom.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\slick\\slick-theme.css",
+      "PackagePath": "staticwebassets\\lib\\slick\\slick-theme.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\slick\\slick-theme.less",
+      "PackagePath": "staticwebassets\\lib\\slick\\slick-theme.less"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\slick\\slick-theme.scss",
+      "PackagePath": "staticwebassets\\lib\\slick\\slick-theme.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\slick\\slick.css",
+      "PackagePath": "staticwebassets\\lib\\slick\\slick.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\slick\\slick.js",
+      "PackagePath": "staticwebassets\\lib\\slick\\slick.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\slick\\slick.less",
+      "PackagePath": "staticwebassets\\lib\\slick\\slick.less"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\slick\\slick.min.js",
+      "PackagePath": "staticwebassets\\lib\\slick\\slick.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\slick\\slick.scss",
+      "PackagePath": "staticwebassets\\lib\\slick\\slick.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\swiper"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\a11y.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\a11y.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\a11y.min.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\a11y.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\a11y.scss",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\a11y.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\autoplay.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\autoplay.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\autoplay.min.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\autoplay.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\autoplay.scss",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\autoplay.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\controller.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\controller.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\controller.min.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\controller.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\controller.scss",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\controller.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\effect-cards.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\effect-cards.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\effect-cards.min.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\effect-cards.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\effect-cards.scss",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\effect-cards.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\effect-coverflow.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\effect-coverflow.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\effect-coverflow.min.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\effect-coverflow.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\effect-coverflow.scss",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\effect-coverflow.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\effect-creative.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\effect-creative.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\effect-creative.min.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\effect-creative.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\effect-creative.scss",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\effect-creative.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\effect-cube.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\effect-cube.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\effect-cube.min.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\effect-cube.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\effect-cube.scss",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\effect-cube.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\effect-fade.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\effect-fade.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\effect-fade.min.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\effect-fade.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\effect-fade.scss",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\effect-fade.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\effect-flip.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\effect-flip.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\effect-flip.min.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\effect-flip.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\effect-flip.scss",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\effect-flip.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\free-mode.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\free-mode.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\free-mode.min.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\free-mode.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\free-mode.scss",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\free-mode.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\grid.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\grid.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\grid.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\grid.scss",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\grid.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\hash-navigation.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\hash-navigation.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\hash-navigation.min.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\hash-navigation.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\hash-navigation.scss",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\hash-navigation.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\history.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\history.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\history.min.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\history.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\history.scss",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\history.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\keyboard.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\keyboard.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\keyboard.min.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\keyboard.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\keyboard.scss",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\keyboard.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\manipulation.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\manipulation.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\manipulation.min.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\manipulation.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\manipulation.scss",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\manipulation.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\mousewheel.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\mousewheel.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\mousewheel.min.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\mousewheel.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\mousewheel.scss",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\mousewheel.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\navigation.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\navigation.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\navigation.min.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\navigation.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\navigation.scss",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\navigation.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\pagination.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\pagination.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\pagination.min.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\pagination.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\pagination.scss",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\pagination.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\parallax.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\parallax.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\parallax.min.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\parallax.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\parallax.scss",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\parallax.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\scrollbar.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\scrollbar.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\scrollbar.min.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\scrollbar.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\scrollbar.scss",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\scrollbar.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\thumbs.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\thumbs.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\thumbs.min.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\thumbs.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\thumbs.scss",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\thumbs.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\virtual.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\virtual.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\virtual.min.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\virtual.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\virtual.scss",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\virtual.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\zoom.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\zoom.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\zoom.min.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\zoom.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\modules\\zoom.scss",
+      "PackagePath": "staticwebassets\\lib\\swiper\\modules\\zoom.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\swiper-bundle.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\swiper-bundle.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\swiper-bundle.es5.js",
+      "PackagePath": "staticwebassets\\lib\\swiper\\swiper-bundle.es5.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\swiper-bundle.es5.min.js",
+      "PackagePath": "staticwebassets\\lib\\swiper\\swiper-bundle.es5.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\swiper-bundle.js",
+      "PackagePath": "staticwebassets\\lib\\swiper\\swiper-bundle.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\swiper-bundle.min.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\swiper-bundle.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\swiper-bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\swiper\\swiper-bundle.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\swiper-bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\swiper\\swiper-bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\swiper-vars.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\swiper-vars.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\swiper-vars.min.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\swiper-vars.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\swiper-vars.scss",
+      "PackagePath": "staticwebassets\\lib\\swiper\\swiper-vars.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\swiper.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\swiper.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\swiper.es5.js",
+      "PackagePath": "staticwebassets\\lib\\swiper\\swiper.es5.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\swiper.es5.min.js",
+      "PackagePath": "staticwebassets\\lib\\swiper\\swiper.es5.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\swiper.js",
+      "PackagePath": "staticwebassets\\lib\\swiper\\swiper.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\swiper.min.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\swiper.min.css"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\swiper.min.js",
+      "PackagePath": "staticwebassets\\lib\\swiper\\swiper.min.js"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\swiper.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\swiper\\swiper.min.js.map"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\lib\\swiper\\swiper.scss",
+      "PackagePath": "staticwebassets\\lib\\swiper\\swiper.scss"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\XiaohongshuLOGO_2.svg",
+      "PackagePath": "staticwebassets\\svg\\XiaohongshuLOGO_2.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\arrow-down-select.svg",
+      "PackagePath": "staticwebassets\\svg\\arrow-down-select.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\arrow-down.svg",
+      "PackagePath": "staticwebassets\\svg\\arrow-down.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\arrow-link-blue.svg",
+      "PackagePath": "staticwebassets\\svg\\arrow-link-blue.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\arrow_left_black.svg",
+      "PackagePath": "staticwebassets\\svg\\arrow_left_black.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\arrow_left_gold.svg",
+      "PackagePath": "staticwebassets\\svg\\arrow_left_gold.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\arrow_right-w.svg",
+      "PackagePath": "staticwebassets\\svg\\arrow_right-w.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\arrow_right_black.svg",
+      "PackagePath": "staticwebassets\\svg\\arrow_right_black.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\arrow_right_gold-light.svg",
+      "PackagePath": "staticwebassets\\svg\\arrow_right_gold-light.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\arrow_right_gold.svg",
+      "PackagePath": "staticwebassets\\svg\\arrow_right_gold.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\arrow_white.svg",
+      "PackagePath": "staticwebassets\\svg\\arrow_white.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\back.svg",
+      "PackagePath": "staticwebassets\\svg\\back.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\checkSettore.svg",
+      "PackagePath": "staticwebassets\\svg\\checkSettore.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\checkWhite.svg",
+      "PackagePath": "staticwebassets\\svg\\checkWhite.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\close.svg",
+      "PackagePath": "staticwebassets\\svg\\close.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\closeGold.svg",
+      "PackagePath": "staticwebassets\\svg\\closeGold.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\download.svg",
+      "PackagePath": "staticwebassets\\svg\\download.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\email.svg",
+      "PackagePath": "staticwebassets\\svg\\email.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\exclamation.svg",
+      "PackagePath": "staticwebassets\\svg\\exclamation.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\facebook-scuro.svg",
+      "PackagePath": "staticwebassets\\svg\\facebook-scuro.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\facebook.svg",
+      "PackagePath": "staticwebassets\\svg\\facebook.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\ico-donut.svg",
+      "PackagePath": "staticwebassets\\svg\\ico-donut.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\ico-freccia-menu-down.svg",
+      "PackagePath": "staticwebassets\\svg\\ico-freccia-menu-down.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\ico-freccia-menu.svg",
+      "PackagePath": "staticwebassets\\svg\\ico-freccia-menu.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\ico-modale.svg",
+      "PackagePath": "staticwebassets\\svg\\ico-modale.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\ico-table.svg",
+      "PackagePath": "staticwebassets\\svg\\ico-table.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\icona-play.svg",
+      "PackagePath": "staticwebassets\\svg\\icona-play.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\instagram.svg",
+      "PackagePath": "staticwebassets\\svg\\instagram.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\kakao-talk-fill-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\svg\\kakao-talk-fill-svgrepo-com.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\line.svg",
+      "PackagePath": "staticwebassets\\svg\\line.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\linee-orizz.svg",
+      "PackagePath": "staticwebassets\\svg\\linee-orizz.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\linee-vert.svg",
+      "PackagePath": "staticwebassets\\svg\\linee-vert.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\linkedin-scuro.svg",
+      "PackagePath": "staticwebassets\\svg\\linkedin-scuro.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\linkedin.svg",
+      "PackagePath": "staticwebassets\\svg\\linkedin.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\logo-neg-star.svg",
+      "PackagePath": "staticwebassets\\svg\\logo-neg-star.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\logo-neg.svg",
+      "PackagePath": "staticwebassets\\svg\\logo-neg.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\logo-star.svg",
+      "PackagePath": "staticwebassets\\svg\\logo-star.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\logo.svg",
+      "PackagePath": "staticwebassets\\svg\\logo.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\plus-black.svg",
+      "PackagePath": "staticwebassets\\svg\\plus-black.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\plus-gold.svg",
+      "PackagePath": "staticwebassets\\svg\\plus-gold.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\plus-goldlight.svg",
+      "PackagePath": "staticwebassets\\svg\\plus-goldlight.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\plus.svg",
+      "PackagePath": "staticwebassets\\svg\\plus.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\search-big.svg",
+      "PackagePath": "staticwebassets\\svg\\search-big.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\search.svg",
+      "PackagePath": "staticwebassets\\svg\\search.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\settore-building.svg",
+      "PackagePath": "staticwebassets\\svg\\settore-building.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\settore-environmental.svg",
+      "PackagePath": "staticwebassets\\svg\\settore-environmental.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\settore-food.svg",
+      "PackagePath": "staticwebassets\\svg\\settore-food.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\settore-industries.svg",
+      "PackagePath": "staticwebassets\\svg\\settore-industries.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\settore-misc.svg",
+      "PackagePath": "staticwebassets\\svg\\settore-misc.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\settore-plants.svg",
+      "PackagePath": "staticwebassets\\svg\\settore-plants.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\settore-plastics.svg",
+      "PackagePath": "staticwebassets\\svg\\settore-plastics.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\settore-renewable.svg",
+      "PackagePath": "staticwebassets\\svg\\settore-renewable.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\share.svg",
+      "PackagePath": "staticwebassets\\svg\\share.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\share_gold.svg",
+      "PackagePath": "staticwebassets\\svg\\share_gold.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\slider_arrow_left-w.svg",
+      "PackagePath": "staticwebassets\\svg\\slider_arrow_left-w.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\slider_arrow_left.svg",
+      "PackagePath": "staticwebassets\\svg\\slider_arrow_left.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\slider_arrow_right-w.svg",
+      "PackagePath": "staticwebassets\\svg\\slider_arrow_right-w.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\slider_arrow_right.svg",
+      "PackagePath": "staticwebassets\\svg\\slider_arrow_right.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\stella.svg",
+      "PackagePath": "staticwebassets\\svg\\stella.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\tiktok.svg",
+      "PackagePath": "staticwebassets\\svg\\tiktok.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\wechat-fill-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\svg\\wechat-fill-svgrepo-com.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\weibo-fill-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\svg\\weibo-fill-svgrepo-com.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\whatsapp-scuro.svg",
+      "PackagePath": "staticwebassets\\svg\\whatsapp-scuro.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\whatsapp.svg",
+      "PackagePath": "staticwebassets\\svg\\whatsapp.svg"
+    },
+    {
+      "Id": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\wwwroot\\svg\\youtube.svg",
+      "PackagePath": "staticwebassets\\svg\\youtube.svg"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Elogic.Wamgroup.Sito2023-NetCore.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Elogic.Wamgroup.Sito2023-NetCore.props",
+      "PackagePath": "build\\Elogic.Wamgroup.Sito2023-NetCore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Elogic.Wamgroup.Sito2023-NetCore.props",
+      "PackagePath": "buildMultiTargeting\\Elogic.Wamgroup.Sito2023-NetCore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Elogic.Wamgroup.Sito2023-NetCore.props",
+      "PackagePath": "buildTransitive\\Elogic.Wamgroup.Sito2023-NetCore.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

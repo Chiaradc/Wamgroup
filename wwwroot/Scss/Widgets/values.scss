@@ -1,0 +1,32 @@
+﻿/// <reference path="../_variables.scss">
+@import "../variables";
+
+[data-value-container] {
+
+    [data-value-text] {
+        font-size: 1.125rem;
+
+        h3 {
+            color: $gold;
+            font-family: $font-family-base;
+            font-size: 1.5rem;
+            margin: 0.8rem auto 0.5rem auto;
+        }
+    }
+    .value-link {
+       background:inherit;
+       border:0;
+    }
+}
+
+@media (min-width:1024px) {
+    [data-value-container] {
+        cursor: pointer;
+
+        [data-value-text] {
+            position: absolute;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+    }
+}

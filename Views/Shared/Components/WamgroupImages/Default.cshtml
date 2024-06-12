@@ -1,0 +1,24 @@
+﻿@using Elogic.Wamgroup.Sito2023.NetCore.ViewModels.WamgroupImages;
+
+@model WamgroupImagesViewModel
+
+@{
+    var classes = "w-100 h-auto ";
+    if (!string.IsNullOrWhiteSpace(Model.CssClass))
+        classes += Model.CssClass;
+}
+@if (!Model.DesktopImage.IsEmpty)
+{
+    <picture class="position-relative">
+        <source srcset="@Model.MobileImage.ImageUrl" media="(max-width: 768px)" width="@Model.MobileImage.Width" height="@Model.MobileImage.Height">
+        <source srcset="@Model.TabletImage.ImageUrl" media="(max-width: 1279px)" width="@Model.TabletImage.Width" height="@Model.TabletImage.Height">
+        <img aria-hidden="true" src="@Model.DesktopImage.ImageUrl" class="@classes" loading="lazy" width="@Model.DesktopImage.Width" height="@Model.DesktopImage.Height" alt="@Model.DesktopImage.AltText" />
+    </picture>
+
+}
+
+
+
+
+
+

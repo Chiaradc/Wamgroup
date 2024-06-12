@@ -1,0 +1,160 @@
+﻿/// <reference path="../_variables.scss">
+@import "../variables";
+
+.pie-container {
+    width: 100%;
+
+    .recharts-wrapper {
+        margin: auto;
+        width: 250px !important;
+        height: 250px !important;
+        overflow: visible;
+
+        svg {
+            width: 250px;
+            height: 250px;
+            overflow: visible;
+
+            .text-container {
+                font-family: $font-family-base;
+                font-size: 1.375rem;
+                line-height: 1.2;
+                width: 110px !important;
+                overflow: visible;
+
+                .bold {
+                    font-weight: 700;
+                }
+            }
+
+            .etichettaDX {
+                transform: translateX(-110px);
+                text-align: right;
+            }
+        }
+    }
+
+    .contentIconPies {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        right:0;
+
+        button {
+           border:0;
+           background:inherit;
+           padding:0;
+        }
+    }
+
+    a, button {
+        /*color: $golddark !important;*/
+
+        span {
+            display: none;
+        }
+
+        &:nth-of-type(even) {
+            margin-right: 1rem;
+        }
+
+        &:nth-of-type(odd) {
+            margin-right: 2rem;
+        }
+
+        svg {
+            /*width: 2rem;
+            height: auto;
+            display: inline-flex;*/
+            margin-right: 0rem;
+            margin-top: 0;
+
+            line, path, rect {
+                fill: $black;
+            }
+        }
+
+        z-index: 20;
+
+        &[aria-pressed="true"] {
+            line, path, rect {
+                fill: $golddark;
+            }
+        }
+    }
+
+    .pie-content, .table-content {
+        &.position-absolute {
+            top: 0;
+        }
+    }
+
+    .table-content {
+        display: none;
+        padding-top: 5rem;
+
+        .table-container {
+            background-color: $grigioChiaro;
+            padding: 2rem;
+        }
+
+        table {
+            width: 100%;
+
+            td {
+                border-bottom: 1px solid $black;
+                padding: 1rem;
+                text-align: left;
+                vertical-align: top;
+                color: $black;
+                font-size: 1rem;
+                line-height: 1rem;
+            }
+
+            caption {
+                color: $black;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    td {
+        padding: 0.475rem !important;
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .pie-container {
+        .recharts-wrapper {
+            width: 450px !important;
+            height: 320px !important;
+            /*overflow: hidden;*/
+          svg {
+                     width: 450px;
+                     height: 450px;
+                     margin-top: -80px;
+
+                     .text-container {
+                         font-size: 0.875rem;
+                     }
+                 }
+        }
+
+        a, button {
+
+           &:nth-of-type(even) {
+               margin-right: 0;
+           }
+
+           &:nth-of-type(odd) {
+               margin-right: 1rem;
+           }
+
+      }
+    }
+}

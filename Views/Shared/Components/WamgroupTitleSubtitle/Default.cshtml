@@ -1,0 +1,55 @@
+﻿@using Elogic.Wamgroup.Sito2023.NetCore.ViewModels.WamgroupTitleSubtitle;
+
+@model WamgroupTitleSubtitleViewModel
+
+@{
+    var h1h2Class = string.Empty;
+    if (!string.IsNullOrWhiteSpace(Model.Title) && !string.IsNullOrWhiteSpace(Model.Subtitle))
+        h1h2Class = "";
+}
+<div class="sectionTitle">
+    @if (!string.IsNullOrWhiteSpace(Model.Title))
+    {
+        if (Model.RenderTitleAsH1)
+        {
+            @:<h1 class="@h1h2Class">
+        }
+        else
+        {
+            @:<h2 class="@h1h2Class">
+        }
+
+        @Model.Title
+
+        if (Model.RenderTitleAsH1)
+        {
+            @:</h1>
+        }
+        else
+        {
+            @:</h2>
+        }
+
+    }
+   
+    @if (!string.IsNullOrWhiteSpace(Model.Subtitle))
+    {
+       
+           <div class="TextIntro">
+               @Html.Raw(Model.Subtitle)
+           </div>
+    }
+
+  
+</div>
+
+     @if (Model.ViewLine)
+    {
+           <div class="line" style="background-color:@Html.Raw(Model.LineColor)"></div>
+    }
+      @*if (!string.IsNullOrEmpty(Model.linkUrl))
+      {
+         <div class="separator">
+            <a href="@Model.linkUrl" class="btn btn-primary" target="@Model.linkTargetBlank">@Model.linkText</a>
+         </div>
+      }*@

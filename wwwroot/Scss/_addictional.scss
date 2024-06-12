@@ -1,0 +1,19 @@
+﻿/// <reference path="_variables.scss">
+
+sf-add-widget {
+    z-index: 1100 !important;
+}
+
+.sf-zone-widget.-sf-content.-sf-empty, .sf-zone-column.-sf-empty {
+    width: 100%;
+}
+
+.sf-zone-widget.-sf-empty {
+    min-height: 78px;
+    width: 100%;
+}
+
+.sf-zone-column, .sf-zone-column > .sf-zone-widget.-sf-empty {
+    width: 100%;
+}
+

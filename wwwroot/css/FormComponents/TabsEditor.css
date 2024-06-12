@@ -1,0 +1,30 @@
+﻿.el-icons .icon-a-lowercase:before {
+  content: "\e74f" !important;
+}
+.el-icons .icon-modal-close:before {
+  content: "\e64a" !important;
+}
+.el-icons .icon-picture:before {
+  content: "\e633" !important;
+}
+.el-icons .icon-picture.hover {
+  color: #CCAF52 !important;
+}
+
+.el-tab-container {
+  display: flex !important;
+}
+.el-tab-container input[type=text] {
+  border: 1px solid #ccc !important;
+}
+.el-tab-container > div {
+  margin: 2px 5px;
+}
+.el-tab-container a[data-image-type] i {
+  color: #000 !important;
+}
+.el-tab-container img {
+  height: 16px;
+  border: 1px solid #ccc;
+  padding: 3px;
+}

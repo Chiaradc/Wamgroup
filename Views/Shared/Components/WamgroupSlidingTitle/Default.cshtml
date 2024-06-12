@@ -1,0 +1,31 @@
+﻿@using Elogic.Wamgroup.Sito2023.NetCore.ViewModels.WamgroupSlidingTitle;
+@model WamgroupSlidingTitleViewModel
+      @if (!string.IsNullOrWhiteSpace(Model.DesktopImageUrl))
+      {
+<div class="slidingTitleContainer">
+   <div class="slidingTitleTop"></div>
+   <div class="slidingTitle position-relative">
+         <div class="boxeditorialeImm position-absolute w-100 top-0 start-0">
+            <picture class="pictureGN">
+               <source srcset="@Model.MobileImageUrl" media="(max-width: 767px)">
+               <source srcset="@Model.TabletImageUrl" media="(max-width: 1279px)">
+               <img src="@Model.DesktopImageUrl" aria-hidden="true" loading="lazy" class="bg-image object-fit-cover" width="@Model.Width" height="@Model.Height" alt="@Model.ImageAlt" />
+            </picture>
+         </div>
+   
+      <div class="container">
+         <div class="row justify-content-center">
+            <div class="col-8">
+               <div class="titEdit position-relative">@Html.Raw(Model.Title)</div>
+               @if (!string.IsNullOrWhiteSpace(Model.CTALink))
+               {
+                  <div class="col-12 spacer spacerPT1x"></div>
+                  <a href="@Model.CTALink" title="Leggi Altro" class="linkDiscoverMoreWhite">@Model.CTAText</a>
+               }
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="slidingTitleBottom"></div>
+</div>
+    }

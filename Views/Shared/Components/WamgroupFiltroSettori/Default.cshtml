@@ -1,0 +1,119 @@
+﻿@using Elogic.Wamgroup.Sito2023.NetCore.ViewModels.WamgroupFiltroSettori;
+
+@model WamgroupFiltroSettoriViewModel
+
+@* <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">@item.Settore</h5>
+                <p class="card-text">@item.Azione</p>
+            <a href="@item.Link" class="btn btn-primary">@item.Link</a>
+            </div>
+        </div>
+    </div>
+    @if (Model.MostraPulsanteConferma)
+{
+
+<a href="#" class="btn btn-primary">Conferma</a>
+
+} *@
+<div class="filtroSettori">
+    @foreach (var item in Model.Settori)
+    {
+         if (item.Settore == "0")
+        {
+            <div class="buildingCostruction">
+                <div class="icona">
+                <img width="50" height="50" src="~/svg/settore-building.svg" />
+                </div>
+                <div class="content">
+                    Building & Costruction
+                </div>
+            </div>
+        }
+        else if (item.Settore == "1")
+        {
+            <div class="feedFood">
+                <div class="icona">
+                <img width="50" height="50" src="~/svg/settore-food.svg" />
+                </div>
+                <div class="content">
+                    Feed & Food
+                </div>
+            </div>
+        }
+        else if (item.Settore == "2")
+        {
+            <div class="plasticsChemicals">
+                <div class="icona">
+                <img width="50" height="50" src="~/svg/settore-plastics.svg" />
+                </div>
+                <div class="content">
+                    Plastics & Chemicals
+                </div>
+            </div>
+        }
+        else if (item.Settore == "3")
+        {
+            <div class="heavyIndustries">
+                <div class="icona">
+                <img width="50" height="50" src="~/svg/settore-industries.svg" />
+                </div>
+                <div class="content">
+                    Heavy Industries
+                </div>
+            </div>
+        }
+        else if (item.Settore == "4")
+        {
+            <div class="renewableEnergy">
+                <div class="icona">
+                <img width="50" height="50" src="~/svg/settore-renewable.svg" />
+                </div>
+                <div class="content">
+                    Renewable Energy
+                </div>
+            </div>
+        }
+        else if (item.Settore == "5")
+        {
+            <div class="plantsMachinery">
+                <div class="icona">
+                <img width="50" height="50" src="~/svg/settore-plants.svg" />
+                </div>
+                <div class="content">
+                    Plants & Machinery
+                </div>
+            </div>
+        }
+        else if (item.Settore == "6")
+        {
+            <div class="environmental">
+                <div class="icona">
+                <img width="50" height="50" src="~/svg/settore-environmental.svg" />
+                </div>
+                <div class="content">
+                    Environmental
+                </div>
+            </div>
+        }
+        else if (item.Settore == "7")
+        {
+            <div class="miscellaneous">
+                <div class="icona">
+                <img width="50" height="50" src="~/svg/settore-misc.svg" />
+                </div>
+                <div class="content">
+                    Miscellaneous
+                </div>
+            </div>
+        }
+}
+</div>
+   
+
+   
+   
+    
+   
+    

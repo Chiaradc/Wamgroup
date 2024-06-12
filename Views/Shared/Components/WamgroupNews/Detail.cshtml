@@ -1,0 +1,28 @@
+﻿@using Elogic.Wamgroup.Sito2023.NetCore.ViewModels.WamgroupNews;
+@using Microsoft.AspNetCore.Http;
+@using Progress.Sitefinity.AspNetCore.Web;
+
+@inject IRenderContext renderContext
+
+@model WamgroupNewsItemViewModel;
+
+   
+   <div class="row StayTunedSlide">
+   
+         <div class="col-4 itemST">
+            <picture>
+            <img src="@Model.ImmagineLista" aria-hidden="true" loading="lazy" alt="@Model.AltImmagineLista" />
+            </picture>
+         <div class="NewsDate"><span class="lineOrizontal"></span> @Model.DataStringa</div>
+         <div><div class="NewsTitle">@Model.Titolo</div></div>
+         <div class="NewsSummary">@Html.Raw(Model.Intro)</div>
+         <div>@Model.Date</div>
+         <div>@Model.Type</div>
+         <div>@Model.Category</div>
+         <div>@Model.ImmagineDettaglio</div>
+         <div>@Model.Highlighted</div>
+         <div>@Model.Testo</div>
+         </div>
+      
+   </div>
+  

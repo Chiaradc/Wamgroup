@@ -1,0 +1,32 @@
+﻿@using Progress.Sitefinity.AspNetCore.ViewComponents;
+@using Progress.Sitefinity.AspNetCore.Mvc.Rendering;
+@using Progress.Sitefinity.AspNetCore.Web;
+@using Elogic.Wamgroup.Sito2023.NetCore.ViewModels.WamgroupSection;
+
+@model WamgroupSectionViewModel
+
+@{
+    var containerClasses = "container";
+    if (Model.FullWidth)
+        containerClasses += "-fluid";
+}
+
+<section @(!string.IsNullOrWhiteSpace(Model.SectionClasses) ? Html.Raw($@" class=""{Model.SectionClasses}""") : "") @(!string.IsNullOrWhiteSpace(Model.SectionStyle) ? Html.Raw($@" style=""{Model.SectionStyle}""") : "")>
+    @if (Model.BackgroundIsImage)
+    {
+        <picture>
+            <source media="(min-width: 1400px)" srcset="@Model.BackgroundDestktopImageUrl" />
+            <source media="(min-width: 768px)" srcset="@Model.BackgroundTabletImageUrl" />
+            <img src="@Model.BackgroundMobileImageUrl" aria-hidden="true" class="@Model.BackgroundImageClasses" alt="@Model.BackgroundImageAlternativeText" width="@Model.BackgroundImageWidth" height="@Model.BackgroundImageHeight">
+        </picture>
+    }
+    <div class="@containerClasses" data-sfcontainer container-context="@this.Model.Context.ContainerContext("Section"+Model.Context.PlaceHolder, "Section")">
+    </div>
+
+    @if (!string.IsNullOrWhiteSpace(Model.Link))
+    {
+        <a href="@Model.Link" ></a>
+    }
+    
+
+</section>

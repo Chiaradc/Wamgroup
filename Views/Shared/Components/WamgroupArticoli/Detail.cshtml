@@ -1,0 +1,34 @@
+﻿@using Elogic.Wamgroup.Sito2023.Models.SdkItems.ModuloProva
+@using Elogic.Wamgroup.Sito2023.NetCore.Localization;
+@using Elogic.Wamgroup.Sito2023.NetCore.ViewModels.WamgroupArticoli;
+
+@inject LocalizationHelperService localizationHelper;
+
+@model WamgroupArticoliDetailViewModel
+
+@{
+var path = this.Context.Request.Path.Value;
+var eventUrlInEdit = $"{path}/edit";
+}
+<section>
+<h1>@Model.Articolo.Codice</h1>
+   <div>@Model.Articolo.Descrizione</div>
+   <div>@localizationHelper.Localize("Costo"): @Model.Articolo.Costo</div>
+<br /><br />
+   @if (Model.VariantiArticolo != null && Model.VariantiArticolo.Count > 0)
+   {
+  
+      <h6>Varianti:</h6>
+
+      @foreach (var item in Model.VariantiArticolo)
+      {
+         <div>@item.Nome (@localizationHelper.Localize("Costo"): @item.Prezzo)</div>
+      }
+   }
+   else {
+   
+      <div>Non ci sono varianti</div>
+   }
+   <br /><br />
+   <div><a href="@eventUrlInEdit">Modifica</a></div>
+</section>

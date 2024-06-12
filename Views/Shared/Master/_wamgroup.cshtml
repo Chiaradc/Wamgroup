@@ -1,0 +1,82 @@
+﻿@model Progress.Sitefinity.AspNetCore.Models.PageModel;
+@using Elogic.Wamgroup.Sito2023.NetCore.Localization;
+@inject Progress.Sitefinity.AspNetCore.Web.IRenderContext renderContext;
+@using Progress.Sitefinity.AspNetCore.Mvc.Rendering
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, Progress.Sitefinity.AspNetCore
+
+@inject Progress.Sitefinity.AspNetCore.Web.IRequestContext requestContext;
+
+@inject LocalizationHelperService localizationHelper;
+<!DOCTYPE html>
+<html id="html">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    @Html.RenderSeoMeta(this.Model)
+   @*  <link rel="stylesheet" href="~/css/wamgroup.min.css" /> *@
+@*     <link rel="preload stylesheet" href="~/lib/swiper/swiper-bundle.min.css" as="style" media="all" /> *@
+    <link rel="preload" as="style" href="~/Css/Elogic.min.css" asp-append-version="true" />
+    <link href="~/Css/elogic-xs.min.css" rel="preload" as="style" type="text/css" asp-append-version="true" />
+    <link href="~/Css/elogic-md.min.css" type="text/css" rel="preload" as="style" asp-append-version="true" />
+    <link href="~/Css/elogic-lg.min.css" type="text/css" rel="preload" as="style" asp-append-version="true" />
+    <link href="~/Css/elogic-xl.min.css" type="text/css" rel="preload" as="style" asp-append-version="true" />
+    <link href="~/Css/elogic-xxl.min.css" type="text/css" rel="preload" as="style" asp-append-version="true" />
+    <link href="~/Css/elogic-xxl-dsk.min.css" type="text/css" rel="preload" as="style" asp-append-version="true" />
+    <link href="~/Css/animation.min.css" type="text/css" rel="preload" as="style" asp-append-version="true" />
+    <link rel="preconnect" href="https://use.typekit.net" crossorigin />
+    <link rel="preload" href="~/lib/jquery/dist/jquery-3.7.1.min.js" asp-append-version="true" as="script" />
+    <link rel="preload" href="~/lib/popper/popper.min.js" asp-append-version="true" as="script" />
+    <link rel="preload" href="~/lib/bootstrap/js/bootstrap.min.js" asp-append-version="true" as="script" />
+    <link rel="preload" href="~/Js/Elogic.min.js" asp-append-version="true" as="script" />
+
+    <link rel="stylesheet" href="~/Css/Elogic.min.css" media="all" asp-append-version="true" />
+    <link href="~/Css/elogic-xs.min.css" media="(max-width: 767px)" type="text/css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/Css/elogic-md.min.css" media="(min-width: 768px)" type="text/css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/Css/elogic-lg.min.css" media="(min-width: 992px)" type="text/css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/Css/elogic-xl.min.css" media="(min-width: 1200px)" type="text/css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/Css/elogic-xxl.min.css" media="(min-width: 1400px)" type="text/css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/Css/elogic-xxl-dsk.min.css" media="(min-width: 1600px)" type="text/css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/Css/animation.min.css" type="text/css" rel="stylesheet" asp-append-version="true" />
+
+    <vc:page-builder-styles></vc:page-builder-styles>
+</head>
+<body>
+    <div class="check-mobile d-md-none"></div>
+    <div class="check-tablet d-lg-none"></div>
+    @* @localizationHelper.Localize("Test") *@
+    @RenderBody()
+   @*  <partial name="../StaticPartView/SliderNews.cshtml" /> *@
+    <section class="modal-custom-white" aria-hidden="true" data-video-modal tabindex="0">
+        <div class="row no-gutters align-items-end justify-content-end modal-header">
+            <button type="button" class="close-modal btn-close" title="Chiudi">X</button>
+        </div>
+        <div class="outer-container">
+            <div class="row g-0 modal-custom-body align-items-center justify-content-center h-100">
+                <div class="col-12 col-md-10">
+                    <div class="video-yt ratio ratio-16x9 d-none">
+                        <div data-video-player-div> </div>
+                    </div>
+                    <div class="img-container d-none">
+                    </div>
+                    <div class="caption-container d-none">
+                        <div class="row">
+                            <div class="TextIntro text-center col-12 col-md-8 m-auto my-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+    <script src="~/lib/jquery/dist/jquery-3.7.1.min.js" asp-append-version="true"></script>
+    <script defer="" src="~/lib/popper/popper.min.js" asp-append-version="true"></script>
+    <script defer="" src="~/lib/bootstrap/js/bootstrap.min.js" asp-append-version="true"></script>
+    <script defer="" src="~/Js/Elogic.min.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+    <vc:page-builder-scripts></vc:page-builder-scripts>
+</body>
+</html>

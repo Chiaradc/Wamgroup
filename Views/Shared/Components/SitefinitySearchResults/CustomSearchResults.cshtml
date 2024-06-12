@@ -1,0 +1,100 @@
+﻿@using Progress.Sitefinity.AspNetCore.TagHelpers;
+@using Progress.Sitefinity.AspNetCore.Models;
+@using Progress.Sitefinity.AspNetCore.Widgets.Models.Common;
+@using Progress.Sitefinity.RestSdk.Dto;
+@using Progress.Sitefinity.AspNetCore.Mvc.Rendering;
+@using Microsoft.AspNetCore.Mvc;
+@using Telerik.Sitefinity.Utilities.TypeConverters;
+@using Progress.Sitefinity
+@using Elogic.Wamgroup.Sito2023.NetCore.Misc;
+
+@inject DynamicTypeHelper DynamicTypeHelper
+
+@model Progress.Sitefinity.AspNetCore.Widgets.Models.SearchResults.SearchResultsViewModel
+
+
+<div class="sectionTitle">
+   
+   @{
+      var types = Model.SearchResults.Select(x => x.ContentType).Distinct();
+
+
+   }
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+   <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="home" aria-selected="true">All</button>
+   </li>
+      @foreach (var type in types)
+      {
+         var typeName = DynamicTypeHelper.GetDynamicType(type)?.Plural;
+         <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#@type" type="button" role="tab" aria-controls="profile" aria-selected="false">@typeName</button>
+         </li>
+      }
+   
+   
+</ul>
+
+
+   <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+         <h4>All</h4>
+         @foreach (var item in Model.SearchResults)
+         {
+            var typeName = DynamicTypeHelper.GetDynamicType(item.ContentType)?.Singular;
+            var title = item.Title; //Model.GetFieldValue<string>(item, "Codice");
+                                    //var type = TypeResolutionService.ResolveType(item.ContentType);
+
+            <h6>@Html.HtmlSanitize(title)</h6>
+
+            <strong>Title:</strong> <span>@(Html.HtmlSanitize(item.Title))</span>
+            <br />
+            <a href="@item.Link">Link</a>
+            <br />
+            <strong>Type:</strong> <span>@(Html.HtmlSanitize(typeName))</span>
+
+            <br />
+            <br />
+            <br />
+
+         }
+
+      </div>
+
+      @foreach (var type in types)
+      {
+         var typeName = DynamicTypeHelper.GetDynamicType(type)?.Singular;
+
+         <div class="tab-pane fade" id="@type" role="tabpanel" aria-labelledby="@(type)-tab">
+            <h4>@typeName</h4>
+            @foreach (var item in Model.SearchResults.Where(x => x.ContentType == type))
+            {
+               var title = item.Title; //Model.GetFieldValue<string>(item, "Codice");
+                                       //var type = TypeResolutionService.ResolveType(item.ContentType);
+
+               <h6>@Html.HtmlSanitize(title)</h6>
+
+               <strong>Title:</strong> <span>@(Html.HtmlSanitize(item.Title))</span>
+               <br />
+               <a href="@item.Link">Link</a>
+               <br />
+               <strong>Type:</strong> <span>@(typeName)</span>
+
+               <br />
+               <br />
+               <br />
+
+            }
+         </div>
+      }
+      
+   </div>
+
+
+
+   
+
+
+
+</div>
+

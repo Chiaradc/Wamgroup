@@ -1,0 +1,54 @@
+﻿.row[data-document-row] {
+  margin-bottom: 3px;
+  background: #FFFFFF;
+  padding: 1rem;
+}
+
+.downloadDate {
+  color: #98680E;
+  font-size: 0.938rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.downloadDate .lineOrizontal {
+  background: #98680E;
+}
+
+.download-actions {
+  color: #98680E;
+  flex-wrap: nowrap;
+  display: flex;
+  justify-content: space-between;
+}
+.download-actions a {
+  color: #98680E;
+}
+.download-actions a svg path, .download-actions a svg line {
+  fill: #98680E !important;
+  stroke: #98680E !important;
+}
+.download-actions a:after {
+  display: none;
+}
+
+.documentCultures {
+  margin: 0;
+  padding: 0;
+}
+.documentCultures li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.documentCultures li .dropdown-menu.show {
+  display: flex;
+  flex-direction: column;
+  background: #191919;
+  min-width: 30px;
+  border: 0;
+  border-top: 1px solid #CCAF52;
+  padding: 0.3rem;
+}
+.documentCultures li .dropdown-menu.show a {
+  margin-right: 0;
+}

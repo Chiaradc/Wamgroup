@@ -1,0 +1,84 @@
+﻿/// <reference path="../_variables.scss">
+@import "../variables";
+
+.generation-list {
+
+    .generation-item {
+        text-align: center;
+
+        .imgP {
+            width: 21.7rem;
+            margin: 0 auto;
+        }
+    }
+}
+
+/*xs*/
+@media (max-width: 767px) 
+{
+    .generation-list {
+        .generation-item {
+            margin-bottom: 3.75rem;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+
+            .imgP {
+                width: 20rem;
+            }
+        }
+    }
+}
+
+/*md*/
+@media (min-width: 768px) {
+    .generation-list {
+        .generation-item {
+            .imgP {
+                width: 12rem;
+                margin: 0 auto;
+            }
+
+            &:nth-child(3n+2) {
+                margin-top: 6rem;
+            }
+        }
+    }
+}
+
+/*lg*/
+@media (min-width: 992px) {
+    .generation-list {
+        .generation-item {
+            .imgP {
+                width: 18rem;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+/*xl*/
+@media (min-width: 1200px) {
+    .generation-list {
+        .generation-item {
+            .imgP {
+                width: 21.7rem;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+/*xxl*/
+@media (min-width: 1400px) {
+    .generation-list {
+        .generation-item {
+            .imgP{
+                width: 21.7rem;
+                margin: 0 auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+﻿@using Progress.Sitefinity.AspNetCore.TagHelpers;
+@using Progress.Sitefinity.AspNetCore.Models;
+@using Progress.Sitefinity.AspNetCore.Widgets.Models.Common;
+@using Progress.Sitefinity.RestSdk.Dto;
+@using Progress.Sitefinity.AspNetCore.Mvc.Rendering;
+
+@model Progress.Sitefinity.AspNetCore.Widgets.Models.ContentList.ContentListViewModel
+
+
+<div class="newsList">
+    <div class="row">
+      
+            @foreach (var item in Model.Items)
+        {
+                var image = item.GetValue<ImageDto[]>("ThumbnailImage").FirstOrDefault<ImageDto>() ?? new ImageDto();
+                var title = item.GetValue<string>("Title"); //Model.GetFieldValue<string>(item, "Codice");
+              <div class="col-3">
+                <div class="item">
+
+                    <h6 class=""><a href="@Model.GetItemUrl(this.Context, item)" class="linkDiscoverMoreWhite">@Html.HtmlSanitize(title)</a></h6>
+
+                    <strong>Title:</strong> <span>@(Html.HtmlSanitize(item.GetValue<string>("Title")))</span><br />
+                    <strong>Intro:</strong> <span>@(Html.HtmlSanitize(item.GetValue<string>("Intro")))</span>
+
+                    <br />
+                    <br />
+                    <br />
+                </div>
+                <div class="image">
+                    <img src="@image.Url"
+                         sizes="100px"
+                         alt="@image.AlternativeText"
+                         loading="lazy"
+                         aria-hidden="true"
+                         class="object-fit-cover" />
+                </div>
+            </div>
+            }
+
+       
+    </div>
+  
+   
+</div>   

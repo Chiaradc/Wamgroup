@@ -1,0 +1,131 @@
+﻿@using Elogic.Wamgroup.Sito2023.NetCore.ViewModels.WamgroupGeneralSlider;
+@using Microsoft.AspNetCore.Http;
+@using Progress.Sitefinity.AspNetCore.Web;
+
+@inject IRenderContext renderContext
+
+@model WamgroupGeneralSliderViewModel
+@if (renderContext.IsEdit)
+{
+ 
+   <div class="row g-0 gs-row">
+      @foreach (var item in Model.Items.Take(3))
+      {
+         <div class="col-4 itemMenuSection position-relative">
+            <div class="wrapPicture position-relative">
+
+               <picture class="position-relative">
+                        <source srcset="@item.MobileImageUrl" media="(max-width: 767px)">
+                        <source srcset="@item.TabletImageUrl" media="(max-width: 1279px)">
+                        <img class="h-auto" src="@item.DesktopImageUrl" loading="lazy" width="@item.Width" height="@item.Height" alt="@item.ImageAlt" />
+               </picture>
+               <div class="itemText m-3">
+                  <div class="name">@item.Title</div>
+                  <div class="text">
+                     @Html.Raw(item.Text)
+                  </div>
+               </div>
+               @if (!string.IsNullOrWhiteSpace(item.CTALink))
+               {
+                  <a href="@item.CTALink" @(item.CTATargetBlank ? " target=\"_blank\"" : "") class="linkDiscoverMore position-absolute">@item.CTAText</a>
+               }
+            </div>
+         </div>
+      }
+   </div>
+}
+else
+{
+var multiSlide = Model.Items.Count() > 1 ? true : false;
+
+   <div class="row g-0">
+      <div class="general-slider">
+            <div class='swiper-wrapper @(Model.Items.Count() > 1 ? "multiSlide" : "")'>
+                @foreach (var item in Model.Items)
+                {
+                    <div class="swiper-slide">
+                        <div class="position-relative overrideBackground">
+                            @if(item.TipoContenuto == "1") // Immagine
+                            {
+                                <picture class="position-relative">
+                                    <source srcset="@item.MobileImageUrl" media="(max-width: 767px)">
+                                    <source srcset="@item.TabletImageUrl" media="(max-width: 1279px)">
+                                    <img aria-hidden="true" src="@item.DesktopImageUrl" @(multiSlide == false ? "" : "loading='lazy'") width="@item.Width" height="@item.Height" alt="@item.ImageAlt" />
+                                </picture>
+                               
+                            } else if (item.TipoContenuto == "2") // video
+                            {
+                                @if (!string.IsNullOrWhiteSpace(item.CodiceVideo))
+                                { // se c'è un video esterno
+                                    if (item.VisualizzaModale)
+                                    {
+                                        // se devo visualizzare il modale
+                                        <picture class="position-relative">
+                                            <source srcset="@item.MobileImageUrl" media="(max-width: 767px)">
+                                            <source srcset="@item.TabletImageUrl" media="(max-width: 1279px)">
+                                            <img aria-hidden="true" src="@item.DesktopImageUrl" class="w-100 h-auto" loading="lazy" width="@item.Width" height="@item.Height" alt="@item.ImageAlt" />
+                                        </picture>
+                                        <button aria-expanded="false" aria-haspopup="dialog" class="position-absolute top-0 end-0 general-slider-detail" aria-label="Dettagli" title="Dettagli" data-detail="@item.Text" data-image-src="@item.DesktopImageUrl" data-image-alt="@item.ImageAlt" data-video-code="@item.CodiceVideo" data-video-type="@item.TipoVideo">
+                                            <img src="~/svg/ico-modale.svg" aria-hidden="true" />
+                                        </button>
+                                    }
+                                    else
+                                    {
+                                        <div class="embed-container">
+                                        <iframe @(item.VisualizzaControlli ? "" : "class=playerNoControls") width="1920" height="1080" src="@((item.TipoVideo == "1") ? "https://www.youtube-nocookie.com/embed/" + item.CodiceVideo + "?autoplay=1&loop=1&" + (item.VisualizzaControlli ? "controls=1" : "controls=0&disablekb=1") + "&rel=0&showinfo=0&modestbranding=1&mute=1&enablejsapi=1&widgetid=1" : "https://player.vimeo.com/video/" + item.CodiceVideo + "?autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1&sidedock=0&" + (item.VisualizzaControlli ? "controls=1" : "controls=0&keyboard=0"))" frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope'>
+                                        </iframe>
+                                        </div>
+
+                                    }
+                                }
+                                else if (!string.IsNullOrWhiteSpace(item.VideoLocaleUrl))
+                                { // se c'è un video locale
+                                    if(item.VisualizzaModale)
+                                    {
+                                        // se devo visualizzare il modale
+                                        <picture class="position-relative">
+                                            <source srcset="@item.MobileImageUrl" media="(max-width: 767px)">
+                                            <source srcset="@item.TabletImageUrl" media="(max-width: 1279px)">
+                                            <img aria-hidden="true" src="@item.DesktopImageUrl" class="w-100 h-auto" loading="lazy" width="@item.Width" height="@item.Height" alt="@item.ImageAlt" />
+                                        </picture>
+                                        <button aria-expanded="false" aria-haspopup="dialog" class="position-absolute top-0 end-0 general-slider-detail" aria-label="Dettagli" title="Dettagli" data-detail="@item.Text" data-image-src="@item.DesktopImageUrl" data-image-alt="@item.ImageAlt" data-video-code="@item.VideoLocaleUrl" data-video-type="@item.TipoVideo">
+                                            <img src="~/svg/ico-modale.svg" aria-hidden="true" />
+                                        </button>
+                                    } else
+                                    {
+                                        <video poster="@item.DesktopImageUrl" class="w-100 h-auto object-fit-cover" width="@item.Width" height="@item.Height" @(item.VisualizzaControlli ? "controls muted autoplay" : "autoplay loop muted playsinline")>
+                                            <source src="@item.VideoLocaleUrl" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                      
+                                    }
+                                }
+                            }
+
+                            <div class='position-absolute m-4 description @(item.TextAlignment == "1" ? "topAlign" : item.TextAlignment == "2" ? "top-50" : "bottom-0") containerText@(item.FullWidthText? "-fluid" : "")' style='background-color:@item.BackgroundColor; color: @item.TextColor'>
+                         <div class="title">@item.Title</div>
+                         <div class="text">
+                            @Html.Raw(item.Text)
+                         </div>
+                         @if (!string.IsNullOrWhiteSpace(item.CTALink))
+                         {
+                            <a href="@item.CTALink" @(item.CTATargetBlank ? " target=\"_blank\"" : "") class="linkDiscoverMore">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16.102" height="13.801" viewBox="0 0 16.102 13.801"><path d="M108.875-43.348Zm9.51-6.662,6.325,6.038a.863.863,0,0,1,.267.625.864.864,0,0,1-.267.625l-6.325,6.038a.864.864,0,0,1-1.22-.029.862.862,0,0,1,.029-1.22l4.769-4.55H109.738a.863.863,0,0,1-.863-.863.863.863,0,0,1,.863-.862h12.223l-4.769-4.55a.866.866,0,0,1-.029-1.222A.865.865,0,0,1,118.385-50.01Z" transform="translate(-108.875 50.248)" fill="currentColor" /></svg>
+
+                                @item.CTAText</a>
+                         }
+                      </div>
+                   </div>
+                </div>
+             }
+         </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+      </div>
+   </div>
+
+ 
+      
+}
+

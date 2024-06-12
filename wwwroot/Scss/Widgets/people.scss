@@ -1,0 +1,325 @@
+﻿/// <reference path="../_variables.scss">
+@import "../variables";
+
+
+.people-list {
+    /*margin-top: 3.75rem;*/
+
+    .people-item {
+        text-align: center;
+
+        .imgP, .nomeP, .posizioneP {
+            width: 21.7rem;
+            margin: 0 auto;
+        }
+
+        .nomeP {
+            font-family: $font-family-base;
+            font-style: normal;
+            font-weight: 300;
+            color: $gold;
+            font-size: 4.063rem;
+            line-height: 1;
+            text-transform: uppercase;
+            text-align: left;
+
+            span {
+                color: $gold;
+                margin-left: -6px;
+            }
+        }
+
+        .posizioneP > div {
+            /*width: 14rem;*/
+            text-align: left;
+            margin: 0 auto;
+            font-size: 1.25rem;
+            padding-left: 0.5rem;
+        }
+
+        &.compact-margin .nomeP {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+.peopleDetail {
+    .peopleContainerName {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.625rem;
+        font-family: $font-family-base;
+        font-weight: 600;
+    }
+
+    .immagineP {
+        text-align: center;
+
+        IMG {
+            width: 26rem;
+        }
+    }
+
+    .citazioneP {
+        font-size: 1.5rem;
+        margin-right: 7.5rem;
+        line-height: 1.875rem;
+
+        .lineOrizontal {
+            background: $black;
+        }
+    }
+
+    .nomeP, .cognomeP {
+        font-family: $font-family-base;
+        font-style: normal;
+        font-weight: 300;
+        color: $gold;
+        font-size: 4rem;
+        line-height: 1;
+        text-transform: uppercase;
+        text-align: left;
+    }
+
+
+
+    .posizioneP {
+        font-size: 1.3rem;
+    }
+
+    .descrizioneP {
+        font-size: 1.15rem;
+    }
+
+    .bioP a, .bioP button, .downloadP a {
+        margin: 10px auto;
+        display: flex;
+        align-items: center;
+        color: $golddark;
+    }
+
+    .bioP button {
+        width: 100%;
+        border: 0;
+        background: inherit;
+        text-align: left;
+        padding: 0;
+    }
+
+    .bioP svg, .downloadP svg {
+        width: 1rem;
+        /*display: inline-flex;*/
+        margin-right: 0.5rem;
+
+        line, path {
+            stroke: $golddark;
+            fill: $golddark;
+        }
+    }
+
+    .bioP {
+        a {
+            color: $golddark;
+        }
+
+        .bioExpanded {
+            display: none;
+            margin: 2rem auto;
+        }
+    }
+
+    .domanderisposteP {
+        font-size: 1.125rem;
+        line-height: 1.563rem;
+
+        .Titolo {
+            font-size: 1.125rem;
+            font-weight: 500;
+            color: $golddark;
+            margin-top: 3.75rem;
+            line-height: 1.875rem;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+        }
+    }
+}
+
+@media(max-width:767px) {
+   .people-list {
+    .people-item {
+       margin-bottom:3.75rem;
+       &:last-of-type {margin-bottom:0;}
+        .imgP, .nomeP, .posizioneP {
+            width: 20rem;
+        }
+        .nomeP {
+            font-size: 3.6rem;
+           }
+        .posizioneP > div {
+            /*width: 12rem;*/
+            font-size: 1.25rem;
+        }   
+     }
+}
+}
+
+@media(max-width:320px) {
+   .people-list {
+    .people-item {
+        .imgP, .nomeP, .posizioneP {
+            width: 16rem;
+        }
+        .nomeP {
+            font-size: 2.9rem;
+           }
+        .posizioneP > div {
+            /*width: 10rem;*/
+            font-size: 1.2rem;
+        }   
+     }
+   }
+}
+
+@media(min-width:768px) {
+  .people-list {
+    .people-item {
+        .imgP, .nomeP, .posizioneP {
+            width: 12rem;
+            margin: 0 auto;
+        }
+
+        .nomeP {
+            font-size: 2.2rem;
+            line-height: 1;
+        }
+        &.compact-margin {
+         .nomeP {
+             font-size: 1.7rem;
+            }
+        }
+        .posizioneP > div {
+            /*width: 10rem;*/
+            font-size: 1rem;
+        }
+
+        &:nth-child(3n+2), &.move-down {
+            margin-top: 6rem;
+        }
+
+        &.compact-margin > a, &.compact-margin > div {
+            display: block;
+            padding: 0 .8rem;
+        }
+
+        &.compact-margin:nth-child(3n+1) > a, &.compact-margin:nth-child(3n+1) > div {
+            padding: 0 1.6rem 0 0;
+        }
+
+        &.compact-margin:nth-child(3n+3) > a, &.compact-margin:nth-child(3n+3) > div {
+            padding: 0 0 0 1.6rem;
+        }
+    }
+}
+  .peopleDetail {
+     .immagineP {
+        text-align: right;
+        IMG {
+            margin-right: 7.5rem;
+        }
+      }
+     .nomeP {
+        margin-left: -3.75rem;
+    }
+  }
+}
+@media(min-width:992px) {
+ 
+.people-list {
+    .people-item {
+        .imgP, .nomeP, .posizioneP {
+            width: 18rem;
+            margin: 0 auto;
+        }
+        .nomeP {
+            font-size: 3.2rem;
+            line-height: 1;
+           }
+        .posizioneP > div {
+           /* width: 11.3rem;*/
+            font-size: 1.25rem;
+            padding-left: 2rem;
+        }
+         &.compact-margin {
+         .nomeP {
+             font-size: 2.25rem;
+            }
+        }
+     }
+}
+
+}
+@media(min-width:1200px) {
+  .people-list {
+    .people-item {
+        .imgP, .nomeP, .posizioneP {
+            width: 19.7rem;
+            margin: 0 auto;
+        }
+        .nomeP {
+            font-size: 4rem;
+            line-height: 1;
+           }
+        .posizioneP > div {
+            /*width: 13rem;*/
+            font-size: 1.25rem;
+        }
+        &.compact-margin {
+         .nomeP {
+             font-size: 2.6rem;
+            }
+        }
+     }
+}
+
+}
+
+@media(min-width:1400px) {
+ .people-list {
+    .people-item {
+        .imgP, .nomeP, .posizioneP {
+            width: 21.7rem;
+            margin: 0 auto;
+        }
+
+        .nomeP {
+            font-size: 4.063rem;
+            line-height: 1;
+        }
+
+        .posizioneP > div {
+           /* width: 13rem;*/
+            font-size: 1.25rem;
+        }
+
+        &.compact-margin .posizioneP > div {
+            /*width: 12rem;*/
+        }
+        &.compact-margin {
+         .nomeP {
+             font-size: 2.5rem;
+            }
+        }
+    }
+   }
+}
+@media(min-width:1600px) {
+ .people-list {
+    .people-item {
+        &.compact-margin {
+         .nomeP {
+             font-size: 2.8rem;
+            }
+        }
+    }
+   }
+}

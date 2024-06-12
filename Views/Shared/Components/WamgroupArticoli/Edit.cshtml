@@ -1,0 +1,17 @@
+﻿@using Elogic.Wamgroup.Sito2023.Models.SdkItems.ModuloProva
+@using Elogic.Wamgroup.Sito2023.NetCore.Localization;
+@using Elogic.Wamgroup.Sito2023.NetCore.ViewModels.WamgroupArticoli;
+
+@inject LocalizationHelperService localizationHelper;
+
+@model WamgroupArticoliDetailViewModel
+<form method="get">
+<section>
+   <div>Codice: <input type="text" asp-for="Articolo.Codice" /></div>
+   <div>Descrizione: <input type="text" asp-for="Articolo.Descrizione" /></div>
+   <div>Costo: <input type="text" asp-for="Articolo.Costo" /></div>
+   <br /><br />
+   <input type="hidden" asp-for="Articolo.Id" />
+   <input type="submit" text="Invia" name="update" value="update" />
+</section>
+</form>

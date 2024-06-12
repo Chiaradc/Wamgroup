@@ -1,0 +1,24 @@
+﻿[data-value-container] [data-value-text] {
+  font-size: 1.125rem;
+}
+[data-value-container] [data-value-text] h3 {
+  color: #98680E;
+  font-family: din-2014, sans-serif;
+  font-size: 1.5rem;
+  margin: 0.8rem auto 0.5rem auto;
+}
+[data-value-container] .value-link {
+  background: inherit;
+  border: 0;
+}
+
+@media (min-width: 1024px) {
+  [data-value-container] {
+    cursor: pointer;
+  }
+  [data-value-container] [data-value-text] {
+    position: absolute;
+    transform: translateY(-50%);
+    z-index: 1000;
+  }
+}

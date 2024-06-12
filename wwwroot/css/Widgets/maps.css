@@ -1,0 +1,137 @@
+﻿.contentMaps .map-text-container {
+  display: none;
+}
+.contentMaps .CTALinkMenu {
+  bottom: auto;
+  top: 0;
+  margin: 0 auto;
+  padding: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+}
+.contentMaps .CTALinkMenu button {
+  font-size: 1rem !important;
+  text-transform: none;
+  background-color: #d9c27a;
+  padding: 0.42rem 1rem 0.456rem 0.5rem;
+  display: flex;
+  align-items: center;
+  color: #191919;
+  width: fit-content !important;
+  border: 0;
+}
+.contentMaps .CTALinkMenu button svg {
+  width: 18.38px;
+  height: 10.52px;
+  display: inline-block;
+  margin: 0 0 0 1rem;
+}
+.contentMaps .map-text-container {
+  text-align: center;
+}
+.contentMaps .map-text-container .CTALinkMenu {
+  position: relative;
+}
+.contentMaps .map-text-container .CTALinkMenu button {
+  margin: auto;
+}
+.contentMaps .titleMaps .spacer.spacerPB1x {
+  padding-bottom: 1rem;
+}
+.contentMaps .titleMaps .spacer.spacerPT1x {
+  padding-top: 1rem;
+}
+.contentMaps .titleMaps .sectionTitle h1.sectiontitle-padder, .contentMaps .titleMaps .sectionTitle h2.sectiontitle-padder {
+  margin-bottom: 1rem;
+}
+.contentMaps .imgMap {
+  z-index: 0;
+  height: auto;
+}
+.contentMaps .navigationMaps {
+  margin-bottom: 2rem;
+  bottom: 5rem;
+  z-index: 1;
+}
+.contentMaps .navigationMaps .nav {
+  --bs-nav-link-padding-x: 0;
+}
+.contentMaps .navigationMaps .nav-tabs {
+  padding: 0;
+  border-bottom: 1px solid #191919;
+  max-width: max-content;
+  --bs-nav-tabs-border-width: 0;
+}
+.contentMaps .navigationMaps .nav-tabs .nav-item {
+  margin-right: 2rem;
+  padding: 0;
+}
+.contentMaps .navigationMaps .nav-tabs .nav-item .nav-link {
+  color: #191919;
+  font-size: 1.125rem;
+}
+.contentMaps .navigationMaps .nav-tabs .nav-item .nav-link.active {
+  color: #191919;
+  background-color: transparent;
+  border-color: transparent;
+  border: 0;
+  font-weight: bold;
+}
+.contentMaps .navigationMaps .nav-tabs .nav-item .nav-link.active + .lineTabActive {
+  display: block !important;
+  position: relative;
+  bottom: -3px;
+  margin: auto;
+}
+.contentMaps .navigationMaps .nav-tabs .nav-item .nav-link:focus, .contentMaps .navigationMaps .nav-tabs .nav-item .nav-link:hover {
+  border-color: none;
+  border: 0;
+}
+.contentMaps .navigationMaps .nav-tabs .nav-item .lineTabActive {
+  width: 82px;
+  height: 6px;
+  background: #191919;
+}
+
+@media (min-width: 768px) {
+  .contentMaps .navigationMaps {
+    position: absolute;
+    margin-bottom: 0;
+  }
+  .contentMaps .navigationMaps .nav-tabs .nav-item:last-of-type {
+    margin-right: 0;
+  }
+}
+@media (min-width: 992px) {
+  .contentMaps .titleMaps {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+  .contentMaps .navigationMaps {
+    bottom: 10rem;
+  }
+  .contentMaps .navigationMaps .nav-tabs .nav-item {
+    margin-right: 6rem;
+  }
+}
+@media (min-width: 1200px) {
+  .contentMaps .navigationMaps {
+    bottom: 15rem;
+  }
+  .contentMaps .navigationMaps .nav-tabs .nav-item {
+    margin-right: 6rem;
+  }
+}
+@media (min-width: 1400px) {
+  .contentMaps .titleMaps .spacer.spacerPB1x {
+    padding-bottom: 3.75rem;
+  }
+  .contentMaps .titleMaps .spacer.spacerPT1x {
+    padding-top: 3.75rem;
+  }
+  .contentMaps .titleMaps .sectionTitle h1.sectiontitle-padder, .contentMaps .titleMaps .sectionTitle h2.sectiontitle-padder {
+    margin-bottom: 3.75rem;
+  }
+}

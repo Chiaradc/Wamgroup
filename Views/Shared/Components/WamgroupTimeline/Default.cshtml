@@ -1,0 +1,69 @@
+﻿@using Elogic.Wamgroup.Sito2023.NetCore.ViewModels.WamgroupTimeline;
+@using Microsoft.AspNetCore.Http;
+@using Progress.Sitefinity.AspNetCore.Web;
+
+@inject IRenderContext renderContext
+
+@model WamgroupTimelineViewModel
+
+
+@if (renderContext.IsEdit)
+{
+    <div class="row">
+        @foreach (var item in Model.Items)
+        {
+            <div class="col-4">
+                <div class="text-md">@item.Title</div>
+                <picture class="pictureYear">
+                    <img src="@item.ImageUrl" aria-hidden="true" class="" alt="@item.ImageAlt" width="150" />
+                </picture>
+                <div>@Html.Raw(item.Text)</div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <div class="timeSlider">
+        <div class="timeSlide swiper-wrapper">
+            @foreach (var item in Model.Items)
+            {
+                <div class="timeItemContainer swiper-slide" data-year="@item.Title">
+                    <div class="ItemYear position-relative">
+                        <div class="itemYearText z-1">
+                            <div class="year">@item.Title</div>
+                            <div class="yearDesc">@Html.Raw(item.Text)</div>
+                        </div>
+                        <div class="wrapPictureYear z-1">
+                            <picture class="pictureYear">
+                                <img src="@item.ImageUrl" aria-hidden="true" class="imgYear h-auto " alt="@item.ImageAlt" width="" height="" />
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="containerScrollbar">
+            <div class="containerInnerScrollbar">
+                <div class="yearStampActive"></div>
+                <div class="swiper-scrollbar"></div>
+            </div>          
+            <div class="swiper-button-container">
+                <div class="swiper-button-prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16.102" height="13.802" viewBox="0 0 16.102 13.802">
+                        <path id="Tracciato_16770" data-name="Tracciato 16770" d="M108.875-43.348Zm9.51-6.662,6.325,6.038a.863.863,0,0,1,.267.625.864.864,0,0,1-.267.625l-6.325,6.038a.864.864,0,0,1-1.22-.029.862.862,0,0,1-.239-.616.862.862,0,0,1,.268-.6l4.769-4.55H109.738a.863.863,0,0,1-.863-.863.863.863,0,0,1,.863-.862h12.223l-4.769-4.55a.866.866,0,0,1-.029-1.222.865.865,0,0,1,1.222-.03Z" transform="translate(124.977 -36.446) rotate(180)" fill="currentColor" />
+                    </svg>
+                </div>
+                <div class="swiper-button-next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16.102" height="13.801" viewBox="0 0 16.102 13.801"><path d="M108.875-43.348Zm9.51-6.662,6.325,6.038a.863.863,0,0,1,.267.625.864.864,0,0,1-.267.625l-6.325,6.038a.864.864,0,0,1-1.22-.029.862.862,0,0,1,.029-1.22l4.769-4.55H109.738a.863.863,0,0,1-.863-.863.863.863,0,0,1,.863-.862h12.223l-4.769-4.55a.866.866,0,0,1-.029-1.222A.865.865,0,0,1,118.385-50.01Z" transform="translate(-108.875 50.248)" fill="currentColor"></path></svg>
+                </div>
+            </div>           
+        </div>
+      
+
+        @* <div class="navYear position-relative d-none d-lg-block">
+            <button class="slick-prev slick-arrow slick-disabled" disabled aria-disabled="true" aria-label="Previous" type="button" style="">Previous</button>
+            <button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button>
+        </div> *@
+    </div>
+}

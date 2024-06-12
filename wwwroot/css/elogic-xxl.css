@@ -1,0 +1,160 @@
+﻿h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.text-sm {
+  display: block;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.text-md {
+  display: block;
+  font-size: 2.25rem;
+}
+
+.text-lg {
+  display: block;
+  font-size: 3rem;
+}
+
+.text-xl {
+  display: block;
+  font-size: 3.75rem;
+}
+
+.grid {
+  grid-template-columns: 55px repeat(11, 1fr 30px) 1fr 55px;
+}
+
+.bannerHero .figureHero {
+  grid-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+}
+.bannerHero .figureHero .imgBannerHero {
+  width: 80%;
+}
+.bannerHero .bannerTextWrap {
+  font-size: 12vw;
+}
+
+header nav.navbar {
+  padding-left: 6vw !important;
+  padding-right: 6vw !important;
+}
+header nav.navbar .navbar-right .icon.icon-email svg {
+  width: 1.5rem;
+}
+header nav.navbar .navbar-right .icon.icon-globe svg {
+  width: 1.5rem;
+}
+header nav.navbar .navbar-right .icon.icon-search svg {
+  width: 1.5rem;
+}
+header nav.navbar .navbar-right .icon.icon-user svg {
+  width: 1.35rem;
+}
+header nav.navbar > li {
+  margin: 0;
+}
+header nav.navbar > li a { /*width: 9.5rem;*/ }
+header nav.navbar > li .dropdown-menu.ulThirdLevel {
+  /*top: 11rem;*/
+  left: 58%;
+}
+header nav.navbar .navbarMenu-toggler {
+  left: calc(6vw - 50px) !important;
+}
+header .filterAreas button svg {
+  width: 30px;
+  height: 30px;
+}
+
+.OurValuesSlide .itemOV {
+  padding: 0 2.8rem;
+}
+.OurValuesSlide .itemOV.pleft {
+  padding: 0 5.6rem 0 0;
+}
+.OurValuesSlide .itemOV.pright {
+  padding: 0 0 0 5.6rem;
+}
+
+.footer-container .navbar-nav li {
+  flex: 1 1 0;
+}
+
+.container:not(.sf-zone-column) > .textAroundImage,
+.container-fluid:not(.sf-zone-column) > .textAroundImage {
+  padding: 3rem 0 5rem 0;
+}
+.container:not(.sf-zone-column) > .textAroundImage > .col:first-of-type > div > div:last-of-type,
+.container-fluid:not(.sf-zone-column) > .textAroundImage > .col:first-of-type > div > div:last-of-type {
+  max-width: 400px;
+}
+.container:not(.sf-zone-column) > .textAroundImage > .col:nth-of-type(2),
+.container-fluid:not(.sf-zone-column) > .textAroundImage > .col:nth-of-type(2) {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container:not(.sf-zone-column) > .textAroundImage > .col:nth-of-type(2) div,
+.container-fluid:not(.sf-zone-column) > .textAroundImage > .col:nth-of-type(2) div {
+  height: 100%;
+}
+.container:not(.sf-zone-column) > .textAroundImage > .col:nth-of-type(2) div picture,
+.container-fluid:not(.sf-zone-column) > .textAroundImage > .col:nth-of-type(2) div picture {
+  height: 100%;
+}
+.container:not(.sf-zone-column) > .textAroundImage > .col:nth-of-type(2) div img,
+.container-fluid:not(.sf-zone-column) > .textAroundImage > .col:nth-of-type(2) div img {
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.container:not(.sf-zone-column) > .textAroundImage > .col:last-of-type,
+.container-fluid:not(.sf-zone-column) > .textAroundImage > .col:last-of-type {
+  width: 50%;
+  position: relative;
+  z-index: 2;
+}
+.container:not(.sf-zone-column) > .textAroundImage > .col:last-of-type > div > div:last-of-type,
+.container-fluid:not(.sf-zone-column) > .textAroundImage > .col:last-of-type > div > div:last-of-type {
+  max-width: 400px;
+}
+.container:not(.sf-zone-column) > .textAroundImage .sectionTitle,
+.container-fluid:not(.sf-zone-column) > .textAroundImage .sectionTitle {
+  padding: 20px 0;
+}

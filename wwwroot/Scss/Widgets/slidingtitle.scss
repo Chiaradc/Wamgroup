@@ -1,0 +1,63 @@
+﻿/// <reference path="../_variables.scss">
+@import "../variables";
+
+.slidingTitle {
+
+    
+    .titEdit {
+        font-size: 3rem;
+        font-weight: 500;
+        font-family: $font-family-base;
+        color: $white;
+        line-height: 3.125rem;
+       
+        z-index: 2;
+        /*max-width: 26rem;*/
+    }
+
+    a {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+@media(min-width:375px) {
+}
+
+@media(min-width:576px) {
+}
+
+@media(min-width:768px) {
+    .slidingTitle {
+        height: 150vh;
+
+        .boxeditorialeImm {
+            height: calc(100vh - 5rem);
+            z-index: 1;
+
+            &.position-fixed {
+                top: 5rem;
+            }
+        }
+
+        .container {
+            padding-top: calc(100vh - 5rem);
+        }
+
+
+        .titEdit {
+            font-size: 4rem;
+            line-height: 4.188rem;
+            min-height: 10rem;
+        }
+    }
+}
+
+@media(min-width:992px) {
+    .slidingTitle {
+        .titEdit {
+            font-size: 6.25rem;
+            line-height: 6.875rem;
+        }
+    }
+}

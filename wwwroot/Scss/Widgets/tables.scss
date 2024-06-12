@@ -1,0 +1,68 @@
+﻿/// <reference path="../_variables.scss">
+@import "../variables";
+/* table */
+.tables-container {
+    table {
+        width: 100%;
+
+        tr {
+            td, th {
+                border-bottom: 1px solid $black;
+
+                &.no-border {
+                    border: none;
+                    padding: 1.875rem 1.875rem 0 1.875rem;
+                }
+            }
+        }
+
+        th, td {
+            padding: 1.875rem;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th, span.mobile-th {
+            color: $golddark;
+            font-size: 1.125rem;
+            font-weight: bold;
+        }
+
+        td {
+            color: $black;
+            font-size: 1.25rem;
+            line-height: 1.563rem;
+
+            &:last-of-type {
+                white-space: nowrap;
+            }
+        }
+
+        caption {
+            color: $black;
+        }
+    }
+}
+
+
+@media (max-width: 767px){
+    .tables-container {
+        table {
+            th, td {
+                padding: 0.475rem!important;
+            }
+
+            th {
+                color: $gold;
+                font-size: 1.125rem;
+                font-weight: bold;
+            }
+
+            td {
+                color: $black;
+                font-size: 1.25rem;
+                line-height: 1.563rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+﻿/// <reference path="../_variables.scss">
+@import "../variables";
+
+// --------------------------------
+//    Gallery
+// --------------------------------
+
+.sectionGallery {
+    padding: 0 0 6.25rem 0;
+}
+
+
+
+.bg-imageZIndex {
+    position: absolute;
+    z-index: 0;
+
+    &.bg-imageLeft {
+        left: 0;
+    }
+
+    &.bg-imageRight {
+        right: 0;
+    }
+
+    &.bg-imageTop {
+        top: 0;
+    }
+
+    &.bg-imageBot {
+        bottom: 0;
+    }
+}
+
+.imageGallery {
+}
+
+@media(min-width:768px) {
+   .contentGallery {
+    .itemGallery {
+        padding: 5rem 0;
+    }
+   }
+}

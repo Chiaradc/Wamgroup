@@ -1,0 +1,333 @@
+﻿/// <reference path="../_variables.scss">
+@import "../variables";
+
+// --------------------------------
+//    Menu section Year
+// --------------------------------
+
+.timeSlider {
+    width: 100%;
+    /*   height: 400px;*/
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-wrap: inherit;
+    -webkit-flex-wrap: inherit;
+    flex-wrap: inherit;
+    height: 100%;
+    min-height: 400px;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    user-select: none;
+
+    .swiper-wrapper {
+        display: flex;
+        height: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        min-height: 400px;
+        cursor: pointer;
+    }
+
+    .timeItemContainer {
+        /*width: 640px;*/
+        /*float: left;*/
+        padding-bottom: 50px;
+        flex: 0 0 auto;
+
+        &:nth(:first-of-type) {
+            .ItemYear {
+                /*     margin-right: 0 !important;*/
+            }
+        }
+
+        .ItemYear {
+            /*            margin-right: 2rem;*/
+            min-height: 440px;
+            width: 650px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .wrapPictureYear {
+                flex-shrink: 0;
+            }
+
+            .pictureYear {
+                bottom: 0;
+                user-select: none;
+            }
+
+            .itemYearText {
+                /*      margin-right: 1.5rem;*/
+                padding-right: 30px;
+
+                .year {
+                    font-size: 5rem;
+                    line-height: 6.5rem;
+                    font-weight: 200;
+                    letter-spacing: -5px;
+                    color: $blue;
+                    margin-top: -1.5rem;
+                    font-family: $font-family-base;
+                    user-select: none;
+                }
+
+                .yearDesc {
+                    font-size: 1rem;
+                    line-height: 1.2rem;
+                    margin-top: 0.5rem;
+                    font-family: $font-family-base;
+                    user-select: none;
+                }
+            }
+
+            .imgYear {
+                width: 80%;
+                height: auto;
+            }
+        }
+    }
+
+    .containerScrollbar {
+        /*  margin-right: 10vw;*/
+        position: relative;
+        height: 100px;
+
+        .swiper-scrollbar.swiper-scrollbar-horizontal {
+            left: 0;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            height: 2px;
+
+            .swiper-scrollbar-drag {
+                background-color: $blue;
+                height: 4px;
+                width: 100%;
+                cursor: pointer;
+                border-radius: 2px;
+                height: 4px;
+                display: flex;
+                flex-direction: column-reverse;
+
+                .yearStampActive {
+                    color: $blue;
+                    font-family: $font-family-base;
+                    font-weight: 600;
+                    margin-bottom: 8px;
+                    font-size: 1.125rem;
+                }
+            }
+        }
+
+        .swiper-button-container {
+            position: initial;
+            display: flex;
+            gap: 20px;
+            margin-top: 10px;
+            -webkit-justify-content: end;
+            justify-content: end;
+
+            .swiper-button-prev {
+                position: initial !important;
+                color: #023b6b;
+                width: 25px;
+                height: 42px;
+                display: flex;
+                -webkit-justify-content: end;
+                justify-content: end;
+                align-items: center;
+                margin: 0 !important;
+
+                svg {
+                    /*   width: 1.5rem;
+                    height: auto;*/
+                }
+
+                &:after {
+                    content: unset;
+                }
+            }
+
+            .swiper-button-next {
+                position: initial !important;
+                color: #023b6b;
+                width: 25px;
+                height: 42px;
+                display: flex;
+                -webkit-justify-content: end;
+                justify-content: end;
+                align-items: center;
+                margin: 0 !important;
+
+                svg {
+                    /*  width: 1.5rem;
+                    height: auto;*/
+                }
+
+                &:after {
+                    content: unset;
+                }
+            }
+        }
+    }
+   
+
+@media(min-width:768px) {
+    .timeSlider {
+        padding-bottom: 3rem;
+
+        .timeItemContainer {
+            /*margin-right: 145px;*/
+
+
+            .ItemYear {
+                /*      margin-right: 1.5rem;*/
+                min-height: 520px;
+                width: initial;
+
+                .pictureYear {
+                    bottom: initial;
+                }
+
+                .itemYearText {
+                    /*  margin-right: 1.5rem;*/
+                    width: 260px;
+
+                    .year {
+                        font-size: 6rem;
+                        line-height: 7rem;
+                    }
+
+                    .yearDesc {
+                        font-size: 1.125rem;
+                        line-height: 1.5rem;
+                    }
+                }
+
+                .imgYear {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:992px) {
+    .timeSlider {
+        width: 100%;
+        /*   height: 400px;*/
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        -ms-flex-wrap: inherit;
+        -webkit-flex-wrap: inherit;
+        flex-wrap: inherit;
+        height: 100%;
+        min-height: 600px;
+        padding-left: 10vw;
+        padding-right: 10vw;
+
+        .swiper-wrapper {
+            display: flex;
+            height: 100%;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            min-height: 600px;
+        }
+
+        .timeItemContainer {
+            /* margin-right: 145px;
+*/
+            .ItemYear {
+                /*                margin-right: 2rem;*/
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+                .itemYearText {
+                    /*                    margin-right: 2rem;*/
+                 /*   width: 270px;*/
+                    padding-right: 30px;
+
+                    .year {
+                        font-size: 6rem;
+                        line-height: 7rem;
+                    }
+
+                    .yearDesc {
+                        font-size: 1.125rem;
+                        line-height: 1.5rem;
+                    }
+                }
+
+                .imgYear { /*max-width:70%;*/
+                }
+            }
+        }
+    }
+    }
+
+@media(min-width:1200px) {
+    .timeSlider {
+        .timeItemContainer {
+            margin-right: 145px;
+
+            .ItemYear {
+                /*       margin-right: 6rem;*/
+
+                .itemYearText {
+                    width: 300px;
+
+                    .year {
+                        font-size: 7rem;
+                        line-height: 8rem;
+                    }
+
+                    .yearDesc {
+                        font-size: 1.125rem;
+                        line-height: 1.5rem;
+                    }
+                }
+
+                .imgYear { /*max-width:80%;*/
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:1400px) {
+    .timeSlider {
+
+        .timeItemContainer {
+            margin-right: 145px;
+
+            .ItemYear {
+                /*         margin-right: 10rem;*/
+
+                .itemYearText {
+                    width: 320px;
+
+                    .year {
+                        font-size: 7.5rem;
+                        line-height: 8.75rem;
+                        margin-top: -1.7rem;
+                    }
+
+                    .yearDesc {
+                        font-size: 1.125rem;
+                        line-height: 1.5rem;
+                    }
+                }
+
+                .imgYear { /*max-width:100%;*/
+                }
+            }
+        }
+    }
+}

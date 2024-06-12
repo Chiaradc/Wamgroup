@@ -1,0 +1,19 @@
+﻿@using Elogic.Wamgroup.Sito2023.NetCore.ViewModels.WamgroupSpacer
+
+@model WamgroupSpacerViewModel
+
+@{
+   var aboveClass = string.Empty;
+   if (Model.AboveMargin != "0x")
+      aboveClass = "spacerPT" + Model.AboveMargin;
+   var belowClass = string.Empty;
+   if (Model.BelowMargin != "0x")
+      belowClass = "spacerPB" + Model.BelowMargin;
+}
+
+<div class="spacer @aboveClass @belowClass">
+   @if (Model.AddVerticalLine)
+   {
+      <span class="lineVertical"></span>
+   }
+</div>

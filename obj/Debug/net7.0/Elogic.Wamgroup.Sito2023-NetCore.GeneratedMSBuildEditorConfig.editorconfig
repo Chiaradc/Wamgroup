@@ -1,0 +1,231 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Elogic.Wamgroup.Sito2023.NetCore
+build_property.RootNamespace = Elogic.Wamgroup.Sito2023.NetCore
+build_property.ProjectDir = C:\Work\Elogic.Wamgroup.Sito2023\Elogic.Wamgroup.Sito2023-NetCore\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = C:\Work\Elogic.Wamgroup.Sito2023\Elogic.Wamgroup.Sito2023-NetCore
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Download/ReadMore.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG93bmxvYWRcUmVhZE1vcmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/News/ReadMore.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c1xSZWFkTW9yZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Product/ProductCatalog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxQcm9kdWN0Q2F0YWxvZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/Captcha3/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2FwdGNoYTNcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/SitefinityContentList/Articoli.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2l0ZWZpbml0eUNvbnRlbnRMaXN0XEFydGljb2xpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/SitefinityContentList/CustomNews.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2l0ZWZpbml0eUNvbnRlbnRMaXN0XEN1c3RvbU5ld3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/SitefinityContentList/Details.Articoli.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2l0ZWZpbml0eUNvbnRlbnRMaXN0XERldGFpbHMuQXJ0aWNvbGkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/SitefinityContentList/Details.CustomNews.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2l0ZWZpbml0eUNvbnRlbnRMaXN0XERldGFpbHMuQ3VzdG9tTmV3cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/SitefinityLoginForm/CustomLoginForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2l0ZWZpbml0eUxvZ2luRm9ybVxDdXN0b21Mb2dpbkZvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/SitefinityNavigation/MyCustomNavigation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2l0ZWZpbml0eU5hdmlnYXRpb25cTXlDdXN0b21OYXZpZ2F0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/SitefinityRegistration/CustomRegistrationForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2l0ZWZpbml0eVJlZ2lzdHJhdGlvblxDdXN0b21SZWdpc3RyYXRpb25Gb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/SitefinityResetPassword/CustomResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2l0ZWZpbml0eVJlc2V0UGFzc3dvcmRcQ3VzdG9tUmVzZXRQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/SitefinitySearchBox/CustomSearchBox.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2l0ZWZpbml0eVNlYXJjaEJveFxDdXN0b21TZWFyY2hCb3guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/SitefinitySearchResults/CustomSearchResults.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2l0ZWZpbml0eVNlYXJjaFJlc3VsdHNcQ3VzdG9tU2VhcmNoUmVzdWx0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/WamgroupArticoli/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV2FtZ3JvdXBBcnRpY29saVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/WamgroupArticoli/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV2FtZ3JvdXBBcnRpY29saVxEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/WamgroupArticoli/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV2FtZ3JvdXBBcnRpY29saVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/WamgroupBanner/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV2FtZ3JvdXBCYW5uZXJcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/WamgroupCatalog/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV2FtZ3JvdXBDYXRhbG9nXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/WamgroupCta/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV2FtZ3JvdXBDdGFcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/WamgroupDownload/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV2FtZ3JvdXBEb3dubG9hZFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/WamgroupFiltroSettori/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV2FtZ3JvdXBGaWx0cm9TZXR0b3JpXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/WamgroupFooter/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV2FtZ3JvdXBGb290ZXJcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/WamgroupGallery/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV2FtZ3JvdXBHYWxsZXJ5XERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/WamgroupGeneralSlider/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV2FtZ3JvdXBHZW5lcmFsU2xpZGVyXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/WamgroupHeader/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV2FtZ3JvdXBIZWFkZXJcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/WamgroupImages/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV2FtZ3JvdXBJbWFnZXNcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/WamgroupMagazzino/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV2FtZ3JvdXBNYWdhenppbm9cRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/WamgroupNews/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV2FtZ3JvdXBOZXdzXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/WamgroupNews/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV2FtZ3JvdXBOZXdzXERldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/WamgroupNumbers/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV2FtZ3JvdXBOdW1iZXJzXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/WamgroupProductDetail/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV2FtZ3JvdXBQcm9kdWN0RGV0YWlsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/WamgroupProductList/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV2FtZ3JvdXBQcm9kdWN0TGlzdFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/WamgroupRow/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV2FtZ3JvdXBSb3dcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/WamgroupSearchResults/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV2FtZ3JvdXBTZWFyY2hSZXN1bHRzXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/WamgroupSection/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV2FtZ3JvdXBTZWN0aW9uXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/WamgroupSlidingTitle/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV2FtZ3JvdXBTbGlkaW5nVGl0bGVcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/WamgroupSpacer/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV2FtZ3JvdXBTcGFjZXJcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/WamgroupTables/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV2FtZ3JvdXBUYWJsZXNcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/WamgroupTables/TableContent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV2FtZ3JvdXBUYWJsZXNcVGFibGVDb250ZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/WamgroupTabs/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV2FtZ3JvdXBUYWJzXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/WamgroupTimeline/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV2FtZ3JvdXBUaW1lbGluZVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/WamgroupTitleSubtitle/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV2FtZ3JvdXBUaXRsZVN1YnRpdGxlXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/WamgroupWidget/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV2FtZ3JvdXBXaWRnZXRcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Components/WamgroupWidget/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV2FtZ3JvdXBXaWRnZXRcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/ContentPager.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbnRlbnRQYWdlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/ElogicGenericPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVsb2dpY0dlbmVyaWNQYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/Master/_wamgroup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE1hc3Rlclxfd2FtZ3JvdXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/StaticPartView/Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFN0YXRpY1BhcnRWaWV3XEhlYWRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/StaticPartView/SliderNews.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFN0YXRpY1BhcnRWaWV3XFNsaWRlck5ld3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/Shared/WamgroupGenericPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFdhbWdyb3VwR2VuZXJpY1BhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Work/Elogic.Wamgroup.Sito2023/Elogic.Wamgroup.Sito2023-NetCore/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

@@ -1,0 +1,338 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\Elogic.Wamgroup.Sito2023-NetCore.csproj": {}
+  },
+  "projects": {
+    "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Sitefinity.14.4.Infrastructure\\Elogic.Sitefinity.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Sitefinity.14.4.Infrastructure\\Elogic.Sitefinity.Infrastructure.csproj",
+        "projectName": "Elogic.Sitefinity.Infrastructure",
+        "projectPath": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Sitefinity.14.4.Infrastructure\\Elogic.Sitefinity.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\mc.dellicarri\\.nuget\\packages\\",
+        "outputPath": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Sitefinity.14.4.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\mc.dellicarri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.sitefinity.com/nuget": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MaxMind.GeoIP2": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "Progress.Sitefinity.AspNetCore": {
+              "target": "Package",
+              "version": "[14.4.8128.36, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-Caching\\Elogic.Wamgroup.Sito2023-Caching.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-Caching\\Elogic.Wamgroup.Sito2023-Caching.csproj",
+        "projectName": "Elogic.Wamgroup.Sito2023-Caching",
+        "projectPath": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-Caching\\Elogic.Wamgroup.Sito2023-Caching.csproj",
+        "packagesPath": "C:\\Users\\mc.dellicarri\\.nuget\\packages\\",
+        "outputPath": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-Caching\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\mc.dellicarri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.sitefinity.com/nuget": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-Models\\Elogic.Wamgroup.Sito2023-Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-Models\\Elogic.Wamgroup.Sito2023-Models.csproj",
+        "projectName": "Elogic.Wamgroup.Sito2023-Models",
+        "projectPath": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-Models\\Elogic.Wamgroup.Sito2023-Models.csproj",
+        "packagesPath": "C:\\Users\\mc.dellicarri\\.nuget\\packages\\",
+        "outputPath": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\mc.dellicarri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.sitefinity.com/nuget": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Progress.Sitefinity.AspNetCore": {
+              "target": "Package",
+              "version": "[14.4.8128.36, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-Net4.8\\Elogic.Wamgroup.Sito2023-Net4.8.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-Net4.8\\Elogic.Wamgroup.Sito2023-Net4.8.csproj",
+        "projectName": "Elogic.Wamgroup.Sito2023-Net4.8",
+        "projectPath": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-Net4.8\\Elogic.Wamgroup.Sito2023-Net4.8.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\Elogic.Wamgroup.Sito2023-NetCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\Elogic.Wamgroup.Sito2023-NetCore.csproj",
+        "projectName": "Elogic.Wamgroup.Sito2023-NetCore",
+        "projectPath": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\Elogic.Wamgroup.Sito2023-NetCore.csproj",
+        "packagesPath": "C:\\Users\\mc.dellicarri\\.nuget\\packages\\",
+        "outputPath": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-NetCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\mc.dellicarri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.sitefinity.com/nuget": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Sitefinity.14.4.Infrastructure\\Elogic.Sitefinity.Infrastructure.csproj": {
+                "projectPath": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Sitefinity.14.4.Infrastructure\\Elogic.Sitefinity.Infrastructure.csproj"
+              },
+              "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-Caching\\Elogic.Wamgroup.Sito2023-Caching.csproj": {
+                "projectPath": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-Caching\\Elogic.Wamgroup.Sito2023-Caching.csproj"
+              },
+              "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-Models\\Elogic.Wamgroup.Sito2023-Models.csproj": {
+                "projectPath": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-Models\\Elogic.Wamgroup.Sito2023-Models.csproj"
+              },
+              "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-Net4.8\\Elogic.Wamgroup.Sito2023-Net4.8.csproj": {
+                "projectPath": "C:\\Work\\Elogic.Wamgroup.Sito2023\\Elogic.Wamgroup.Sito2023-Net4.8\\Elogic.Wamgroup.Sito2023-Net4.8.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Progress.Sitefinity.AspNetCore": {
+              "target": "Package",
+              "version": "[14.4.8128.36, )"
+            },
+            "Progress.Sitefinity.AspNetCore.FormWidgets": {
+              "target": "Package",
+              "version": "[14.4.8128.36, )"
+            },
+            "Progress.Sitefinity.AspNetCore.Widgets": {
+              "target": "Package",
+              "version": "[14.4.8128.36, )"
+            },
+            "Progress.Sitefinity.Renderer": {
+              "target": "Package",
+              "version": "[14.4.8128.36, )"
+            },
+            "Progress.Sitefinity.RestSdk": {
+              "target": "Package",
+              "version": "[14.4.8128.36, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

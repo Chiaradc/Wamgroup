@@ -1,0 +1,60 @@
+﻿h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.text-sm {
+  display: block;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.text-md {
+  display: block;
+  font-size: 2.25rem;
+}
+
+.text-lg {
+  display: block;
+  font-size: 3rem;
+}
+
+.text-xl {
+  display: block;
+  font-size: 3.75rem;
+}
+
+header nav.navbar {
+  padding-left: calc(10vw - 50px) !important;
+  padding-right: calc(10vw - 50px) !important;
+}
+header nav.navbar > li .dropdown-menu.ulThirdLevel {
+  left: 55%;
+}
+header nav.navbar .navbarMenu-toggler {
+  left: calc(10vw - 100px) !important;
+}

@@ -1,0 +1,52 @@
+﻿@using Elogic.Wamgroup.Sito2023.NetCore.ViewModels.WamgroupCta;
+@using Progress.Sitefinity.AspNetCore.Web;
+@inject IRenderContext renderContext
+@model WamgroupCtaViewModel
+@{
+    var targetBool = (Model.TargetBlank == true) ? "_blank" : "_self";
+}   
+
+ 
+        @if (Model.ViewIsText)
+        {
+    <a href="@Model.CTALink" target="@targetBool" title="@Model.Title" aria-label="@Model.Title" class="wp-ctaText @(renderContext.IsEdit ? "edit" : "")" data-call-to-action="" style="color:inherit">
+            @if (Model.Arrow == "0")
+            {
+                <svg xmlns="http://www.w3.org/2000/svg" width="16.102" height="13.801" viewBox="0 0 16.102 13.801"><path d="M108.875-43.348Zm9.51-6.662,6.325,6.038a.863.863,0,0,1,.267.625.864.864,0,0,1-.267.625l-6.325,6.038a.864.864,0,0,1-1.22-.029.862.862,0,0,1,.029-1.22l4.769-4.55H109.738a.863.863,0,0,1-.863-.863.863.863,0,0,1,.863-.862h12.223l-4.769-4.55a.866.866,0,0,1-.029-1.222A.865.865,0,0,1,118.385-50.01Z" transform="translate(-108.875 50.248)" fill="currentColor"></path></svg>
+            }
+            @* da inserire l'svg 'arrow-right' e left *@
+                 @Model.Title
+
+            @if (Model.Arrow == "1")
+            {
+                <svg xmlns="http://www.w3.org/2000/svg" width="16.102" height="13.801" viewBox="0 0 16.102 13.801"><path d="M108.875-43.348Zm9.51-6.662,6.325,6.038a.863.863,0,0,1,.267.625.864.864,0,0,1-.267.625l-6.325,6.038a.864.864,0,0,1-1.22-.029.862.862,0,0,1,.029-1.22l4.769-4.55H109.738a.863.863,0,0,1-.863-.863.863.863,0,0,1,.863-.862h12.223l-4.769-4.55a.866.866,0,0,1-.029-1.222A.865.865,0,0,1,118.385-50.01Z" transform="translate(-108.875 50.248)" fill="currentColor"></path></svg>
+            }
+    </a>
+
+
+} else if (Model.ViewIsCard)
+{
+
+    <div class="position-relative wp-ctaCard @(renderContext.IsEdit ? "edit" : "")">
+        <a href="@Model.CTALink" target="@targetBool" class="" title="@Model.Title" aria-label="@Model.Title" data-call-to-action=""></a>
+            <div class="titEdit position-relative">
+                <div>@Model.Title</div>
+            </div>
+            @if (Model.ViewLine)
+            {
+                <div class="line" style="background-color:@Html.Raw(Model.LineColor)"></div>
+            }
+        </div>
+    } else if (Model.ViewIsList)
+    {
+    <div class="position-relative wp-ctaList @(renderContext.IsEdit ? "edit" : "")">
+        <a href="@Model.CTALink" target="@targetBool" class="" data-call-to-action="" title="@Model.Title" aria-label="@Model.Title"></a>
+            <div class="titEdit position-relative">
+                <div class="svg" style="background:@Model.BackgroundColor"><svg xmlns="http://www.w3.org/2000/svg" width="16.102" height="13.801" viewBox="0 0 16.102 13.801"><path d="M108.875-43.348Zm9.51-6.662,6.325,6.038a.863.863,0,0,1,.267.625.864.864,0,0,1-.267.625l-6.325,6.038a.864.864,0,0,1-1.22-.029.862.862,0,0,1,.029-1.22l4.769-4.55H109.738a.863.863,0,0,1-.863-.863.863.863,0,0,1,.863-.862h12.223l-4.769-4.55a.866.866,0,0,1-.029-1.222A.865.865,0,0,1,118.385-50.01Z" transform="translate(-108.875 50.248)" fill="currentColor"></path></svg></div>
+                <div class="title">@Model.Title</div>
+            </div>
+        </div>
+    }
+
+   
+

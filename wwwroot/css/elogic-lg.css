@@ -1,0 +1,283 @@
+﻿h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.text-sm {
+  display: block;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.text-md {
+  display: block;
+  font-size: 2.25rem;
+}
+
+.text-lg {
+  display: block;
+  font-size: 3rem;
+}
+
+.text-xl {
+  display: block;
+  font-size: 3.75rem;
+}
+
+.navbar .header-right {
+  right: 0.5rem;
+  position: absolute;
+}
+
+header {
+  padding-top: 20px;
+}
+header .navbar-nav.navbar-center {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  line-height: 1;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);*/
+  margin-left: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+header .navbar-nav.navbar-center > li:nth-of-type(even) {
+  position: relative;
+}
+header .navbar-nav.navbar-center > li:nth-of-type(even):before {
+  content: "";
+  position: absolute;
+  left: -0.5rem;
+  height: 92%;
+  border-left: 2px solid #fff;
+}
+header .navbar-nav.navbar-right {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+header .navbar-nav.navbar-right .dropdown-s {
+  position: relative;
+  min-width: 30px;
+}
+header .navbar-nav.navbar-right .dropdown-s svg {
+  transition: transform 0.2s ease-in-out;
+}
+header .navbar-nav.navbar-right .dropdown-s .offcanvas {
+  position: absolute;
+  top: 100%;
+  height: 0 !important;
+  min-height: 0;
+  display: flex;
+  left: 0;
+  text-align: center;
+  transition: min-height 0.2s ease-in-out;
+}
+header .navbar-nav.navbar-right .dropdown-s .offcanvas .offcanvas-body {
+  padding: 5px;
+}
+header .navbar-nav.navbar-right .dropdown-s.open svg {
+  transform: rotate(-180deg);
+}
+header .navbar-nav.navbar-right .dropdown-s.open .offcanvas {
+  min-height: 32px !important;
+}
+header .navbar-nav.navbar-right .icon.icon-email svg {
+  width: 1.2rem;
+  height: 1.5rem;
+}
+header .navbar-nav.navbar-right .icon.icon-globe svg {
+  width: 1.15rem;
+  height: 1.5rem;
+}
+header .navbar-nav.navbar-right .icon.icon-search svg {
+  width: 1.2rem;
+  height: 1.5rem;
+}
+header .navbar-nav.navbar-right .icon.icon-user svg {
+  width: 1.2rem;
+  height: 1.35rem;
+}
+header .navbar-nav.navbar-right .icon.icon-user + .link-user-mail {
+  visibility: hidden;
+  margin-top: 16px !important;
+  border: 1px solid #bfcedb;
+}
+header .navbar-nav.navbar-right .icon.icon-user + .link-user-mail.show {
+  visibility: visible;
+}
+header .navbar-nav.navbar-right .icon.icon-user + .link-user-mail > a {
+  background: #143d4c;
+  padding: 5px 10px !important;
+  color: #fff;
+}
+header .navbar-nav.navbar-right .icon.icon-user + .link-user-mail > a:first-of-type {
+  padding: 10px 10px 5px 10px !important;
+}
+header .navbar-nav.navbar-right .icon.icon-user + .link-user-mail > a:last-of-type {
+  padding: 5px 10px 10px 10px !important;
+}
+header .navbar-nav > li {
+  /* margin: 0 0.5rem;*/
+  margin: 0;
+}
+header .navbar-nav > li .LastImages {
+  padding-left: 4rem;
+}
+header .navbar-nav > li .LastImages picture:first-of-type {
+  margin-right: 4rem;
+}
+header .navbar-nav > li a, header .navbar-nav > li button {
+  font-size: 0.938rem;
+  /*width: 8.5rem;*/
+  text-align: center;
+}
+header .navbar-nav > li ul {
+  padding-left: 3rem;
+}
+header .navbar-nav > li ul li {
+  margin-bottom: 0;
+}
+header .navbar-nav > li ul li a, header .navbar-nav > li ul li button {
+  font-size: 1.5rem;
+  line-height: 2.75rem;
+}
+header .navbar-nav > li ul.ulThirdLevel {
+  position: fixed !important;
+  top: 8rem;
+  left: 65%;
+}
+header .filterAreas {
+  /*  position: absolute;
+  right: 22%;*/
+  opacity: 1;
+  transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+header .filterAreas button {
+  display: flex;
+  gap: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: transparent;
+  -webkit-appearance: none;
+  border: 0;
+  padding: 0;
+  color: #FFFFFF;
+}
+header .filterAreas button svg {
+  width: 20px;
+  height: 20px;
+}
+header.open .navbar-center, header.open .navbar-right, header.open .filterAreas {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#navbarNav {
+  position: relative;
+  left: initial;
+  right: initial;
+  height: initial !important;
+  top: initial;
+  max-height: initial;
+  background-color: initial;
+  padding: 0;
+  gap: 40px;
+}
+.CTALinkMenu {
+  position: absolute;
+  bottom: 0;
+  padding-left: 3rem;
+}
+
+.footer-container .rowFooter1 {
+  margin-bottom: 4.375rem;
+}
+.footer-container .navbar-nav {
+  margin-left: 3rem;
+  flex-direction: row;
+}
+.footer-container .navbar-nav li .dropdown-toggle:after {
+  content: none;
+}
+.footer-container .navbar-nav li ul {
+  display: block;
+}
+
+.footer-nav a:after {
+  content: " | ";
+  margin-right: 0.1rem;
+}
+.footer-nav a:last-of-type:after {
+  content: none;
+}
+
+.footer-container .navbar-nav > li {
+  margin: 0 1.2rem 0.5rem 0.7rem;
+}
+
+ul.Languages {
+  padding-left: 1rem;
+}
+
+.sectionTitle h1, .sectionTitle h2 {
+  font-size: 3.75rem;
+}
+
+.container:not(.sf-zone-column) > .textAroundImage > .col:first-of-type > div > div:last-of-type,
+.container-fluid:not(.sf-zone-column) > .textAroundImage > .col:first-of-type > div > div:last-of-type {
+  max-width: 300px;
+}
+.container:not(.sf-zone-column) > .textAroundImage > .col:last-of-type > div > div:last-of-type,
+.container-fluid:not(.sf-zone-column) > .textAroundImage > .col:last-of-type > div > div:last-of-type {
+  max-width: 300px;
+}
+.container:not(.sf-zone-column) > .textAroundImage .sectionTitle,
+.container-fluid:not(.sf-zone-column) > .textAroundImage .sectionTitle {
+  padding: 10px 0;
+}
+.container:not(.sf-zone-column) > .textAroundImage .sectionTitle + .line,
+.container-fluid:not(.sf-zone-column) > .textAroundImage .sectionTitle + .line {
+  width: 52px;
+  height: 0.3rem;
+  margin: 0.6rem 0 3.5rem 0;
+}

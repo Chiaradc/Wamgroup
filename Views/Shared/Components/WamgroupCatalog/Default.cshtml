@@ -1,0 +1,316 @@
+﻿@using Elogic.Wamgroup.Sito2023.NetCore.ViewModels.WamgroupCatalog;
+@using Progress.Sitefinity.AspNetCore.Web;
+
+@model WamgroupCatalogViewModel;
+
+<div class="detail-url" style="display:none">@Model.ProductURL</div>
+
+        <div class="product-finder">
+            <div class="product-finder__head">
+                <div class="product-finder__head-inner">
+                    <input type="text" id="searchInput" name="searchInput" style="background: unset;border: unset;width: 100%;" placeholder="Search for a product name or code">
+                </div>
+            </div>
+
+            <div class="product-finder__filters">
+                <button class="product-finder__back-btn" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M7.4 273.4C2.7 268.8 0 262.6 0 256s2.7-12.8 7.4-17.4l176-168c9.6-9.2 24.8-8.8 33.9 .8s8.8 24.8-.8 33.9L83.9 232 424 232c13.3 0 24 10.7 24 24s-10.7 24-24 24L83.9 280 216.6 406.6c9.6 9.2 9.9 24.3 .8 33.9s-24.3 9.9-33.9 .8l-176-168z" /></svg>
+            <span class="sr-only">Back</span>
+        </button>
+                <div class="product-filters">
+                    <div class="product-filters__head">
+                        <div class="product-filters__first-title">Filter by</div>
+                        <button class="product-filters__reset-btn" type="button">
+                            Reset All <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16.414 16.414">
+                                <g id="Raggruppa_244" data-name="Raggruppa 244" transform="translate(-1371.793 -86.793)">
+                                    <line id="Linea_56" data-name="Linea 56" x2="15" y2="15" transform="translate(1372.5 87.5)" fill="none" stroke="currentColor" stroke-width="2" />
+                                    <line id="Linea_57" data-name="Linea 57" y1="15" x2="15" transform="translate(1372.5 87.5)" fill="none" stroke="currentColor" stroke-width="2" />
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="accordion accordion-flush" id="category_accordion_container">
+                        <div class="category-accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    Solution by Industry
+                            <span class="checkCounter empty"></span>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#category_accordion_container">
+                              <div class="accordion-body">
+                                 @foreach (var item in Model.SolutionsByIndustry)
+                                 {
+                                    <div class="form-checkbox">
+                                        <input class="form-checkbox-input checkbox-sbi" type="checkbox" value="@item.Id" id="sbi_@item.Id" @(item.IsSelected ? "checked" : "")>
+                                          <label class="form-checkbox-label" for="sbi_@item.Id">
+                                            @item.Title
+                                        </label>
+                                    </div>
+                                 }
+
+                              </div>
+                            </div>
+                        </div>
+                        <div class="category-accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    Solution by Tecnology
+                                    <span class="checkCounter empty"></span>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#category_accordion_container">
+                                <div class="accordion-body">
+
+                                    @foreach (var item in Model.SolutionsByNeed)
+                                    {
+                                       <div class="form-checkbox">
+                                          <input class="form-checkbox-input checkbox-sbt" type="checkbox" value="@item.Id" id="sbt_@item.Id" @(item.IsSelected ? "checked" : "")>
+                                          <label class="form-checkbox-label" for="sbt_@item.Id">
+                                             @item.Title
+                                          </label>
+                                       </div>
+                                    }
+
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="category-accordion-item">
+                           <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseBrands" aria-expanded="false" aria-controls="flush-collapseBrands">
+                                 Brand
+                                 <span class="checkCounter empty"></span>
+                              </button>
+                           </h2>
+                           <div id="flush-collapseBrands" class="accordion-collapse collapse" data-bs-parent="#category_accordion_container">
+                              <div class="accordion-body">
+
+                                 @foreach (var item in Model.Brands)
+                                 {
+                                    <div class="form-checkbox">
+                                       <input class="form-checkbox-input checkbox-b" type="checkbox" value="@item.Id" id="b_@item.Id" @(item.IsSelected ? "checked" : "")>
+                                       <label class="form-checkbox-label" for="b_@item.Id">
+                                          @item.Title
+                                       </label>
+                                    </div>
+                                 }
+
+                              </div>
+                           </div>
+                        </div>
+                        <div class="category-accordion-item">
+                           <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFamilies" aria-expanded="false" aria-controls="flush-collapseFamilies">
+                                 Family
+                                 <span class="checkCounter empty"></span>
+                              </button>
+                           </h2>
+                           <div id="flush-collapseFamilies" class="accordion-collapse collapse" data-bs-parent="#category_accordion_container">
+                              <div class="accordion-body">
+
+                                 @foreach (var item in Model.Macrofamilies)
+                                 {
+                                    <div class="category-accordion-item__level1">
+                                       <h2 class="accordion-header">
+                                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mf-@item.Id" aria-expanded="false" aria-controls="flush-collapseThree">
+                                             @item.Title
+                                          </button>
+                                       </h2>
+                                       <div id="mf-@item.Id" class="accordion-collapse collapse">
+                                          <div class="accordion-body">
+
+                                             @foreach (var familyItem in item.Families)
+                                             {
+                                                <div class="form-checkbox">
+                                                      <input class="form-checkbox-input checkbox-fam" type="checkbox" value="@familyItem.Id" id="fam-@familyItem.Id" @(familyItem.IsSelected ? "checked" : "")>
+                                                      <label class="form-checkbox-label" for="fam-@familyItem.Id">
+                                                      @familyItem.Title
+                                                   </label>
+                                                </div>
+                                             }
+
+                                          </div>
+                                       </div>
+                                    </div>
+
+
+                                   
+                                 }
+
+                              </div>
+                           </div>
+                        </div>
+                        
+                        <div class="category-accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo1" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    Type
+                            <span class="checkCounter empty"></span>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo1" class="accordion-collapse collapse" data-bs-parent="#category_accordion_container">
+                                <div class="accordion-body">
+                                    <div class="form-checkbox">
+                                        <input class="form-checkbox-input" type="checkbox" value="" id="check_1">
+                                        <label class="form-checkbox-label" for="check_1">
+                                            Products
+                                        </label>
+                                    </div>
+                                    <div class="form-checkbox">
+                                        <input class="form-checkbox-input" type="checkbox" value="" id="check_2">
+                                        <label class="form-checkbox-label" for="check_2">
+                                            Video
+                                        </label>
+                                    </div>
+                                    <div class="form-checkbox">
+                                        <input class="form-checkbox-input" type="checkbox" value="" id="check_3">
+                                        <label class="form-checkbox-label" for="check_3">
+                                            Photo
+                                        </label>
+                                    </div>
+                                    <div class="form-checkbox">
+                                        <input class="form-checkbox-input" type="checkbox" value="" id="check_4">
+                                        <label class="form-checkbox-label" for="check_4">
+                                            Brochures
+                                        </label>
+                                    </div>
+                                    <div class="form-checkbox">
+                                        <input class="form-checkbox-input" type="checkbox" value="" id="check_5">
+                                        <label class="form-checkbox-label" for="check_5">
+                                            Datasheet
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+            </div>
+            </div>
+
+
+            <div class="product-finder__main">
+                <div class="product-finder__main-head">
+                    <div class="product-finder__head-wrap">
+                        <div><span class="numberItemsFound"></span> items found</div>
+                        <button type="button" class="toggle-filter-mobile">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M0 400l0 32 16 0 64 0 0 32 0 32 32 0 96 0 32 0 0-32 0-32 256 0 16 0 0-32-16 0-256 0 0-32 0-32-32 0-96 0-32 0 0 32 0 32-64 0L0 400zm208 32l0 32-96 0 0-32 0-32 0-32 96 0 0 32 0 32zM0 240l0 32 16 0 256 0 0 32 0 32 32 0 96 0 32 0 0-32 0-32 64 0 16 0 0-32-16 0-64 0 0-32 0-32-32 0-96 0-32 0 0 32 0 32L16 240 0 240zM112 112l0 32 0 32 32 0 96 0 32 0 0-32 0-32 224 0 16 0 0-32-16 0L272 80l0-32 0-32-32 0-96 0-32 0 0 32 0 32L16 80 0 80l0 32 16 0 96 0zm32 0l0-32 0-32 96 0 0 32 0 32 0 32-96 0 0-32zM400 240l0 32 0 32-96 0 0-32 0-32 0-32 96 0 0 32z" /></svg>
+                    <span class="sr-only">Filters</span>
+                </button>
+                    </div>
+                    <div class="product-finder__filter-applied-container">
+                        <button type="button" class="filter-applied">
+                            <span class="filter-applied__label"></span> <span class="filter-applied__remove">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13.035" viewBox="0 0 13 13.035">
+                                    <path id="Tracciato_17573" data-name="Tracciato 17573" d="M16.18,18.8A.975.975,0,1,1,14.8,20.182L10,15.345,5.166,20.18A.975.975,0,0,1,3.787,18.8l4.837-4.833L3.786,9.1A.975.975,0,1,1,5.164,7.718L10,12.591l4.835-4.835a.975.975,0,0,1,1.379,1.379l-4.836,4.833Z" transform="translate(-3.5 -7.432)" fill="currentColor" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-finder__result-container">
+                    <div class="product-finder_head">
+                <div class="product-tags_link-container d-none">
+                            <span class="product-tags_link">
+                                <span class="products-tags_link-label">Mixers</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"><path id="Tracciato_17613" data-name="Tracciato 17613" d="M20.969-.25H15.155a1.4,1.4,0,0,0-.992,2.4L15.911,3.9l-8.288,8.29a1.374,1.374,0,1,0,1.943,1.943L17.854,5.84,19.6,7.588A1.4,1.4,0,0,0,22,6.595V.781A1.03,1.03,0,0,0,20.969-.25ZM16.844,13.5a1.032,1.032,0,0,0-1.031,1.031v4.813a.344.344,0,0,1-.344.344H2.406a.344.344,0,0,1-.344-.344V6.281a.344.344,0,0,1,.344-.344H7.219a1.031,1.031,0,0,0,0-2.062H2.406A2.409,2.409,0,0,0,0,6.281V19.344A2.409,2.409,0,0,0,2.406,21.75H15.469a2.409,2.409,0,0,0,2.406-2.406V14.531A1.032,1.032,0,0,0,16.844,13.5Z" transform="translate(0 0.25)" fill="currentColor" />
+                                    </svg>
+                                </span>
+                            </span>
+                            <span class="tags-divider">,</span>
+                            <span class="product-tags_link">
+                                <span class="products-tags_link-label">DUST FILTER</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                                        <path id="Tracciato_17613" data-name="Tracciato 17613" d="M20.969-.25H15.155a1.4,1.4,0,0,0-.992,2.4L15.911,3.9l-8.288,8.29a1.374,1.374,0,1,0,1.943,1.943L17.854,5.84,19.6,7.588A1.4,1.4,0,0,0,22,6.595V.781A1.03,1.03,0,0,0,20.969-.25ZM16.844,13.5a1.032,1.032,0,0,0-1.031,1.031v4.813a.344.344,0,0,1-.344.344H2.406a.344.344,0,0,1-.344-.344V6.281a.344.344,0,0,1,.344-.344H7.219a1.031,1.031,0,0,0,0-2.062H2.406A2.409,2.409,0,0,0,0,6.281V19.344A2.409,2.409,0,0,0,2.406,21.75H15.469a2.409,2.409,0,0,0,2.406-2.406V14.531A1.032,1.032,0,0,0,16.844,13.5Z" transform="translate(0 0.25)" fill="currentColor" />
+                                    </svg>
+                                </span>
+                            </span>
+
+                        </div>
+                        <div class="orderBy-selector-container">
+                            <select class="selector form-select orderBy-selector">
+                                <option selected>Sort by</option>
+                                <option value="1">Name A-Z</option>
+                                <option value="2">Name Z-A</option>
+                                <option value="3">Newest first</option>
+                                <option value="4">Oldest first</option>
+                                <option value="5">Type</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+            <div class="product-finder_products">
+              <div class="placeholder_intro_products mx-auto">
+                    <div class="spacer spacerPT1x">
+                    </div>
+                    <div class="mx-4 my-4">
+                        <p class="text-md text-center">Start <b>searching</b> or select a <b>filter</b> <br>to find the product you are looking for</p>
+                    </div>
+              </div>
+             @*   <div class="product-finder_product">
+                    <div class="product-finder_product-image">
+                        <img src="https://via.placeholder.com/150" alt="product image">
+                    </div>
+                    <div class="product-finder_product-info">
+                        <div class="product-finder_product-title">Horizontal Single Shaft Mixers</div>
+                    
+                        <div class="product-finder_product-link">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17.141" viewBox="0 0 20 17.141">
+                              <path id="Tracciato_17578" data-name="Tracciato 17578" d="M108.875-41.678Zm11.811-8.275,7.856,7.5a1.072,1.072,0,0,1,.332.776,1.073,1.073,0,0,1-.332.776l-7.856,7.5a1.073,1.073,0,0,1-1.515-.036,1.07,1.07,0,0,1,.036-1.515l5.924-5.651H109.947a1.072,1.072,0,0,1-1.072-1.072,1.072,1.072,0,0,1,1.072-1.071h15.182L119.2-48.4a1.076,1.076,0,0,1-.036-1.517A1.075,1.075,0,0,1,120.687-49.953Z" transform="translate(-108.875 50.248)" fill="currentColor"/>
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="product-finder_product">
+                    <div class="product-finder_product-image">
+                        <img src="https://via.placeholder.com/150" alt="product image">
+                    </div>
+                    <div class="product-finder_product-info">
+                        <div class="product-finder_product-title">Ribbon Blenders</div>
+                         <div class="product-finder_product-link">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17.141" viewBox="0 0 20 17.141">
+                              <path id="Tracciato_17578" data-name="Tracciato 17578" d="M108.875-41.678Zm11.811-8.275,7.856,7.5a1.072,1.072,0,0,1,.332.776,1.073,1.073,0,0,1-.332.776l-7.856,7.5a1.073,1.073,0,0,1-1.515-.036,1.07,1.07,0,0,1,.036-1.515l5.924-5.651H109.947a1.072,1.072,0,0,1-1.072-1.072,1.072,1.072,0,0,1,1.072-1.071h15.182L119.2-48.4a1.076,1.076,0,0,1-.036-1.517A1.075,1.075,0,0,1,120.687-49.953Z" transform="translate(-108.875 50.248)" fill="currentColor"/>
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="product-finder_product">
+                    <div class="product-finder_product-image">
+                        <img src="https://via.placeholder.com/150" alt="product image">
+                    </div>
+                    <div class="product-finder_product-info">
+                        <div class="product-finder_product-title">Twin Shaft Paddle Mixers</div>
+                         <div class="product-finder_product-link">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17.141" viewBox="0 0 20 17.141">
+                              <path id="Tracciato_17578" data-name="Tracciato 17578" d="M108.875-41.678Zm11.811-8.275,7.856,7.5a1.072,1.072,0,0,1,.332.776,1.073,1.073,0,0,1-.332.776l-7.856,7.5a1.073,1.073,0,0,1-1.515-.036,1.07,1.07,0,0,1,.036-1.515l5.924-5.651H109.947a1.072,1.072,0,0,1-1.072-1.072,1.072,1.072,0,0,1,1.072-1.071h15.182L119.2-48.4a1.076,1.076,0,0,1-.036-1.517A1.075,1.075,0,0,1,120.687-49.953Z" transform="translate(-108.875 50.248)" fill="currentColor"/>
+                            </svg>
+
+                        </div>
+                    </div>
+                </div> *@
+               
+            </div>
+            <nav aria-label="Page navigation" class="navigation-page">
+                <ul class="pagination">
+                    <li class="page-item active">
+                        <a class="page-link" href="">1</a>
+                    </li>
+                    <li class="page-item ">
+                        <a class="page-link" href="">2</a>
+                    </li>
+
+                    <li class="page-item">
+                        <a class="page-link" href="" aria-label="Next">
+                            <span aria-hidden="true">></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+                </div>
+            </div>
+        </div>

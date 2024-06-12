@@ -1,0 +1,146 @@
+﻿@using Elogic.Wamgroup.Sito2023.NetCore.ViewModels.WamgroupNumbers;
+
+@model WamgroupNumbersViewModel
+
+@{
+   var twoRows = !string.IsNullOrWhiteSpace(Model.Number5);
+}
+@if (!string.IsNullOrWhiteSpace(Model.Number1))
+{
+    <div class="sectionNumbers position-relative">
+        @if (!Model.KeyNumberView)
+        {
+            @if (!string.IsNullOrWhiteSpace(Model.DesktopImageUrl))
+            {
+                <picture class="pictureGN">
+                    <source srcset="@Model.MobileImageUrl" media="(max-width: 767px)">
+                    <source srcset="@Model.TabletImageUrl" media="(max-width: 1279px)">
+                    <img src="@Model.DesktopImageUrl" aria-hidden="true" loading="lazy" class="bg-image object-fit-cover" width="@Model.Width" height="@Model.Height" alt="@Model.ImageAlt" />
+                </picture>
+            }
+          @*   <div class="col-12 spacer spacerPB1x spacerPT1x position-relative"><span class="lineVertical"></span></div> *@
+          @*   @if (Html.Raw(Model.Title) != null)
+            {
+                <div class="col-12">
+                    <div class="sectionTitle text-center position-relative">
+                        <h2 class="text-center">
+                            @Html.Raw(Model.Title)
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-12 spacer spacerPT1x position-relative"></div>
+            } *@
+
+               
+        }
+
+        <div class="col-12 d-flex align-items-start justify-content-center position-relative flex-wrap">
+            @if (!string.IsNullOrWhiteSpace(Model.Number1))
+            {
+                <div class="d-flex flex-column goldNum">
+                    <span class="@(Model.KeyNumberView ? "numberLine" : "")">
+                        @Html.Raw(Model.Number1)
+                        @if (!string.IsNullOrWhiteSpace(Model.Number1Small))
+                        {
+                            <span class="numberSmall">@Html.Raw(Model.Number1Small)</span>
+                        }
+                    </span>
+                    <span class="numberCaption">@Html.Raw(Model.Caption1)</span>
+                </div>
+            }
+            @if (!string.IsNullOrWhiteSpace(Model.Number2))
+            {
+                <div class="d-flex flex-column goldNum">
+                    <span class="@(Model.KeyNumberView ? "numberLine" : "")">
+                        @Html.Raw(Model.Number2)
+                        @if (!string.IsNullOrWhiteSpace(Model.Number2Small))
+                        {
+                            <span class="numberSmall">@Html.Raw(Model.Number2Small)</span>
+                        }
+                    </span>
+                    <span class="numberCaption">@Html.Raw(Model.Caption2)</span>
+                </div>
+            }
+            @if (!string.IsNullOrWhiteSpace(Model.Number3))
+            {
+                <div class="d-flex flex-column goldNum">
+                    <span class="@(Model.KeyNumberView ? "numberLine" : "")">
+                        @Html.Raw(Model.Number3)
+                        @if (!string.IsNullOrWhiteSpace(Model.Number3Small))
+                        {
+                            <span class="numberSmall">@Html.Raw(Model.Number3Small)</span>
+                        }
+                    </span>
+                    <span class="numberCaption">@Html.Raw(Model.Caption3)</span>
+                </div>
+            }
+            @if (!string.IsNullOrWhiteSpace(Model.Number4) && !twoRows)
+            {
+                <div class="d-flex flex-column goldNum">
+                    <span class="@(Model.KeyNumberView ? "numberLine" : "")">
+                        @Html.Raw(Model.Number4)
+                        @if (!string.IsNullOrWhiteSpace(Model.Number4Small))
+                        {
+                            <span class="numberCaption numberSmall">@Html.Raw(Model.Number4Small)</span>
+                        }
+                    </span>
+                    <span class="numberCaption">@Html.Raw(Model.Caption4)</span>
+                </div>
+            }
+            @if (twoRows)
+            {
+                <div class="col-12 d-none d-md-block spacer spacerPT1x position-relative"></div>
+            }
+
+            @if (!string.IsNullOrWhiteSpace(Model.Number4) && twoRows)
+            {
+                <div class="d-flex flex-column goldNum">
+                    <span class="@(Model.KeyNumberView ? "numberLine" : "")">
+                        @Html.Raw(Model.Number4)
+                        @if (!string.IsNullOrWhiteSpace(Model.Number4Small))
+                        {
+                            <span class="numberSmall">@Html.Raw(Model.Number4Small)</span>
+                        }
+                    </span>
+                    <span class="numberCaption">@Html.Raw(Model.Caption4)</span>
+                </div>
+            }
+            @if (!string.IsNullOrWhiteSpace(Model.Number5))
+            {
+                <div class="d-flex flex-column goldNum">
+                    <span class="@(Model.KeyNumberView ? "numberLine" : "")">
+                        @Html.Raw(Model.Number5)
+                        @if (!string.IsNullOrWhiteSpace(Model.Number5Small))
+                        {
+                            <span class="numberSmall">@Html.Raw(Model.Number5Small)</span>
+                        }
+                    </span>
+                    <span class="numberCaption">@Html.Raw(Model.Caption5)</span>
+                </div>
+            }
+            @if (!string.IsNullOrWhiteSpace(Model.Number6))
+            {
+                <div class="d-flex flex-column goldNum">
+                    <span class="@(Model.KeyNumberView ? "numberLine" : "")">
+                        @Html.Raw(Model.Number6)
+                        @if (!string.IsNullOrWhiteSpace(Model.Number6Small))
+                        {
+                            <span class="numberSmall">@Html.Raw(Model.Number6Small)</span>
+                        }
+                    </span>
+                    <span class="numberCaption">@Html.Raw(Model.Caption6)</span>
+                </div>
+            }
+        </div>
+        @* <div class="col-12 spacer spacerPT1x position-relative"></div> *@
+        @if (!string.IsNullOrWhiteSpace(Model.FinalText))
+        {
+            <div class="text-center position-absolute bottom-0 w-100 text-center numbers-final-text">
+
+                <div class="dateGN">@Model.FinalText</div>
+
+            </div>
+        }
+       @*  <div class="col-12 spacer spacerPT2x position-relative"></div> *@
+    </div>
+}

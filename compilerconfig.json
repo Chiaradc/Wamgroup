@@ -1,0 +1,258 @@
+﻿[
+   {
+      "outputFile": "wwwroot/css/wamgroup.css",
+      "inputFile": "wwwroot/Scss/wamgroup.scss"
+   },
+   {
+      "outputFile": "wwwroot/css/Elogic.css",
+      "inputFile": "wwwroot/Scss/Elogic.scss"
+   },
+   {
+      "outputFile": "wwwroot/Css/elogic-xs.css",
+      "inputFile": "wwwroot/Scss/elogic-xs.scss"
+   },
+   {
+      "outputFile": "wwwroot/Css/elogic-md.css",
+      "inputFile": "wwwroot/Scss/elogic-md.scss"
+   },
+   {
+      "outputFile": "wwwroot/Css/elogic-lg.css",
+      "inputFile": "wwwroot/Scss/elogic-lg.scss"
+   },
+   {
+      "outputFile": "wwwroot/Css/elogic-xl.css",
+      "inputFile": "wwwroot/Scss/elogic-xl.scss"
+   },
+   {
+      "outputFile": "wwwroot/Css/elogic-xxl.css",
+      "inputFile": "wwwroot/Scss/elogic-xxl.scss"
+   },
+   {
+      "outputFile": "wwwroot/Css/elogic-xxl-dsk.css",
+      "inputFile": "wwwroot/Scss/elogic-xxl-dsk.scss"
+   },
+   {
+      "outputFile": "wwwroot/Css/animation.css",
+      "inputFile": "wwwroot/Scss/animation.scss"
+   },
+   {
+      "outputFile": "wwwroot/Css/FormComponents/SectionIntroPhrasesEditor.css",
+      "inputFile": "wwwroot/Scss/FormComponents/SectionIntroPhrasesEditor.scss"
+   },
+   {
+      "outputFile": "wwwroot/Css/FormComponents/TabsEditor.css",
+      "inputFile": "wwwroot/Scss/FormComponents/TabsEditor.scss"
+   },
+   {
+      "outputFile": "wwwroot/Css/FormComponents/PieEditor.css",
+      "inputFile": "wwwroot/Scss/FormComponents/PieEditor.scss"
+   },
+   {
+      "outputFile": "wwwroot/Lib/bootstrap/scss/bootstrap.css",
+      "inputFile": "wwwroot/Lib/bootstrap/scss/bootstrap.scss"
+   },
+   {
+      "outputFile": "wwwroot/Css/widgets/documentdownload.css",
+      "inputFile": "wwwroot/Scss/Widgets/documentdownload.scss"
+   },
+   {
+      "outputFile": "wwwroot/Css/Widgets/stores.css",
+      "inputFile": "wwwroot/Scss/Widgets/stores.scss"
+   },
+   {
+      "outputFile": "wwwroot/Css/Widgets/slidingtitle.css",
+      "inputFile": "wwwroot/Scss/Widgets/slidingtitle.scss"
+   },
+   {
+      "outputFile": "wwwroot/Css/Widgets/generation.css",
+      "inputFile": "wwwroot/Scss/Widgets/generation.scss"
+   },
+   {
+      "outputFile": "wwwroot/Css/widgets/numbers.css",
+      "inputFile": "wwwroot/Scss/Widgets/numbers.scss"
+   },
+   {
+      "outputFile": "wwwroot/Css/widgets/gallery.css",
+      "inputFile": "wwwroot/Scss/Widgets/gallery.scss"
+   },
+   {
+      "outputFile": "wwwroot/Css/widgets/news.css",
+      "inputFile": "wwwroot/Scss/Widgets/news.scss"
+   },
+   {
+      "outputFile": "wwwroot/Css/Widgets/maps.css",
+      "inputFile": "wwwroot/Scss/Widgets/maps.scss"
+   },
+   {
+      "outputFile": "wwwroot/Css/Widgets/timeline.css",
+      "inputFile": "wwwroot/Scss/Widgets/timeline.scss"
+   },
+   {
+      "outputFile": "wwwroot/Css/Widgets/tripletPagine.css",
+      "inputFile": "wwwroot/Scss/Widgets/tripletPagine.scss"
+   },
+   {
+      "outputFile": "wwwroot/Css/Widgets/people.css",
+      "inputFile": "wwwroot/Scss/Widgets/people.scss"
+   },
+   {
+      "outputFile": "wwwroot/Css/Widgets/sentences.css",
+      "inputFile": "wwwroot/Scss/Widgets/sentences.scss"
+   },
+   {
+      "outputFile": "wwwroot/Css/Widgets/DocumentDownload.css",
+      "inputFile": "wwwroot/Scss/Widgets/DocumentDownload.scss"
+   },
+   {
+      "outputFile": "wwwroot/Css/Widgets/values.css",
+      "inputFile": "wwwroot/Scss/Widgets/values.scss"
+   },
+   {
+      "outputFile": "wwwroot/Css/Widgets/pies.css",
+      "inputFile": "wwwroot/Scss/Widgets/pies.scss"
+   },
+   {
+      "outputFile": "wwwroot/Css/Widgets/tabs.css",
+      "inputFile": "wwwroot/Scss/Widgets/tabs.scss"
+   },
+   {
+      "outputFile": "wwwroot/Css/Widgets/tables.css",
+      "inputFile": "wwwroot/Scss/Widgets/tables.scss"
+   },
+   {
+      "outputFile": "wwwroot/Css/Widgets/generalslider.css",
+      "inputFile": "wwwroot/Scss/Widgets/generalslider.scss"
+   },
+   {
+      "outputFile": "wwwroot/Css/Widgets/productListDetail.css",
+      "inputFile": "wwwroot/Scss/Widgets/productListDetail.scss"
+   },
+   {
+      "outputFile": "wwwroot/Js/Widgets/documentdownload.min.js",
+      "inputFile": "wwwroot/Js/Widgets/documentdownload.js"
+   },
+   {
+      "outputFile": "wwwroot/Js/Widgets/eurotool.min.js",
+      "inputFile": "wwwroot/Js/Widgets/eurotool.js"
+   },
+   {
+      "outputFile": "wwwroot/Js/Widgets/gallery.min.js",
+      "inputFile": "wwwroot/Js/Widgets/gallery.js"
+   },
+   {
+      "outputFile": "wwwroot/Js/Widgets/generalslider.min.js",
+      "inputFile": "wwwroot/Js/Widgets/generalslider.js"
+   },
+   {
+      "outputFile": "wwwroot/Js/Widgets/maps.min.js",
+      "inputFile": "wwwroot/Js/Widgets/maps.js"
+   },
+   {
+      "outputFile": "wwwroot/Js/Widgets/news.min.js",
+      "inputFile": "wwwroot/Js/Widgets/news.js"
+   },
+   {
+      "outputFile": "wwwroot/Js/Widgets/numbers.min.js",
+      "inputFile": "wwwroot/Js/Widgets/numbers.js"
+   },
+   {
+      "outputFile": "wwwroot/Js/Widgets/pages.min.js",
+      "inputFile": "wwwroot/Js/Widgets/pages.js"
+   },
+   {
+      "outputFile": "wwwroot/Js/Widgets/pies.min.js",
+      "inputFile": "wwwroot/Js/Widgets/pies.js"
+   },
+   {
+      "outputFile": "wwwroot/Js/Widgets/places.min.js",
+      "inputFile": "wwwroot/Js/Widgets/places.js"
+   },
+   {
+      "outputFile": "wwwroot/Js/Widgets/richtexteditor.min.js",
+      "inputFile": "wwwroot/Js/Widgets/RichTextEditor.js"
+   },
+   {
+      "outputFile": "wwwroot/Js/Widgets/sentences.min.js",
+      "inputFile": "wwwroot/Js/Widgets/sentences.js"
+   },
+   {
+      "outputFile": "wwwroot/Js/Widgets/slidingtitle.min.js",
+      "inputFile": "wwwroot/Js/Widgets/slidingtitle.js"
+   },
+   {
+      "outputFile": "wwwroot/Js/Widgets/stores.min.js",
+      "inputFile": "wwwroot/Js/Widgets/stores.js"
+   },
+   {
+      "outputFile": "wwwroot/Js/Widgets/stories.min.js",
+      "inputFile": "wwwroot/Js/Widgets/stories.js"
+   },
+   {
+      "outputFile": "wwwroot/Js/Widgets/tabs.min.js",
+      "inputFile": "wwwroot/Js/Widgets/tabs.js"
+   },
+   {
+      "outputFile": "wwwroot/Js/Widgets/values.min.js",
+      "inputFile": "wwwroot/Js/Widgets/values.js"
+   },
+   {
+      "outputFile": "wwwroot/Js/Widgets/video.min.js",
+      "inputFile": "wwwroot/Js/Widgets/video.js"
+   },
+   {
+      "outputFile": "wwwroot/Js/Widgets/timeline.min.js",
+      "inputFile": "wwwroot/Js/Widgets/timeline.js"
+   },
+   {
+      "outputFile": "wwwroot/Js/Widgets/search.min.js",
+      "inputFile": "wwwroot/Js/Widgets/search.js"
+   },
+   {
+      "outputFile": "wwwroot/Js/Widgets/catalog.min.js",
+      "inputFile": "wwwroot/Js/Widgets/catalog.js"
+   },
+   {
+      "outputFile": "wwwroot/Js/Widgets/productdetail.min.js",
+      "inputFile": "wwwroot/Js/Widgets/productdetail.js"
+   },
+   {
+      "outputFile": "wwwroot/Js/elogic.min.js",
+      "inputFile": "wwwroot/Js/elogic.js"
+   },
+   {
+      "outputFile": "wwwroot/Js/slickwaifix.min.js",
+      "inputFile": "wwwroot/Js/SlickWAIFix.js"
+   },
+   {
+      "outputFile": "wwwroot/Lib/slick/slick.min.js",
+      "inputFile": "wwwroot/Lib/slick/slick.js"
+   },
+   {
+      "outputFile": "wwwroot/lib/swiper/swiper.css",
+      "inputFile": "wwwroot/lib/swiper/swiper.scss"
+   },
+   {
+      "outputFile": "wwwroot/css/Widgets/sliderNews.css",
+      "inputFile": "wwwroot/Scss/Widgets/sliderNews.scss"
+   },
+   {
+      "outputFile": "wwwroot/css/Widgets/generalsliderNew.css",
+      "inputFile": "wwwroot/Scss/Widgets/generalsliderNew.scss"
+   },
+   {
+      "outputFile": "wwwroot/css/Widgets/cta.css",
+      "inputFile": "wwwroot/Scss/Widgets/cta.scss"
+   },
+   {
+      "outputFile": "wwwroot/css/Widgets/filtroSettori.css",
+      "inputFile": "wwwroot/Scss/Widgets/filtroSettori.scss"
+   },
+   {
+      "outputFile": "wwwroot/css/Widgets/search.css",
+      "inputFile": "wwwroot/Scss/Widgets/search.scss"
+   },
+   {
+      "outputFile": "wwwroot/css/Widgets/catalog.css",
+      "inputFile": "wwwroot/scss/Widgets/catalog.scss"
+   }
+]

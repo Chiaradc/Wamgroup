@@ -1,0 +1,39 @@
+﻿.el-icons {
+    .icon-a-lowercase:before {
+        content: "\e74f" !important;
+    }
+
+    .icon-modal-close:before {
+        content: "\e64a" !important;
+    }
+
+    .icon-picture:before {
+        content: "\e633" !important;
+    }
+
+    .icon-picture.hover {
+        color: #CCAF52 !important;
+    }
+}
+
+.el-tab-container {
+    display: flex !important;
+
+    input[type=text] {
+        border: 1px solid #ccc!important;
+    }
+
+    > div {
+        margin: 2px 5px;
+    }
+
+    a[data-image-type] i {
+        color: #000 !important;
+    }
+
+    img {
+        height: 16px;
+        border: 1px solid #ccc;
+        padding: 3px;
+    }
+}

@@ -1,0 +1,82 @@
+﻿@using Elogic.Wamgroup.Sito2023.NetCore.ViewModels.WamgroupGallery;
+@using Progress.Sitefinity.AspNetCore.Web;
+@inject IRenderContext renderContext
+
+@model WamgroupGalleryViewModel
+@if (renderContext.IsEdit)
+{
+    <div class="row g-0">
+        @foreach (var item in Model.Items)
+        {
+          <div class="col-4 col-lg-2">
+                @if (!string.IsNullOrWhiteSpace(item.DesktopImageUrl))
+                {
+                    <!-- Image gallery -->
+                    <picture class="pictureGallery position-relative">
+                        <source srcset="@item.MobileImageUrl" media="(max-width: 767px)">
+                        <source srcset="@item.TabletImageUrl" media="(max-width: 1279px)">
+                        <img src="@item.DesktopImageUrl" loading="lazy" aria-hidden="true" class="imageGallery h-auto" width="@item.Width" height="@item.Height" alt="@item.ImageAlt" />
+                    </picture>
+                }
+                else
+                {
+                    <div class="vco-video-yt-bg position-relative">
+                        <div class="ratio ratio-16x9 wrap-video-bg text-center" data-video-container>
+                        </div>
+                        <div class="overlay">
+                            <button class="linkVideo open-modal link-int" aria-expanded="false" aria-haspopup="dialog" data-video-code="@item.CodiceVideo" data-video-type="@item.TipoVideo"> <img src="/svg/icona-play.svg" width="100" height="100" alt="Play video"> </button>
+                        </div>
+                    </div>
+                }
+          </div>
+
+        }
+    </div>
+}
+else
+{
+    <div class="contentGallery position-relative video-widget">
+        @foreach (var item in Model.Items)
+        {
+            <div class="itemGallery position-relative">
+
+                <div class="row">
+                    <div class="video-sentinel"></div>
+                    <div class="col-md-10 col-lg-8 m-auto">
+
+                        @if (!string.IsNullOrWhiteSpace(item.DesktopImageUrl))
+                        {
+                            <!-- Image gallery -->
+                            <picture class="pictureGallery position-relative">
+                                <source srcset="@item.MobileImageUrl" media="(max-width: 767px)">
+                                <source srcset="@item.TabletImageUrl" media="(max-width: 1279px)">
+                                <img src="@item.DesktopImageUrl" loading="lazy" aria-hidden="true" class="imageGallery h-auto" width="@item.Width" height="@item.Height" alt="@item.ImageAlt" />
+                            </picture>
+                        }
+                        else
+                        {
+                            <div class="vco-video-yt-bg position-relative">
+                                <div class="ratio ratio-16x9 wrap-video-bg text-center" data-video-container>
+                                </div>
+                                <div class="overlay">
+                                    <button class="linkVideo open-modal link-int" aria-expanded="false" aria-haspopup="dialog" data-video-code="@item.CodiceVideo" data-video-type="@item.TipoVideo"> <img src="/svg/icona-play.svg" width="100" height="100" alt="Play video"> </button>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+
+@if (Model.Items.Count() == 0 && !string.IsNullOrWhiteSpace(Model.SelettorePerNascondereElemento))
+{
+    <script>
+        var elem = document.querySelector('@Model.SelettorePerNascondereElemento');
+        if (elem != null) {
+            elem.classList.add('d-none');
+        }
+    </script>
+}

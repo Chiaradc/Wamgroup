@@ -1,0 +1,30 @@
+﻿@using Progress.Sitefinity.AspNetCore.ViewComponents;
+@using Progress.Sitefinity.AspNetCore.Mvc.Rendering;
+@using Progress.Sitefinity.AspNetCore.Web;
+@using Elogic.Wamgroup.Sito2023.NetCore.ViewModels.WamgroupArticoli;
+@using Elogic.Wamgroup.Sito2023.NetCore.ViewComponents.WamgroupArticoli;
+@using Elogic.Wamgroup.Sito2023.NetCore.Entities.WamgroupArticoli;
+@using Elogic.Wamgroup.Sito2023.NetCore.Localization;
+
+@inject LocalizationHelperService localizationHelper;
+
+@model WamgroupMagazzinoViewModel
+
+<form method="get">
+<section>
+   
+
+   @foreach (var item in Model.RigheMagazzino)
+   {
+      var path = this.Context.Request.Path.Value;
+      var eventUrlInDetail = $"{path}/{WamgroupArticoliViewComponent.DetailItemPrefix}/{item.Title}";
+
+         <h3><strong>Titolo</strong>: @item.Title</h3>
+         <div><strong>Articolo</strong>: </div>
+         <div><strong>Quantita</strong>: @item.Quantita</div>
+         <div><a href="@eventUrlInDetail">@localizationHelper.Localize("Dettagli")</a></div>
+      <hr />
+   }
+
+</section>
+</form>

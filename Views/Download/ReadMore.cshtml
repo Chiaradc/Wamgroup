@@ -1,0 +1,85 @@
+﻿@using Elogic.Wamgroup.Sito2023.NetCore.ViewModels.WamgroupDownload;
+@using Elogic.Wamgroup.Sito2023.Models.Misc;
+@using System.Globalization;
+@{
+   Layout = "";
+}
+
+@model IEnumerable<DownloadableDocument>
+
+
+@foreach (var document in Model)
+{
+   <div class="row" data-document-row>
+      <div class="col-12 col-md-3 downloadDate" data-file-date>
+         <span class="lineOrizontal"></span>
+         @foreach (var file in document.Files)
+         {
+            var style = !file.Value.IsDefault ? "display: none;" : "";
+            <span style="@style" data-culture="@file.Value.DocumentCulture">
+               @document.Date.ToString(file.Value.DocumentCulture == "it-IT"? Constants.ItalianDateFormat : Constants.EnglishDateFormat, CultureInfo.GetCultureInfo(file.Value.DocumentCulture))
+            </span>
+         }
+      </div>
+      <div class="col-10 col-md-8" data-file-description>
+         @foreach (var file in document.Files)
+         {
+            var style = !file.Value.IsDefault ? "display: none;" : "";
+            <span style="@style" data-culture="@file.Value.DocumentCulture">@file.Value.DocumentDescription</span>
+         }
+      </div>
+      <div class="col-2 col-md-1 download-actions">
+         @{
+            if (document.Files.Count == 1)
+            {
+               <span class="boxDocumentCultures">@document.Files.FirstOrDefault().Value.DocumentCulture.Substring(0, 2).ToUpperInvariant()</span>
+            }
+            else
+            {
+               <ul class="documentCultures">
+                  <li class="dropdown">
+                     <button class="dropdown-toggle" title="Lingua" data-bs-toggle="dropdown" aria-expanded="false">
+                        @foreach (var file in document.Files)
+                        {
+                           var style = !file.Value.IsDefault ? "display: none;" : "";
+                           <span style="@style" data-culture="@file.Value.DocumentCulture">@file.Value.DocumentCulture.Substring(0,2).ToUpperInvariant()</span>
+                        }
+                        <svg xmlns="http://www.w3.org/2000/svg" width="7.27" height="4.443" viewBox="0 0 7.27 4.443">
+                           <g transform="translate(-400.38 -994.882)">
+                              <g transform="translate(400.733 987.516)">
+                                 <path d="M11.038,8.288l-.457.457,3.281,3.281,3.281-3.281-.457-.457-2.825,2.758Z" transform="translate(-10.581 -0.57)" fill="#ccaf52" stroke="#ccaf52" stroke-width="0.5" />
+                              </g>
+                           </g>
+                        </svg>
+
+                     </button>
+
+                     <div class="dropdown-menu">
+                        @foreach (var file in document.Files)
+                        {
+                           var style = file.Value.IsDefault ? "display: none;" : "";
+                           <button style="@style" data-culture="@file.Value.DocumentCulture">@file.Value.DocumentCulture.Substring(0,2).ToUpperInvariant()</button>
+                        }
+                     </div>
+                  </li>
+               </ul>
+            }
+         }
+         @foreach (var file in document.Files)
+         {
+            var style = !file.Value.IsDefault ? "display: none;" : "";
+            <a href="@file.Value.FileUrl" title="Download" style="@style" data-culture="@file.Value.DocumentCulture" target="_blank">
+               <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13.9" viewBox="0 0 8 13.9" role="img" aria-label="Download">
+                  <g transform="translate(-399.908 -987.266)">
+                     <g transform="translate(400.733 987.516)">
+                        <path d="M11.038,8.288l-.457.457,3.281,3.281,3.281-3.281-.457-.457-2.5,2.5V.57H13.54V10.79Z" transform="translate(-10.581 -0.57)" fill="#ccaf52" stroke="#ccaf52" stroke-width="0.5" />
+                     </g>
+                  </g>
+                  <line x2="8" transform="translate(0 13.4)" fill="none" stroke="#ccaf52" stroke-width="1" />
+               </svg>
+
+            </a>
+         }
+      </div>
+   </div>
+}

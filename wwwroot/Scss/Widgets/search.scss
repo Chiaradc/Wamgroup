@@ -1,0 +1,10 @@
+﻿/// <reference path="../_variables.scss">
+
+.search-page-results {
+    .container-results {
+        > div {
+            padding: 2rem;
+            border: 1px solid $lightblue;
+        }
+    }
+}

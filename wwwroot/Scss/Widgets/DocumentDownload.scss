@@ -1,0 +1,58 @@
+﻿/// <reference path="../_variables.scss">
+@import "../variables";
+
+.row[data-document-row] {
+    margin-bottom: 3px;
+    background:$white;
+    padding:1rem;
+}
+
+.downloadDate {
+    color: $golddark;
+    font-size: 0.938rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    .lineOrizontal {
+        background: $gold;
+    }
+}
+
+.download-actions {
+    color: $golddark;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        color: $golddark;
+        svg path, svg line {fill:$golddark!important; stroke:$golddark!important;}
+
+        &:after {
+            display: none;
+        }
+    }
+}
+
+.documentCultures {
+    margin: 0;
+    padding: 0;
+
+
+    li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .dropdown-menu.show {
+            display: flex;
+            flex-direction: column;
+            background: $black;
+            min-width: 30px;
+            border:0;
+            border-top: 1px solid #CCAF52;
+            padding: 0.3rem;
+            a {margin-right: 0;}
+        }
+    }
+}

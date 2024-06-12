@@ -1,0 +1,29 @@
+﻿@using Progress.Sitefinity.AspNetCore.ViewComponents;
+@using Progress.Sitefinity.AspNetCore.Mvc.Rendering;
+@using Progress.Sitefinity.AspNetCore.Web;
+@using Elogic.Wamgroup.Sito2023.NetCore.ViewModels.WamgroupWidget;
+@using Elogic.Wamgroup.Sito2023.NetCore.ViewComponents.WamgroupWidget;
+
+
+@model WamgroupWidgetViewModel
+
+<section>
+    <div data-sfcontainer >
+        Articoli @Model.Codice
+        <br />
+      Localization: 
+    </div>
+
+   @foreach (var item in Model.Articoli)
+   {
+      var path = this.Context.Request.Path.Value;
+      var eventUrlInDetail = $"{path}/{WamgroupWidgetViewComponent.DetailItemPrefix}{item.Codice}";
+
+      <div><strong>Codice</strong>: @item.Codice</div>
+      <div><strong>Descrizione</strong>: @item.Descrizione</div>
+      <div><strong>Costo</strong>: @item.Costo</div>
+      <div><a href="@eventUrlInDetail">Dettagli</a></div>
+      <hr />
+   }
+
+</section>

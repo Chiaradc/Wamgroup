@@ -1,0 +1,149 @@
+﻿@using Elogic.Wamgroup.Sito2023.NetCore.ViewModels.WamgroupDownload;
+@using Elogic.Wamgroup.Sito2023.Models.Misc;
+@using System.Globalization;
+
+@model WamgroupDownloadViewModel
+@{
+   var guid = Guid.NewGuid().ToString("N");
+}
+
+@if (!string.IsNullOrWhiteSpace(Model.Folder))
+{
+<div class="document-list">
+   @if (Model.MostrFiltro)
+   {
+      <a name="filter" aria-hidden="true"></a>
+      <div class="newsFilter d-flex align-items-center justify-content-center mb-5">
+         <div class="dropdown mx-3">
+            <button class="dropdown-toggle" id="anniDropdown-@guid" data-bs-auto-close="inside" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               @Model.AnnoSelezionato
+            </button>
+            <div class="dropdown-menu" aria-labelledby="anniDropdown-@guid">
+               @foreach (var anno in Model.Anni)
+               {
+                  <button class="dropdown-item" data-filter-for="docs" data-filter="year" data-folder="@Model.Folder" data-label="@anno" data-year="@anno" data-category="@Model.CategoriaSelezionata">@anno</button>
+               }
+            </div>
+         </div>
+         <div class="dropdown mx-3 @(Model.MostrCategorieFiltro ? "" : "d-none")">
+            <button class="dropdown-toggle" id="categorieDropdown-@guid" data-bs-auto-close="inside" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               @Model.CategoriaSelezionataTesto
+            </button>
+            <div class="dropdown-menu" aria-labelledby="categorieDropdown-@guid">
+               <button class="dropdown-item" data-filter-for="docs" data-filter="category" data-label="Categoria" data-folder="@Model.Folder" data-year="@Model.AnnoSelezionato" data-category="">Tutte le categorie</button>
+               @foreach (var categoria in Model.Categorie)
+               {
+                  <button class="dropdown-item" data-filter-for="docs" data-filter="category" data-folder="@Model.Folder" data-label="@categoria.Value" data-year="@Model.AnnoSelezionato" data-category="@categoria.Key">@categoria.Value</button>
+               }
+            </div>
+         </div>
+      </div>
+   }
+   <div class="contentDownload" data-id="@Guid.NewGuid().ToString("N")">
+      <div class="row">
+         <div class="col-lg-8 m-auto" data-type="docscontainer">
+            @if (Model.Documenti.Count > 0)
+            {
+               foreach (var document in Model.Documenti)
+               {
+                  <div class="row" data-document-row>
+                     <div class="col-12 col-md-3 downloadDate" data-file-date>
+                        <span class="lineOrizontal"></span>
+                        @foreach (var file in document.Files)
+                        {
+                           var style = !file.Value.IsDefault ? "display: none;" : "";
+                           <span style="@style" data-culture="@file.Value.DocumentCulture">
+                              @document.Date.ToString(file.Value.DocumentCulture == "it-IT"? Constants.ItalianDateFormat : Constants.EnglishDateFormat, CultureInfo.GetCultureInfo(file.Value.DocumentCulture))
+                           </span>
+                        }
+                     </div>
+                     <div class="col-10 col-md-8" data-file-description>
+                        @foreach (var file in document.Files)
+                        {
+                           var style = !file.Value.IsDefault ? "display: none;" : "";
+                           <span style="@style" data-culture="@file.Value.DocumentCulture">@file.Value.DocumentDescription</span>
+                        }
+                     </div>
+                     <div class="col-2 col-md-1 download-actions">
+                        @{
+                           if (document.Files.Count == 1)
+                           {
+                              <span class="boxDocumentCultures">@document.Files.FirstOrDefault().Value.DocumentCulture.Substring(0, 2).ToUpperInvariant()</span>
+                           }
+                           else
+                           {
+                              <ul class="documentCultures">
+                                 <li class="dropdown">
+                                    <button class="dropdown-toggle" title="Lingua" data-bs-toggle="dropdown" aria-expanded="false">
+                                       @foreach (var file in document.Files)
+                                       {
+                                          var style = !file.Value.IsDefault ? "display: none;" : "";
+                                          <span style="@style" data-culture="@file.Value.DocumentCulture">@file.Value.DocumentCulture.Substring(0,2).ToUpperInvariant()</span>
+                                       }
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="7.27" height="4.443" viewBox="0 0 7.27 4.443">
+                                          <g transform="translate(-400.38 -994.882)">
+                                             <g transform="translate(400.733 987.516)">
+                                                <path d="M11.038,8.288l-.457.457,3.281,3.281,3.281-3.281-.457-.457-2.825,2.758Z" transform="translate(-10.581 -0.57)" fill="#ccaf52" stroke="#ccaf52" stroke-width="0.5" />
+                                             </g>
+                                          </g>
+                                       </svg>
+
+                                    </button>
+
+                                    <div class="dropdown-menu">
+                                       @foreach (var file in document.Files)
+                                       {
+                                          var style = file.Value.IsDefault ? "display: none;" : "";
+                                          <button style="@style" data-culture="@file.Value.DocumentCulture">@file.Value.DocumentCulture.Substring(0,2).ToUpperInvariant()</button>
+                                       }
+                                    </div>
+                                 </li>
+                              </ul>
+                           }
+                        }
+                        @foreach (var file in document.Files)
+                        {
+                           var style = !file.Value.IsDefault ? "display: none;" : "";
+                           <a href="@file.Value.FileUrl" title="Download" style="@style" data-culture="@file.Value.DocumentCulture" target="_blank">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13.9" viewBox="0 0 8 13.9" role="img" aria-label="Download">
+                                 <g transform="translate(-399.908 -987.266)">
+                                    <g transform="translate(400.733 987.516)">
+                                       <path d="M11.038,8.288l-.457.457,3.281,3.281,3.281-3.281-.457-.457-2.5,2.5V.57H13.54V10.79Z" transform="translate(-10.581 -0.57)" fill="#ccaf52" stroke="#ccaf52" stroke-width="0.5" />
+                                    </g>
+                                 </g>
+                                 <line x2="8" transform="translate(0 13.4)" fill="none" stroke="#ccaf52" stroke-width="1" />
+                              </svg>
+
+                           </a>
+                        }
+                     </div>
+                  </div>
+               }
+            }
+            else if (!Model.NascondiNessunRisultato)
+            {
+               <div class="text-center mb-5">
+                  Nessun Risultato
+               </div>
+            }
+         </div>
+         <div data-readmore-container="docs" class="@(Model.MostraReadMore && Model.Documenti.Count > 0 && Model.Documenti.Count >= Model.TopN ? "" : "d-none")">
+
+            <div class="spacer spacerPT1x"></div>
+            <div class="text-center">
+               <button title="Leggi altri documenti" data-current-page="1" data-page-size="@Model.TopN" data-folder="@Model.Folder" data-year="@Model.AnnoSelezionato" data-type="readmore-docs" data-category="@Model.CategoriaSelezionata" class="linkReadMore">
+                  Leggi altri documenti
+               </button>
+               <span class="d-none" data-type="loader-docs">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto;  display: block; shape-rendering: auto;" width="30px" height="30px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                     <circle cx="50" cy="50" fill="none" stroke="#0a0a0a" stroke-width="10" r="35" stroke-dasharray="164.93361431346415 56.97787143782138">
+                        <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s" values="0 50 50;360 50 50" keyTimes="0;1"></animateTransform>
+                     </circle>
+                  </svg>
+               </span>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+}

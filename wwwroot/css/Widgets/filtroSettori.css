@@ -1,0 +1,110 @@
+﻿.filtroSettori {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-gap: 40px 50px;
+  grid-template-columns: 1fr;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+.filtroSettori > div {
+  position: relative;
+  display: flex;
+  -webkit-box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1803921569);
+  -moz-box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1803921569);
+  -o-box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1803921569);
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1803921569);
+  background: #FFFFFF;
+}
+.filtroSettori > div.buildingCostruction .icona {
+  background: #26ABE3;
+}
+.filtroSettori > div.feedFood .icona {
+  background: #FCB042;
+}
+.filtroSettori > div.plasticsChemicals .icona {
+  background: #209BB0;
+}
+.filtroSettori > div.heavyIndustries .icona {
+  background: #0D74B9;
+}
+.filtroSettori > div.renewableEnergy .icona {
+  background: #94C84A;
+}
+.filtroSettori > div.plantsMachinery .icona {
+  background: #C8A64A;
+}
+.filtroSettori > div.environmental .icona {
+  background: #4EB597;
+}
+.filtroSettori > div.miscellaneous .icona {
+  background: #F03F37;
+}
+.filtroSettori > div > .icona {
+  background: red;
+  position: relative;
+  min-width: 90px;
+  min-height: 90px;
+  aspect-ratio: 1/1;
+  position: relative;
+}
+.filtroSettori > div > .icona > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+}
+.filtroSettori > div .content {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: "proxima-nova", sans-serif;
+  line-height: 1.2;
+  color: #023B6B;
+}
+.filtroSettori > div:after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  width: 20px;
+  height: 28px;
+  background: url("../../svg/checkSettore.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+}
+.filtroSettori > div.selected:after {
+  opacity: 1;
+}
+.filtroSettori > div.selected .content {
+  color: #209BB0;
+}
+
+/*@media (min-width: 768px) {
+    .filtroSettori {
+        grid-template-columns: 1fr 1fr;
+    }
+}*/
+/*
+@media(min-width: 1024px) {
+    .filtroSettori {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}*/
+@media (min-width: 1200px) {
+  .filtroSettori {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1400px) {
+  .filtroSettori {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

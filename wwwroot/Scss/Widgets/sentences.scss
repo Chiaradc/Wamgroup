@@ -1,0 +1,113 @@
+﻿/// <reference path="../_variables.scss">
+@import "../variables";
+
+.sentence-in-a-box {
+    perspective: 1000px;
+
+    .inner {
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+        position: relative;
+        
+        button {
+           background:inherit;
+           border:0;
+        }
+    }
+
+    &.flip-box.open .inner {
+        transform: rotateY(180deg);
+    }
+
+    .front, .back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+        opacity: .85
+    }
+
+    .front {
+        background: $white;
+    }
+
+    .back {
+        background: $black;
+        transform: rotateY(180deg);
+
+        .sentence-text, .sentence-number {
+            color: $white;
+        }
+    }
+
+
+    .sentence-number {
+        font-size: 2.5rem;
+        margin-top: 1rem;
+        margin-right: 2rem;
+        font-weight: 500;
+    }
+
+    .sentence-text {
+        width: 70%;
+        font-size: 1.5rem;
+        line-height: 1.875rem;
+        color: $black;
+    }
+}
+
+@media(max-width:767px) {
+}
+
+@media(max-width:320px) {
+}
+
+@media(min-width:768px) {
+    .sentence-in-a-box {
+        .sentence-number {
+            font-size: 1.5rem;
+            margin-top: 0;
+            margin-right: 0.5rem;
+        }
+
+        .sentence-text {
+            font-size: 1rem;
+            line-height: 1.3rem;
+        }
+    }
+}
+
+@media(min-width:992px) {
+
+    .sentence-in-a-box {
+        .sentence-number {
+            font-size: 2.1rem;
+            margin-top: 0.5rem;
+            margin-right: 1rem;
+        }
+
+        .sentence-text {
+            font-size: 1.1rem;
+            line-height: 1.6rem;
+        }
+    }
+}
+
+@media(min-width:1200px) {
+    .sentence-in-a-box {
+        .sentence-number {
+            font-size: 2.4rem;
+            margin-top: 1rem;
+            margin-right: 2rem;
+        }
+
+        .sentence-text {
+            font-size: 1.2rem;
+            line-height: 1.75rem;
+        }
+    }
+}
+
+@media(min-width:1400px) {
+}
